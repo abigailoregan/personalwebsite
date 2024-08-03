@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/Quicksand-Regular.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    position: fixed;
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    user-select: none;
+    font-family: Raleway;
+    left: 0;
+    right: 0;
+}
+
+#nav_name {
+    font-size: 2em;
+    padding-right: 1em;
+    user-select: none;
+}
+
+#nav_buttton_container {
+    margin-left: auto;
+}
+
+.nav_button {
+    font-size: 1.2em;
+    margin-left: 1em;
+    text-decoration: none;
+    background-image: linear-gradient(#B2A4D4, #B2A4D4);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.nav_button:hover {
+    cursor: pointer;
+    background-size: 100% 0.1em;
+}
+
+.content {
+    width: 65%;
+    margin: auto;
+    margin-top: 4.5em;
+    font-size: 1.3em;
+    font-family: Quicksand;
+}
+
+.footer {
+    font-size: 1.2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    font-family: Quicksand;
+}
+
+.footer_button {
+    margin-bottom: 1em;
+    text-decoration: none;
+    background-image: linear-gradient(#B2A4D4, #B2A4D4);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.footer_button:hover {
+    cursor: pointer;
+    background-size: 100% 0.1em;
+}
