@@ -6,7 +6,6 @@
     <link rel=stylesheet href=css/universal.css>
     <link rel=stylesheet href=css/contact.css>
 </head>
-
 <body>
     <div class=navbar>
         <span id=nav_name>Abigail O'Regan</span>
@@ -18,6 +17,40 @@
             <span class=nav_button
                 onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">Instagram</span>
             <span class=nav_button onclick=window.location='./contact.html'>Contact</span>
+        </div>
+    </div>
+    <div class=content>
+        <h1>Get in touch!</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="66a5c3aa-cd83-40bc-853c-00e1c2d276ad">
+
+            <input type="text" name="name" placeholder="Type your name..." required>
+            <input type="email" name="email" placeholder="Type your email..." required>
+            <input type="text" name="subject" placeholder="Type your subject..." required/>
+            <textarea id="textbox" name="message" placeholder="Type your message..." required></textarea>
+        
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+        
+            <button type="submit">Send Message</button>
+        </form>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                var textarea = document.getElementById('textbox');
+
+                function autoResize() {
+                    textarea.style.height = 'auto';
+                    textarea.style.height = textarea.scrollHeight + 'px';
+                }
+
+                textarea.addEventListener('input', autoResize);
+                autoResize();
+            });
+        </script>
+        <div class=footer>
+            <span class=footer_button
+                onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
+            <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
         </div>
     </div>
 </body>

@@ -1,3 +1,7 @@
+:root {
+    --violet: #B2A4D4;
+}
+
 @font-face {
     font-family: 'Raleway';
     src: url('../fonts/Raleway-VariableFont_wght.ttf');
@@ -29,6 +33,7 @@ body {
     font-family: Raleway;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 #nav_name {
@@ -45,7 +50,7 @@ body {
     font-size: 1.2em;
     margin-left: 1em;
     text-decoration: none;
-    background-image: linear-gradient(#B2A4D4, #B2A4D4);
+    background-image: linear-gradient( var(--violet),  var(--violet));
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 0%;
@@ -82,7 +87,7 @@ body {
 .footer_button {
     margin-bottom: 1em;
     text-decoration: none;
-    background-image: linear-gradient(#B2A4D4, #B2A4D4);
+    background-image: linear-gradient( var(--violet),  var(--violet));
     background-size: 0% 0.1em;
     background-position-y: 100%;
     background-position-x: 0%;
