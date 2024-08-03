@@ -99,3 +99,8 @@ body {
     cursor: pointer;
     background-size: 100% 0.1em;
 }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
