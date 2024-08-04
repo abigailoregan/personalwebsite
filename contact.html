@@ -38,6 +38,20 @@
         </form>
         <script src="https://web3forms.com/client/script.js" async defer></script>
         <script>
+            const form = document.getElementById('emailform')
+            
+            form.addEventListener('submit', function(e) {
+            
+                const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value
+            
+                if (!hCaptcha) {
+                    e.preventDefault();
+                    alert("Please fill out captcha field")
+                    return
+                }
+            })
+        </script>
+        <script>
             document.addEventListener('DOMContentLoaded', () => {
                 var textarea = document.getElementById('textbox')
 
@@ -49,23 +63,7 @@
                 textarea.addEventListener('input', autoResize)
                 autoResize()
             })
-            const form =  document.getElementById('emailform')
-            form.addEventListener('submit', function(e) {
-                const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value
-                if (!hCaptcha) {
-                    e.preventDefault()
-                    alert("Please fill out captcha field")
-                    return
-                }
-            })
         </script>
-         <div class="h-captcha" 
-          data-captcha="true" 
-          data-lang="de" 
-          data-theme="dark"
-          data-onload="myFunction"
-          data-render="explicit"
-          data-size="compact"></div>
         <div class=footer>
             <span class=footer_button
                 onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
