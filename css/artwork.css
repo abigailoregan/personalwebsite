@@ -1,15 +1,21 @@
 .content {
-    margin-top: 5.5em;
+    margin-top: 4.5em;
     width: 90%;
     height: 100%;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .cover-photo {
     position: relative;
-    width: 15em;
-    height: 15em;
+    width: 22vw;
+    height: 22vw;
+    min-width: 10em;
+    min-height: 10em;
     display: inline-block;
     margin: 1em;
 }
@@ -17,14 +23,18 @@
 .cover-photo img {
     left: 0;
     position: absolute;
-    width: 15em;
-    height: 15em;
+    width: 22vw;
+    height: 22vw;
+    min-width: 10em;
+    min-height: 10em;
 }
 
 .backdrop {
     position: absolute;
-    width: 15em;
-    height: 15em;
+    width: 22vw;
+    height: 22vw;
+    min-width: 10em;
+    min-height: 10em;
     transition-duration: 300ms;
     color: #00000000;
     display: flex;
