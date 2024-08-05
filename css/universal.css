@@ -1,5 +1,6 @@
 :root {
     --violet: #B2A4D4;
+    --violethalf: #B2A4D4BC;
 }
 
 @font-face {
@@ -23,6 +24,8 @@ body {
     position: fixed;
     background-color: white;
     width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
     margin: auto;
     padding-top: 2em;
     padding-bottom: 1.5em;
