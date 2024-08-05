@@ -41,17 +41,18 @@ body {
 
 #nav_name {
     font-size: 2em;
-    padding-right: 1em;
     user-select: none;
 }
 
 #nav_buttton_container {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
     margin-left: auto;
 }
 
 .nav_button {
     font-size: 1.2em;
-    margin-left: 1em;
     text-decoration: none;
     background-image: linear-gradient( var(--violet),  var(--violet));
     background-size: 0% 0.1em;
