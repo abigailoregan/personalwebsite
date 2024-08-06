@@ -1,0 +1,16 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    row-gap: 1em;
+}
+
+.artwork {
+    height: 40vh;
+}
+
+.artwork img {
+    height: 40vh;
+}
