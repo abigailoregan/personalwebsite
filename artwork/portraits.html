@@ -5,6 +5,7 @@
     <title> Abigail O'Regan | Portraits </title>
     <link rel=stylesheet href=../css/universal.css>
     <link rel=stylesheet href=../css/artworks.css>
+    <script src='../javascript/popups.js'></script>
 </head>
 
 <body>
@@ -19,33 +20,62 @@
         </div>
     </div>
     <div class=content>
-        <!-- mas changes -->
-        <div class=artwork>
-            <img src='../images/portraits/abigail_blue.jpg'>
+        <div class=artwork onclick='openPopUp(12, `portraits`)'>
+            <img src='../images/portraits/abigail_droregan.jpg'>
         </div>
-        <div class=artwork>
-            <img src='../images/portraits/abigail_digital.jpg'>
+        <div class=artwork onclick='openPopUp(11, `portraits`)'>
+            <img src='../images/portraits/abigail_self2.jpg'>
         </div>
-        <div class=artwork>
-            <img src='../images/portraits/abigail_eye.jpg'>
+        <div class=artwork onclick='openPopUp(10, `portraits`)'>
+            <img src='../images/portraits/abigail_holland.jpg'>
         </div>
-        <div class=artwork>
-            <img src='../images/portraits/abigail_julia.jpg'>
+        <div class=artwork onclick='openPopUp(9, `portraits`)'>
+            <img src='../images/portraits/abigail_beardold.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(8, `portraits`)'>
             <img src='../images/portraits/abigail_metal.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(7, `portraits`)'>
+            <img src='../images/portraits/abigail_phone.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(6, `portraits`)'>
+            <img src='../images/portraits/abigail_einstein.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(5, `portraits`)'>
+            <img src='../images/portraits/abigail_eye.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(4, `portraits`)'>
             <img src='../images/portraits/abigail_self1.jpg'>
         </div>
-        <div class=artwork>
-            <img src='../images/portraits/abigail_self2.jpg'>
+        <div class=artwork onclick='openPopUp(3, `portraits`)'>
+            <img src='../images/portraits/abigail_digital.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(2, `portraits`)'>
+            <img src='../images/portraits/abigail_julia.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(1, `portraits`)'>
+            <img src='../images/portraits/abigail_hera.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(0, `portraits`)'>
+            <img src='../images/portraits/abigail_blue.jpg'>
         </div>
     </div>
     <div class=footer>
         <span class=footer_button
             onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
         <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+    </div>
+    <div id=portraits-popup class='popup-art hide'>
+        <div class=popup-backer onclick=closePopUp(this)></div>
+        <span class=close-popup onclick=closePopUp(this)>X</span>
+        <span class=right-popup onclick='moveRight(`portraits`)'>></span>
+        <span class=left-popup onclick='moveLeft(`portraits`)'><</span>
+        <div class=popup-image>
+            <div class=second-container>
+                <img id=portraits-rotation current=0 src='../hiRez/portraits/abigail_blue.jpg'>
+            </div>
+            <span id=portraits-description class=description>Title, Medium, Size, Availability & Link</span>
+        </div>
     </div>
 </body>
 </html>

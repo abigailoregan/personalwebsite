@@ -5,6 +5,7 @@
     <title> Abigail O'Regan | Figures </title>
     <link rel=stylesheet href=../css/universal.css>
     <link rel=stylesheet href=../css/artworks.css>
+    <script src='../javascript/popups.js'></script>
 </head>
 
 <body>
@@ -19,11 +20,22 @@
         </div>
     </div>
     <div class=content>
-        <!-- mas changes -->
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(5, `figures`)'>
+            <img src='../images/figures/abigail_oldman.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(4, `figures`)'>
+            <img src='../images/figures/abigail_figures.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(3, `figures`)'>
+            <img src='../images/figures/abigail_dude2.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(2, `figures`)'>
+            <img src='../images/figures/abigail_lady.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(1, `figures`)'>
             <img src='../images/figures/abigail_dancer.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(0, `figures`)'>
             <img src='../images/figures/abigail_siren.jpg'>
         </div>
     </div>
@@ -31,6 +43,18 @@
         <span class=footer_button
             onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
         <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+    </div>
+    <div id=figures-popup class='popup-art hide'>
+        <div class=popup-backer onclick=closePopUp(this)></div>
+        <span class=close-popup onclick=closePopUp(this)>X</span>
+        <span class=right-popup onclick='moveRight(`figures`)'>></span>
+        <span class=left-popup onclick='moveLeft(`figures`)'><</span>
+        <div class=popup-image>
+            <div class=second-container>
+                <img id=figures-rotation current=0 src='../hiRez/figures/abigail_siren.jpg'>
+            </div>
+            <span id=figures-description class=description>Title, Medium, Size, Availability & Link</span>
+        </div>
     </div>
 </body>
 </html>
