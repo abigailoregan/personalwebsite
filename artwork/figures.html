@@ -20,22 +20,22 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork onclick='openPopUp(5, `figures`)'>
+        <div class=artwork onclick='openPopUp(5)'>
             <img src='../images/figures/abigail_oldman.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(4, `figures`)'>
+        <div class=artwork onclick='openPopUp(4)'>
             <img src='../images/figures/abigail_figures.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(3, `figures`)'>
+        <div class=artwork onclick='openPopUp(3)'>
             <img src='../images/figures/abigail_dude2.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(2, `figures`)'>
+        <div class=artwork onclick='openPopUp(2)'>
             <img src='../images/figures/abigail_lady.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(1, `figures`)'>
+        <div class=artwork onclick='openPopUp(1)'>
             <img src='../images/figures/abigail_dancer.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(0, `figures`)'>
+        <div class=artwork onclick='openPopUp(0)'>
             <img src='../images/figures/abigail_siren.jpg'>
         </div>
     </div>
@@ -47,8 +47,8 @@
     <div id=figures-popup class='popup-art hide'>
         <div class=popup-backer onclick=closePopUp(this)></div>
         <span class=close-popup onclick=closePopUp(this)>X</span>
-        <span class=right-popup onclick='moveRight(`figures`)'>></span>
-        <span class=left-popup onclick='moveLeft(`figures`)'><</span>
+        <span class=right-popup onclick='moveRight()'>></span>
+        <span class=left-popup onclick='moveLeft()'><</span>
         <div class=popup-image>
             <div class=second-container>
                 <img id=figures-rotation current=0 src='../hiRez/figures/abigail_siren.jpg'>
@@ -56,5 +56,6 @@
             <span id=figures-description class=description>Title, Medium, Size, Availability & Link</span>
         </div>
     </div>
+    <identifier-tag name=figures id=identifier />
 </body>
 </html>

@@ -20,13 +20,13 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork onclick='openPopUp(0, `love`)'>
+        <div class=artwork onclick='openPopUp(0)'>
             <img src='../images/love/abigail_summon.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(1, `love`)'>
+        <div class=artwork onclick='openPopUp(1)'>
             <img src=../images/love/abigail_noah.jpg>
         </div>
-        <div class=artwork onclick='openPopUp(2, `love`)'>
+        <div class=artwork onclick='openPopUp(2)'>
             <img src=../images/love/abigail_noahsana.jpg>
         </div>
     </div>
@@ -38,8 +38,8 @@
     <div id=love-popup class='popup-art hide'>
         <div class=popup-backer onclick=closePopUp(this)></div>
         <span class=close-popup onclick=closePopUp(this)>X</span>
-        <span class=right-popup onclick='moveLeft(`love`)'>></span>
-        <span class=left-popup onclick='moveRight(`love`)'><</span>
+        <span class=right-popup onclick='moveLeft()'>></span>
+        <span class=left-popup onclick='moveRight()'><</span>
         <div class=popup-image>
             <div class=second-container>
                 <img id=love-rotation current=3 src='../hiRez/love/abigail_summon.jpg'>
@@ -47,5 +47,6 @@
             <span id=love-description class=description>Title, Medium, Size, Availability & Link</span>
         </div>
     </div>
+    <identifier-tag name=love id=identifier />
 </body>
 </html>

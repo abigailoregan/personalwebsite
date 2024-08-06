@@ -30,12 +30,12 @@ const figures_art = {
         '../hiRez/figures/abigail_oldman.jpg'
     ],
     descs: [
-        'Title, Medium, Size',
+        'The Siren, digital drawing on Photoshop, 9000x6600px',
         'The Flamenco Dancer, digital drawing on Procreate',
-        'Title, Medium, Size',
-        'Title, Medium, Size',
-        'Studies of the female form, graphite on newsprint',
-        'Title, Medium, Size'
+        'Crying Lady, Charcoal on Drawing Paper, 22.5"x18"',
+        'Male figure sketch, Charcoal on Drawing Paper',
+        'Studies of the female form, Graphite on Newsprint',
+        'Male figure drawing, Charcoal on Drawing Paper, 24"x18"'
     ],
     final: 5
 }
@@ -115,7 +115,7 @@ const portraits_art = {
         'Hera, Micron Pen and White Charcoal on Toned-Tan Mixed Media Paper',
         'Julia, Charcoal on Paper, 24"x18"',
         'Color Study, digital drawing on Procreate',
-        'Abigail O\'Regan Graffiti, Mixed Media Painting on Canvas, 20"x30"',
+        '"Graffiti" Self-Portrait, Mixed Media Painting on Canvas, 30"x20"',
         'The Eye, Acrylic on Canvas Board, 4"x6"',
         'Einstein, Micron Pen and White Charcoal on Toned-Tan Mixed Media Paper',
         'Man on Phone, Charcoal on Drawing Paper',
@@ -169,12 +169,24 @@ const stills_art = {
 
 const setList = [ abstract_art, figures_art, landscapes_art, love_art, murals_art, portraits_art, stills_art ]
 
+document.addEventListener('keydown', (e) => {
+    if (document.body.classList.contains('disabled')) {
+        if (e.key === 'ArrowLeft') {
+            moveLeft()
+        }
+        else if (e.key === 'ArrowRight') {
+            moveRight()
+        }
+    }
+})
+
 function closePopUp(node) {
     document.body.classList.remove('disabled')
     node.parentNode.classList.add('hide')
 }
 
-function openPopUp(image_num, name) {
+function openPopUp(image_num) {
+    const name = document.getElementById('identifier').getAttribute('name')
     document.body.classList.add('disabled')
     const set = setList.find(artSet => artSet.name === name)
     const image = document.getElementById(`${name}-rotation`)
@@ -183,7 +195,8 @@ function openPopUp(image_num, name) {
     document.getElementById(`${name}-popup`).classList.remove('hide')
 }
 
-function moveRight(name) {
+function moveRight() {
+    const name = document.getElementById('identifier').getAttribute('name')
     const set = setList.find(artSet => artSet.name === name)
     const image = document.getElementById(`${name}-rotation`)
     const description = document.getElementById(`${name}-description`)
@@ -198,7 +211,8 @@ function moveRight(name) {
     standardMove(next, image, description, set)
 }
 
-function moveLeft(name) {
+function moveLeft() {
+    const name = document.getElementById('identifier').getAttribute('name')
     const set = setList.find(artSet => artSet.name === name)
     const image = document.getElementById(`${name}-rotation`)
     const description = document.getElementById(`${name}-description`)

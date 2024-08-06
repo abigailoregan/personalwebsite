@@ -20,43 +20,43 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork onclick='openPopUp(12, `portraits`)'>
+        <div class=artwork onclick='openPopUp(12)'>
             <img src='../images/portraits/abigail_droregan.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(11, `portraits`)'>
+        <div class=artwork onclick='openPopUp(11)'>
             <img src='../images/portraits/abigail_self2.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(10, `portraits`)'>
+        <div class=artwork onclick='openPopUp(10)'>
             <img src='../images/portraits/abigail_holland.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(9, `portraits`)'>
+        <div class=artwork onclick='openPopUp(9)'>
             <img src='../images/portraits/abigail_beardold.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(8, `portraits`)'>
+        <div class=artwork onclick='openPopUp(8)'>
             <img src='../images/portraits/abigail_metal.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(7, `portraits`)'>
+        <div class=artwork onclick='openPopUp(7)'>
             <img src='../images/portraits/abigail_phone.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(6, `portraits`)'>
+        <div class=artwork onclick='openPopUp(6)'>
             <img src='../images/portraits/abigail_einstein.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(5, `portraits`)'>
+        <div class=artwork onclick='openPopUp(5)'>
             <img src='../images/portraits/abigail_eye.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(4, `portraits`)'>
+        <div class=artwork onclick='openPopUp(4)'>
             <img src='../images/portraits/abigail_self1.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(3, `portraits`)'>
+        <div class=artwork onclick='openPopUp(3)'>
             <img src='../images/portraits/abigail_digital.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(2, `portraits`)'>
+        <div class=artwork onclick='openPopUp(2)'>
             <img src='../images/portraits/abigail_julia.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(1, `portraits`)'>
+        <div class=artwork onclick='openPopUp(1)'>
             <img src='../images/portraits/abigail_hera.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(0, `portraits`)'>
+        <div class=artwork onclick='openPopUp(0)'>
             <img src='../images/portraits/abigail_blue.jpg'>
         </div>
     </div>
@@ -68,8 +68,8 @@
     <div id=portraits-popup class='popup-art hide'>
         <div class=popup-backer onclick=closePopUp(this)></div>
         <span class=close-popup onclick=closePopUp(this)>X</span>
-        <span class=right-popup onclick='moveRight(`portraits`)'>></span>
-        <span class=left-popup onclick='moveLeft(`portraits`)'><</span>
+        <span class=right-popup onclick='moveRight()'>></span>
+        <span class=left-popup onclick='moveLeft()'><</span>
         <div class=popup-image>
             <div class=second-container>
                 <img id=portraits-rotation current=0 src='../hiRez/portraits/abigail_blue.jpg'>
@@ -77,5 +77,6 @@
             <span id=portraits-description class=description>Title, Medium, Size, Availability & Link</span>
         </div>
     </div>
+    <identifier-tag name=portraits id=identifier />
 </body>
 </html>

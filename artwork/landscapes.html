@@ -20,28 +20,28 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork onclick='openPopUp(7, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(7)'>
             <img src=../images/landscapes/abigail_richmond.jpg>
         </div>
-        <div class=artwork onclick='openPopUp(6, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(6)'>
             <img src=../images/landscapes/abigail_tree.jpg>
         </div>
-        <div class=artwork onclick='openPopUp(5, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(5)'>
             <img src='../images/landscapes/abigail_birds.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(4, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(4)'>
             <img src=../images/landscapes/abigail_fallschurch.jpg>
         </div>
-        <div class=artwork onclick='openPopUp(3, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(3)'>
             <img src=../images/landscapes/abigail_suffocation.jpg>
         </div>
-        <div class=artwork onclick='openPopUp(2, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(2)'>
             <img src='../images/landscapes/abigail_forest2.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(1, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(1)'>
             <img src='../images/landscapes/abigail_fireycreek.jpg'>
         </div>
-        <div class=artwork onclick='openPopUp(0, `landscapes`)'>
+        <div class=artwork onclick='openPopUp(0)'>
             <img src='../images/landscapes/abigail_forest.jpg'>
         </div>
     </div>
@@ -53,8 +53,8 @@
     <div id=landscapes-popup class='popup-art hide'>
         <div class=popup-backer onclick=closePopUp(this)></div>
         <span class=close-popup onclick=closePopUp(this)>X</span>
-        <span class=right-popup onclick='moveRight(`landscapes`)'>></span>
-        <span class=left-popup onclick='moveLeft(`landscapes`)'><</span>
+        <span class=right-popup onclick='moveRight()'>></span>
+        <span class=left-popup onclick='moveLeft()'><</span>
         <div class=popup-image>
             <div class=second-container>
                 <img id=landscapes-rotation current=7 src='../hiRez/landscapes/abigail_richmond.jpg'>
@@ -62,5 +62,6 @@
             <span id=landscapes-description class=description>Title, Medium, Size, Availability & Link</span>
         </div>
     </div>
+    <identifier-tag name=landscapes id=identifier />
 </body>
 </html>
