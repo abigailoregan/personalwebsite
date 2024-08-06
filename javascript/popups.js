@@ -7,14 +7,14 @@ const abstract_art = { // Needs updating
 
 const landscapes_art = { // Needs updating
     name: 'landscapes',
-    paths: [ '../images/landscapes/abigail_fireycreek.jpg', '../hiRez/landscapes/abigail_suffocation.jpg', '../hiRez/landscapes/abigail_fallschurch.jpg', '../hiRez/landscapes/abigail_tree.jpg', '../hiRez/landscapes/abigail_richmond.jpg'],
-    descs: [ 'Fiery Creek, Chalk Pastel on Pastel Paper, 12"x16"', 'Suffocation, Mixed Media on Canvas Board, 20"x24"', 'The Little City, Oil Paint on Canvas, 12"x16"', 'Twilight\'s Guardian, Gouache on Hardcover Book', 'Richmond, Acrylic Paint on Canvas, 20"x16"' ],
-    final: 4
+    paths: [ '../hiRez/landscapes/abigail_fireycreek.jpg', '../hiRez/landscapes/abigail_suffocation.jpg', '../hiRez/landscapes/abigail_fallschurch.jpg', '../hiRez/landscapes/abigail_birds.jpg', '../hiRez/landscapes/abigail_tree.jpg', '../hiRez/landscapes/abigail_richmond.jpg'],
+    descs: [ 'Fiery Creek, Chalk Pastel on Pastel Paper, 12"x16"', 'Suffocation, Mixed Media on Canvas Board, 20"x24"', 'The Little City, Oil Paint on Canvas, 12"x16"', 'David\'s Birds, Oil Paint on Canvas, 20"x30"', 'Twilight\'s Guardian, Gouache on Hardcover Book', 'Richmond, Acrylic Paint on Canvas, 20"x16"' ],
+    final: 5
 }
 
 const love_art = { // Complete Set
     name: 'love',
-    paths: [ '../images/love/abigail_summon.jpg', '../images/love/abigail_noah.jpg', '../images/love/abigail_noahsana.jpg' ],
+    paths: [ '../hiRez/love/abigail_summon.jpg', '../hiRez/love/abigail_noah.jpg', '../hiRez/love/abigail_noahsana.jpg' ],
     descs: [ 'Flickering Fate, Charcoal on Paper, 18"x24"', 'The Veil, Charcoal on Paper, 24"x18"', 'Dancing with Death, Charcoal on Paper, 44"x30"' ],
     final: 2
 }
