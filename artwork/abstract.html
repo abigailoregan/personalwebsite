@@ -5,6 +5,7 @@
     <title> Abigail O'Regan | Abstract </title>
     <link rel=stylesheet href=../css/universal.css>
     <link rel=stylesheet href=../css/artworks.css>
+    <script src='../javascript/popups.js'></script>
 </head>
 
 <body>
@@ -19,17 +20,38 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(4, `abstract`)'>
+            <img src=../images/abstract/abigail_vines.jpg>
+        </div>
+        <div class=artwork onclick='openPopUp(3, `abstract`)'>
+            <img src=../images/abstract/abigail_protovine.jpg>
+        </div>
+        <div class=artwork onclick='openPopUp(2, `abstract`)'>
             <img src=../images/abstract/abigail_shapes.jpg>
         </div>
-        <div class=artwork>
-            <img src=../images/abstract/abigail_vines.jpg>
+        <div class=artwork onclick='openPopUp(1, `abstract`)'>
+            <img src='../images/abstract/abigail_pigeon.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(0, `abstract`)'>
+            <img src='../images/abstract/abigail_time.jpg'>
         </div>
     </div>
     <div class=footer>
         <span class=footer_button
             onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
         <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+    </div>
+    <div id=abstract-popup class='popup-art hide'>
+        <div class=popup-backer onclick=closePopUp(this)></div>
+        <span class=close-popup onclick=closePopUp(this)>X</span>
+        <span class=right-popup onclick='moveRight(`abstract`)'>></span>
+        <span class=left-popup onclick='moveLeft(`abstract`)'><</span>
+        <div class=popup-image>
+            <div class=second-container>
+                <img id=abstract-rotation current=0 src='../hiRez/abstract/abigail_time.jpg'>
+            </div>
+            <span id=abstract-description class=description>Title, Medium, Size, Availability & Link</span>
+        </div>
     </div>
 </body>
 </html>

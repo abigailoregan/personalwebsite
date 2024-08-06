@@ -5,6 +5,7 @@
     <title> Abigail O'Regan | Murals </title>
     <link rel=stylesheet href=../css/universal.css>
     <link rel=stylesheet href=../css/artworks.css>
+    <script src='../javascript/popups.js'></script>
 </head>
 
 <body>
@@ -19,14 +20,29 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork>
-            <img src=../images/murals/abigail_goddess.jpg>
+        <div class=artwork onclick='openPopUp(1, `murals`)'>
+            <img src='../images/murals/abigail_goddess.jpg'>
+        </div>
+        <div class=artwork onclick='openPopUp(0, `murals`)'>
+            <img src='../images/murals/abigail_drain.jpg'>
         </div>
     </div>
     <div class=footer>
         <span class=footer_button
             onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
         <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+    </div>
+    <div id=murals-popup class='popup-art hide'>
+        <div class=popup-backer onclick=closePopUp(this)></div>
+        <span class=close-popup onclick=closePopUp(this)>X</span>
+        <span class=right-popup onclick='moveRight(`murals`)'>></span>
+        <span class=left-popup onclick='moveLeft(`murals`)'><</span>
+        <div class=popup-image>
+            <div class=second-container>
+                <img id=murals-rotation current=0 src='../hiRez/murals/abigail_drain.jpg'>
+            </div>
+            <span id=murals-description class=description>Title, Medium, Size, Availability & Link</span>
+        </div>
     </div>
 </body>
 </html>

@@ -11,6 +11,125 @@
     height: 40vh;
 }
 
+.artwork:hover {
+    cursor: pointer;
+}
+
 .artwork img {
     height: 40vh;
+}
+
+.popup-art {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+}
+
+.popup-backer {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000B0;
+}
+
+.close-popup {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    color: #FFF;
+    font-size: 3em;
+    font-family: Quicksand;
+    user-select: none;
+
+    transition-duration: text-shadow 200ms;
+}
+
+.close-popup:hover {
+    cursor: pointer;
+    text-shadow: 0 0 .65px #FFF, 0 0 .65px #FFF;
+}
+
+.popup-image {
+    position: absolute;
+    width: fit-content;
+    height: 97%;
+    top: 2.5%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.description {
+    text-align: center;
+    min-height: fit-content;
+    padding-top: 2vh;
+    font-family: Quicksand;
+    font-size: 1.3em;
+    color: #FFF;
+}
+
+.second-container {
+    height: 94%;
+    width: fit-content;
+}
+
+.second-container img {
+    height: 100%;
+}
+
+.right-popup {
+    position: absolute;
+    top: 48vh;
+    right: 1vw;
+    color: #FFF;
+    font-size: 3em;
+    font-family: Quicksand;
+    user-select: none;
+
+    transition-duration: text-shadow 200ms;
+}
+
+.right-popup:hover {
+    cursor: pointer;
+    text-shadow: 0 0 .65px #FFF, 0 0 .65px #FFF;
+}
+
+.left-popup {
+    position: absolute;
+    top: 48vh;
+    left: 1vw;
+    color: #FFF;
+    font-size: 3em;
+    font-family: Quicksand;
+    user-select: none;
+
+    transition-duration: text-shadow 200ms;
+}
+
+.left-popup:hover {
+    cursor: pointer;
+    text-shadow: 0 0 .65px #FFF, 0 0 .65px #FFF;
+}
+
+.link-button {
+    color: #FFF;
+    text-decoration: none;
+    background-image: linear-gradient( var(--violet),  var(--violet));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.link-button:hover {
+    cursor: pointer;
+    background-size: 100% 0.1em;
 }

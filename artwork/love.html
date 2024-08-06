@@ -5,6 +5,7 @@
     <title> Abigail O'Regan | Love </title>
     <link rel=stylesheet href=../css/universal.css>
     <link rel=stylesheet href=../css/artworks.css>
+    <script src='../javascript/popups.js'></script>
 </head>
 
 <body>
@@ -19,13 +20,13 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork>
-            <img src=../images/love/abigail_summon.jpg>
+        <div class=artwork onclick='openPopUp(0, `love`)'>
+            <img src='../images/love/abigail_summon.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(1, `love`)'>
             <img src=../images/love/abigail_noah.jpg>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(2, `love`)'>
             <img src=../images/love/abigail_noahsana.jpg>
         </div>
     </div>
@@ -33,6 +34,18 @@
         <span class=footer_button
             onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
         <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+    </div>
+    <div id=love-popup class='popup-art hide'>
+        <div class=popup-backer onclick=closePopUp(this)></div>
+        <span class=close-popup onclick=closePopUp(this)>X</span>
+        <span class=right-popup onclick='moveLeft(`love`)'>></span>
+        <span class=left-popup onclick='moveRight(`love`)'><</span>
+        <div class=popup-image>
+            <div class=second-container>
+                <img id=love-rotation current=3 src='../hiRez/love/abigail_summon.jpg'>
+            </div>
+            <span id=love-description class=description>Title, Medium, Size, Availability & Link</span>
+        </div>
     </div>
 </body>
 </html>
