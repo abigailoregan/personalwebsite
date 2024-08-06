@@ -53,14 +53,14 @@ const landscapes_art = {
         '../hiRez/landscapes/abigail_richmond.jpg'
     ],
     descs: [
-        'Winter, Acrylic Paint on Canvas Board, 14"x11"',
+        'Winter, Acrylic on Canvas Board, 14"x11"',
         'Fiery Creek, Chalk Pastel on Pastel Paper, 12"x16"',
-        'Tranquility, Oil Paint on Canvas Board, 8"x10" - Art Study with Johannes Vloothuis',
+        'Tranquility, Oil on Canvas Board, 8"x10" - Art Study with Johannes Vloothuis',
         'Suffocation, Mixed Media on Canvas Board, 20"x24"',
-        'The Little City, Oil Paint on Canvas, 12"x16"',
-        'David\'s Birds, Oil Paint on Canvas, 20"x30"',
+        'The Little City, Oil on Canvas, 12"x16"',
+        'David\'s Birds, Oil on Canvas, 20"x30"',
         'Twilight\'s Guardian, Gouache on Hardcover Book',
-        'Richmond, Acrylic Paint on Canvas, 20"x16"'
+        'Richmond, Acrylic on Canvas, 20"x16"'
     ],
     final: 7
 }
@@ -122,7 +122,7 @@ const portraits_art = {
         'Hope, Acrylic on Canvas, 18"x14"',
         'Old Man, Charcoal on Drawing Paper',
         'Tom Holland - Uncharted,  Oil on Canvas Board, 8"x10"',
-        'Abigail O\'Regan, Acrylic Paint on Wood Panel, 40"x30"',
+        'Abigail O\'Regan, Acrylic on Wood Panel, 40"x30"',
         'Dr David J O\'Regan, Oil on Canvas, 18"x14"'
     ],
     final: 12
@@ -131,12 +131,40 @@ const portraits_art = {
 const stills_art = {
     name: 'stills',
     paths: [
-        ''
+        '../hiRez/stills/abigail_pepper2.jpg',
+        '../hiRez/stills/abigail_pepper1.jpg',
+        '../hiRez/stills/abigail_bottle.jpg',
+        '../hiRez/stills/abigail_brown.jpg',
+        '../hiRez/stills/abigail_milk.jpg',
+        '../hiRez/stills/abigail_hopestudy.jpg',
+        '../hiRez/stills/abigail_echoes.jpg',
+        '../hiRez/stills/abigail_bust.jpg',
+        '../hiRez/stills/abigail_orange.jpg',
+        '../hiRez/stills/abigail_grapes.jpg',
+        '../hiRez/stills/abigail_ring.jpg',
+        '../hiRez/stills/abigail_bottles2.jpg',
+        '../hiRez/stills/abigail_bottles.jpg',
+        '../hiRez/stills/abigail_teapot.jpg',
+        '../hiRez/stills/abigail_nose.jpg'
     ],
     descs: [
-        'Title, Medium, Size'
+        'Pepper, digital drawing on Procreate',
+        'Pepper, Oil on Canvas, 10"x10"',
+        'Bottle, Oil on Canvas, 14"x14"',
+        'Vase, Oil on Canvas Board',
+        'Milk Jug, Oil on Canvas, 12"x9"',
+        'Flowers, Oil on Canvas, 10"x10"',
+        'Echos of Stillness, Charcoal on Drawing Paper, 24"x18"',
+        'Greek Style Bust, Oil on Canvas Board',
+        'Breakfast, Oil on Canvas, 20"x20"',
+        'Grapes, Oil on Canvas, 20"x20"',
+        'Butterfly Ring, Oil on Canvas, 24"x24"',
+        'Bottles Sketch, Graphite on Drawing Paper, 18"x24"',
+        'Bottles, Oil on Canvas, 24"x24"',
+        'Teapot, Oil on Canvas, 12"x12"',
+        'The Nose, Oil on Canvas, 16"x20"'
     ],
-    final: 0
+    final: 14
 }
 
 const setList = [ abstract_art, figures_art, landscapes_art, love_art, murals_art, portraits_art, stills_art ]

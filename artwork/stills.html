@@ -20,49 +20,49 @@
         </div>
     </div>
     <div class=content>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(14, `stills`)'>
             <img src='../images/stills/abigail_nose.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(13, `stills`)'>
             <img src='../images/stills/abigail_teapot.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(12, `stills`)'>
             <img src='../images/stills/abigail_bottles.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(11, `stills`)'>
             <img src='../images/stills/abigail_bottles2.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(10, `stills`)'>
             <img src='../images/stills/abigail_ring.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(9, `stills`)'>
             <img src='../images/stills/abigail_grapes.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(8, `stills`)'>
             <img src='../images/stills/abigail_orange.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(7, `stills`)'>
             <img src='../images/stills/abigail_bust.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(6, `stills`)'>
             <img src='../images/stills/abigail_echoes.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(5, `stills`)'>
             <img src='../images/stills/abigail_hopestudy.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(4, `stills`)'>
             <img src='../images/stills/abigail_milk.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(3, `stills`)'>
             <img src='../images/stills/abigail_brown.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(2, `stills`)'>
             <img src='../images/stills/abigail_bottle.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(1, `stills`)'>
             <img src='../images/stills/abigail_pepper1.jpg'>
         </div>
-        <div class=artwork>
+        <div class=artwork onclick='openPopUp(0, `stills`)'>
             <img src='../images/stills/abigail_pepper2.jpg'>
         </div>
     </div>
@@ -70,6 +70,18 @@
         <span class=footer_button
             onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
         <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+    </div>
+    <div id=stills-popup class='popup-art hide'>
+        <div class=popup-backer onclick=closePopUp(this)></div>
+        <span class=close-popup onclick=closePopUp(this)>X</span>
+        <span class=right-popup onclick='moveRight(`stills`)'>></span>
+        <span class=left-popup onclick='moveLeft(`stills`)'><</span>
+        <div class=popup-image>
+            <div class=second-container>
+                <img id=stills-rotation current=0 src='../hiRez/stills/abigail_pepper2.jpg'>
+            </div>
+            <span id=stills-description class=description>Title, Medium, Size, Availability & Link</span>
+        </div>
     </div>
 </body>
 </html>
