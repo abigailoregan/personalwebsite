@@ -68,9 +68,10 @@
 }
 
 .description {
+    height: 6%;
     text-align: center;
     min-height: fit-content;
-    padding-top: 2vh;
+    padding-top: 1%;
     font-family: Quicksand;
     font-size: 1.3em;
     color: #FFF;

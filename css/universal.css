@@ -53,6 +53,7 @@ body {
 
 .nav_button {
     font-size: 1.2em;
+
     text-decoration: none;
     background-image: linear-gradient( var(--violet),  var(--violet));
     background-size: 0% 0.1em;
@@ -65,6 +66,50 @@ body {
 .nav_button:hover {
     cursor: pointer;
     background-size: 100% 0.1em;
+}
+
+.nav_drop_content {
+    overflow: hidden;
+    height: 0px;
+    -webkit-transition: height 200ms linear;
+       -moz-transition: height 200ms linear;
+        -ms-transition: height 200ms linear;
+         -o-transition: height 200ms linear;
+            transition: height 200ms linear;
+    position: absolute;
+    background-color: var(--violet);
+    line-height: 1.5em;
+}
+
+.nav_drop_content a {
+    padding: .4em;
+    color: #FFF;
+    text-decoration: none;
+    background-image: linear-gradient(#FFF,  #FFF);
+    background-size: 0% 0.1em;
+    background-position-y: 90%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.nav_drop_content a:hover {
+    cursor: pointer;
+    background-size: 100% 0.1em;
+}
+
+.nav_dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav_dropdown:hover .nav_drop_content {
+    height: 10.6em;
+    -webkit-transition: height 200ms linear;
+       -moz-transition: height 200ms linear;
+        -ms-transition: height 200ms linear;
+         -o-transition: height 200ms linear;
+            transition: height 200ms linear;
 }
 
 .content {

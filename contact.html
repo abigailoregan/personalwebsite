@@ -1,74 +1,83 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title> Abigail O'Regan | Contact </title>
-    <link rel=stylesheet href=./css/universal.css>
-    <link rel=stylesheet href=./css/contact.css>
-</head>
-<body>
-    <div class=navbar>
-        <a href="./index.html"><span id=nav_name>Abigail O'Regan</span></a>
-        <div id=nav_buttton_container>
-            <a href="./artwork.html"><span class=nav_button>Artwork</span></a>
-            <a href="./shop.html"><span class=nav_button>Shop</span></a>
-            <a href="./exhibitions.html"><span class=nav_button>Exhibitions</span></a>
-            <a href='https://www.instagram.com/gabi_oregan/' target="_blank"><span class=nav_button>Instagram</span></a>
-            <a href="./contact.html"><span class=nav_button>Contact</span></a>
+    <head>
+        <title> Abigail O'Regan | Contact </title>
+        <link rel=stylesheet href=./css/universal.css>
+        <link rel=stylesheet href=./css/contact.css>
+    </head>
+    <body>
+        <div class=navbar>
+            <a href="./index.html"><span id=nav_name>Abigail O'Regan</span></a>
+            <div id=nav_buttton_container>
+                <div class=nav_dropdown>
+                    <a href="./artwork.html"><span class=nav_button>Artwork</span></a>
+                    <div class=nav_drop_content>
+                        <a href="./artwork/abstract.html">Abstract</a>
+                        <a href="./artwork/figures.html">Figures</a>
+                        <a href="./artwork/landscapes.html">Landscapes</a>
+                        <a href="./artwork/love.html">Love</a>
+                        <a href="./artwork/murals.html">Murals</a>
+                        <a href="./artwork/portraits.html">Portraits</a>
+                        <a href="./artwork/stills.html">Still Lifes</a>
+                    </div>
+                </div>
+                <a href="./shop.html"><span class=nav_button>Shop</span></a>
+                <a href="./exhibitions.html"><span class=nav_button>Exhibitions</span></a>
+                <a href='https://www.instagram.com/gabi_oregan/' target="_blank"><span class=nav_button>Instagram</span></a>
+                <a href="./contact.html"><span class=nav_button>Contact</span></a>
+            </div>
         </div>
-    </div>
-    <div class=content>
-        <h1>Get in touch!</h1>
-        <form id=emailform autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="66a5c3aa-cd83-40bc-853c-00e1c2d276ad">
+        <div class=content>
+            <h1>Get in touch!</h1>
+            <form id=emailform autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="66a5c3aa-cd83-40bc-853c-00e1c2d276ad">
 
-            <input type="text" name="name" placeholder="Type your name..." required>
-            <input type="email" name="email" placeholder="Type your email..." required>
-            <input type="text" name="subject" placeholder="Type your subject..." required/>
-            <textarea id="textbox" name="message" placeholder="Type your message..." required></textarea>
-        
-            <!-- Honeypot Spam Protection -->
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <input type="text" name="name" placeholder="Type your name..." required>
+                <input type="email" name="email" placeholder="Type your email..." required>
+                <input type="text" name="subject" placeholder="Type your subject..." required />
+                <textarea id="textbox" name="message" placeholder="Type your message..." required></textarea>
 
-            <!-- hCaptcha -->
-            <div class="h-captcha" data-captcha="true"></div>
-        
-            <button type="submit">Send Message</button>
-        </form>
-        <script src="https://web3forms.com/client/script.js" async defer></script>
-        <script>
-            const form = document.getElementById('emailform')
-            
-            form.addEventListener('submit', function(e) {
-            
-                const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value
-            
-                if (!hCaptcha) {
-                    e.preventDefault();
-                    alert("Please fill out captcha field")
-                    return
-                }
-            })
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                var textarea = document.getElementById('textbox')
+                <!-- Honeypot Spam Protection -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-                function autoResize() {
-                    textarea.style.height = 'auto'
-                    textarea.style.height = textarea.scrollHeight + 'px'
-                }
+                <!-- hCaptcha -->
+                <div class="h-captcha" data-captcha="true"></div>
 
-                textarea.addEventListener('input', autoResize)
-                autoResize()
-            })
-        </script>
-        <div class=footer>
-            <span class=footer_button
-                onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
-            <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+                <button type="submit">Send Message</button>
+            </form>
+            <script src="https://web3forms.com/client/script.js" async defer></script>
+            <script>
+                const form = document.getElementById('emailform')
+
+                form.addEventListener('submit', function (e) {
+
+                    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value
+
+                    if (!hCaptcha) {
+                        e.preventDefault();
+                        alert("Please fill out captcha field")
+                        return
+                    }
+                })
+            </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                    var textarea = document.getElementById('textbox')
+
+                    function autoResize() {
+                        textarea.style.height = 'auto'
+                        textarea.style.height = textarea.scrollHeight + 'px'
+                    }
+
+                    textarea.addEventListener('input', autoResize)
+                    autoResize()
+                })
+            </script>
+            <div class=footer>
+                <span class=footer_button
+                    onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
+                <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
