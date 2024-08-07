@@ -180,26 +180,42 @@ document.addEventListener('keydown', (e) => {
     }
 })
 
+function getName() {
+    return document.getElementById('identifier').getAttribute('name')
+}
+
+function getSet(name) {
+    return setList.find(artSet => artSet.name === name)
+}
+
+function getImage(name) {
+    return document.getElementById(`${name}-rotation`)
+}
+
+function getDescription(name) {
+    return document.getElementById(`${name}-description`)
+}
+
 function closePopUp(node) {
     document.body.classList.remove('disabled')
     node.parentNode.classList.add('hide')
 }
 
 function openPopUp(image_num) {
-    const name = document.getElementById('identifier').getAttribute('name')
+    const name = getName()
     document.body.classList.add('disabled')
-    const set = setList.find(artSet => artSet.name === name)
-    const image = document.getElementById(`${name}-rotation`)
-    const description = document.getElementById(`${name}-description`)
+    const set = getSet(name)
+    const image = getImage(name)
+    const description = getDescription(name)
     standardMove(image_num, image, description, set)
     document.getElementById(`${name}-popup`).classList.remove('hide')
 }
 
 function moveRight() {
-    const name = document.getElementById('identifier').getAttribute('name')
-    const set = setList.find(artSet => artSet.name === name)
-    const image = document.getElementById(`${name}-rotation`)
-    const description = document.getElementById(`${name}-description`)
+    const name = getName()
+    const set = getSet(name)
+    const image = getImage(name)
+    const description = getDescription(name)
     const next = Number(image.getAttribute('current'))-1
     
     if (set.paths[next] === undefined) {
@@ -212,10 +228,10 @@ function moveRight() {
 }
 
 function moveLeft() {
-    const name = document.getElementById('identifier').getAttribute('name')
-    const set = setList.find(artSet => artSet.name === name)
-    const image = document.getElementById(`${name}-rotation`)
-    const description = document.getElementById(`${name}-description`)
+    const name = getName()
+    const set = getSet(name)
+    const image = getImage(name)
+    const description = getDescription(name)
     const next = Number(image.getAttribute('current'))+1
     
     if (set.paths[next] === undefined) {
