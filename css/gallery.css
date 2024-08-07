@@ -144,3 +144,7 @@
     cursor: pointer;
     background-size: 100% 0.1em;
 }
+
+.isclickable {
+    cursor: pointer;
+}

@@ -87,8 +87,8 @@ const murals_art = {
         '../hiRez/murals/abigail_goddess.jpg'
     ],
     descs: [
-        'Storm Drain Mural 1, <a class="link-button" href="https://sites.google.com/view/falls-church-art-walk/home-artwork-inventory/storm-drain-mural-1?authuser=0" target="_blank">click here to learn more</a>',
-        'Goddess of Justice, Acrylic Mural, Meridian High School - Falls Church, VA'
+        'Storm Drain Mural 1 (Co-Artist: Alex Schwartz), <a class="link-button" href="https://sites.google.com/view/falls-church-art-walk/home-artwork-inventory/storm-drain-mural-1?authuser=0" target="_blank">click here to learn more</a>',
+        'Goddess of Justice (Co-Artist: Sophia Koo), Acrylic Mural, Meridian High School - Falls Church, VA'
     ],
     final: 1
 }
