@@ -104,7 +104,52 @@ body {
 }
 
 .nav_dropdown:hover .nav_drop_content {
-    height: 10.6em;
+    height: 10.55em;
+    -webkit-transition: height 200ms linear;
+       -moz-transition: height 200ms linear;
+        -ms-transition: height 200ms linear;
+         -o-transition: height 200ms linear;
+            transition: height 200ms linear;
+}
+
+.nav_drop_content2 {
+    width: 10.3em;
+    overflow: hidden;
+    height: 0px;
+    -webkit-transition: height 200ms linear;
+       -moz-transition: height 200ms linear;
+        -ms-transition: height 200ms linear;
+         -o-transition: height 200ms linear;
+            transition: height 200ms linear;
+    position: absolute;
+    background-color: var(--violet);
+    line-height: 1.5em;
+}
+
+.nav_drop_content2 a {
+    padding: .4em;
+    color: #FFF;
+    text-decoration: none;
+    background-image: linear-gradient(#FFF,  #FFF);
+    background-size: 0% 0.1em;
+    background-position-y: 90%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.nav_drop_content2 a:hover {
+    cursor: pointer;
+    background-size: 100% 0.1em;
+}
+
+.nav_dropdown2 {
+    position: relative;
+    display: inline-block;
+}
+
+.nav_dropdown2:hover .nav_drop_content2 {
+    height: 3.06em;
     -webkit-transition: height 200ms linear;
        -moz-transition: height 200ms linear;
         -ms-transition: height 200ms linear;
