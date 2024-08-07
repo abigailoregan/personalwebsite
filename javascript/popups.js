@@ -68,14 +68,14 @@ const landscapes_art = {
 const love_art = {
     name: 'love',
     paths: [
-        '../hiRez/love/abigail_summon.jpg',
+        '../hiRez/love/abigail_noahsana.jpg',
         '../hiRez/love/abigail_noah.jpg',
-        '../hiRez/love/abigail_noahsana.jpg'
+        '../hiRez/love/abigail_summon.jpg'
     ],
     descs: [
-        'Flickering Fate, Charcoal on Paper, 18"x24"',
+        'Dancing with Death, Charcoal on Paper, 44"x30"',
         'The Veil, Charcoal on Paper, 24"x18"',
-        'Dancing with Death, Charcoal on Paper, 44"x30"'
+        'Flickering Fate, Charcoal on Paper, 18"x24"'
     ],
     final: 2
 }
