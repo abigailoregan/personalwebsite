@@ -4,10 +4,39 @@
         <title> Abigail O'Regan | Contact </title>
         <link rel=stylesheet href=./css/universal.css>
         <link rel=stylesheet href=./css/contact.css>
+        <script src='./javascript/mobilemenu.js'></script>
         <link rel="shortcut icon" type="image/x-icon" href=./images/abigail_weblogo.ico>
         <link rel="apple-touch-icon" type="image/x-icon" href=./images/abigail_weblogo.ico>
     </head>
     <body>
+        <span id=mobile_menu onclick=toggleMobileMenu()>
+            <svg xmlns="http://www.w3.org/2000/svg" width="8em" height="8em" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </span>
+        <div id=nav_buttons_mobile>
+            <a class=nav_button onclick='toggleExpand(`artdropdown`)'><span>Artwork</span></a>
+            <div id=artdropdown class=mobile_dropdown>
+                <a href="./artwork/abstract">Abstract</a>
+                <a href="./artwork/figures">Figures</a>
+                <a href="./artwork/landscapes">Landscapes</a>
+                <a href="./artwork/love">Love</a>
+                <a href="./artwork/murals">Murals</a>
+                <a href="./artwork/portraits">Portraits</a>
+                <a href="./artwork/stills">Still Lifes</a>
+            </div>
+            <blank-tag></blank-tag>
+            <a class=nav_button href="./shop"><span>Shop</span></a>
+            <a class=nav_button onclick='toggleExpand(`exbdropdown`)'><span>Exhibitions</span></a>
+            <div id=exbdropdown class=mobile_dropdown>
+                <a href="./exhibitions/afocontent2024">AFO CONTENT 2024</a>
+                <a href="./exhibitions/spukhaus2023">Spukhaus 2023</a>
+            </div>
+            <blank-tag></blank-tag>
+            <a class=nav_button href="./contact"><span>Contact</span></a>
+            <span class=copyright-link onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
+            <span class=copyright>Copyright © 2024 Abigail O'Regan - All Rights Reserved.</span>
+        </div>
         <div class=navbar>
             <a href="./"><span id=nav_name>Abigail O'Regan</span></a>
             <div id=nav_buttton_container>

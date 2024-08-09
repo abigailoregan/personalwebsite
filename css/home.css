@@ -30,3 +30,20 @@
 .footer {
     padding-top: 0;
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    
+    .content {
+        margin-top: 9em;
+        width: 100%;
+    }
+
+    #homepage_image {
+        width: 100%;
+    }
+
+    #about_me {
+        font-size: 1.2em;
+        border: 0;
+    }
+}

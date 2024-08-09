@@ -199,10 +199,130 @@ a {
     color: #000;
 }
 
+#mobile_menu {
+    display: none;
+}
+
 .hide {
     display: none;
 }
 
+.flex {
+    display: flex !important;
+}
+
 .disabled {
-    overflow: hidden;
+    overflow: hidden !important;
+    max-height: 90vh;
+}
+
+#nav_buttons_mobile {
+    display: none;
+}
+
+.expand {
+    height: 82.5em !important;
+    overflow-y: visible;
+}
+
+.expand2 {
+    height: 23.5em !important;
+    overflow-y: visible;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+    #mobile_menu {
+        display: block;
+        position: fixed;
+        z-index: 4;
+        padding: 1em;
+        padding-top: 2em;
+    }
+    
+    #mobile_menu:hover {
+        cursor: pointer;
+    }
+
+    .navbar {
+        justify-content: center;
+        font-size: 2em;
+        text-align: center;
+        flex-direction: column;
+        z-index: 2;
+    }
+
+    #nav_buttton_container {
+        display: none;
+    }
+
+    #nav_buttons_mobile {
+        background-color: white;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+        user-select: none;
+        font-family: Raleway;
+        z-index: 1;
+        padding-top: 10em;
+
+        position: absolute;
+        margin-top: 2em;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        height: fit-content;
+        overflow-x: hidden;
+        overflow-y: scroll !important;
+    }
+
+    #nav_buttons_mobile .nav_button {
+        padding: 1.7em;
+        font-size: 3.4em;
+        width: 100%;
+        height: fit-content;
+        background-color: var(--violet);
+    }
+
+    #nav_buttons_mobile .copyright {
+        padding: 1em;
+        font-size: 3em;
+    }
+
+    .mobile_dropdown {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: linear 250ms;
+    }
+
+    .mobile_dropdown a {
+        width: 1000%;
+        font-size: 2.7em;
+        padding: 1.6em;
+    }
+    
+    .copyright-link {
+        font-size: 3em;
+        padding-top: 1em;
+    }
+    
+    .mobile_dropdown a:nth-child(even) {
+        background-color: #0000001a;
+    }
+
+    .nav_button:nth-child(even) {
+        filter: brightness(120%);
+    }
+
+    .footer {
+        font-size: 2em;
+    }
 }

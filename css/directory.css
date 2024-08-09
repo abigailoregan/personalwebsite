@@ -54,3 +54,20 @@ text-desc {
     font-size: 1.5em;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .content {
+        margin-top: 10em;
+    }
+
+    .cover-photo, .backdrop, .cover-photo img {
+        width: 44vw;
+        height: 44vw;
+    }
+
+    .backdrop {
+        font-size: 2em;
+        background-color: var(--violethalf);
+        color: #FFF;
+    }
+}

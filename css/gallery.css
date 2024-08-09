@@ -148,3 +148,46 @@
 .isclickable {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    
+    .content {
+        margin-top: 10em;
+        width: 100%;
+    }
+
+    .artwork, .artwork img {
+        max-width: 95%;
+        height: auto;
+    }
+    
+    .popup-art, .popup-image, .second-container, .second-container img {
+        width: 100%;
+    }
+
+    .second-container {
+        height: 85%;
+    }
+
+    .popup-art, .popup-image, .popup-backer {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    .right-popup, .left-popup {
+        font-size: 6em;
+        padding: .2em;
+        background-color: #000000B0;
+    }
+
+    .close-popup {
+        font-size: 6em;
+        padding: .1em;
+        background-color: #000000B0;
+    }
+
+    .description {
+        font-size: 3em;
+        height: 15%;
+    }
+}
