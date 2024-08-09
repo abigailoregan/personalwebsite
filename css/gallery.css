@@ -166,7 +166,8 @@
     }
 
     .second-container {
-        height: 85%;
+        height: 75%;
+        justify-content: end;
     }
 
     .popup-art, .popup-image, .popup-backer {
@@ -188,6 +189,6 @@
 
     .description {
         font-size: 3em;
-        height: 15%;
+        height: 25%;
     }
 }
