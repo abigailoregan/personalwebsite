@@ -149,6 +149,10 @@
     cursor: pointer;
 }
 
+.artist_statement {
+    text-align: center;
+}
+
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     
     .content {
@@ -190,5 +194,12 @@
     .description {
         font-size: 3em;
         height: 25%;
+    }
+
+    .artist_statement {
+        font-size: 2em;
+        margin-bottom: 0;
+        padding-left: 2em;
+        padding-right: 2em;
     }
 }

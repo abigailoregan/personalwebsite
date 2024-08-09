@@ -237,7 +237,8 @@ a {
         position: fixed;
         z-index: 4;
         padding: 1em;
-        padding-top: 2em;
+        padding-left: 2em;
+        padding-top: 3.3em;
     }
     
     #mobile_menu:hover {
