@@ -6,7 +6,9 @@ const abstract_art = {
         '../hiRez/abstract/abigail_inverse.jpg',
         '../hiRez/abstract/abigail_shapes.jpg',
         '../hiRez/abstract/abigail_protovine.jpg',
-        '../hiRez/abstract/abigail_vines.jpg'
+        '../hiRez/abstract/abigail_vines.jpg',
+        '../hiRez/abstract/abigail_rocks.jpg',
+        '../hiRez/abstract/abigail_galaxy.jpg'
     ],
     descs: [
         'Time, Collage on Board, 20"x24"',
@@ -14,9 +16,11 @@ const abstract_art = {
         'Proto-Shapes, Micron Pens on Watercolor Paper - Study for Overgrowth',
         'Shattered Harmony, Micron Pens on Watercolor Paper, 30"x22"',
         'Proto-Vines, Micron Pens on Watercolor Paper - Study for Overgrowth',
-        'Overgrowth, Micron Pens on Watercolor Paper, 30"x22"'
+        'Overgrowth, Micron Pens on Watercolor Paper, 30"x22"',
+        'Fragments of Solitude, Graphite on Drawing Paper Primed with Acrylic',
+        'Cosmic Symphony, Oil on Canvas, 24"x24"'
     ],
-    final: 5
+    final: 7
 }
 
 const figures_art = {
@@ -27,7 +31,10 @@ const figures_art = {
         '../hiRez/figures/abigail_lady.jpg',
         '../hiRez/figures/abigail_dude2.jpg',
         '../hiRez/figures/abigail_figures.jpg',
-        '../hiRez/figures/abigail_oldman.jpg'
+        '../hiRez/figures/abigail_oldman.jpg',
+        '../hiRez/figures/abigail_woman.jpg',
+        '../hiRez/figures/abigail_zombies.jpg',
+        '../hiRez/figures/abigail_campfire.jpg'
     ],
     descs: [
         'The Siren, digital drawing on Photoshop, 9000x6600px',
@@ -35,9 +42,12 @@ const figures_art = {
         'Crying Lady, Charcoal on Drawing Paper, 22.5"x18"',
         'Male figure sketch, Charcoal on Drawing Paper',
         'Studies of the female form, Graphite on Newsprint',
-        'Male figure drawing, Charcoal on Drawing Paper, 24"x18"'
+        'Male figure drawing, Charcoal on Drawing Paper, 24"x18"',
+        'Female figure drawing, Charcoal on Paper',
+        'Santa\'s Helpers, Oil on Canvas, 30"x22"',
+        'The James, Charcoal on Toned-Tan Drawing Paper, 36"x24"'
     ],
-    final: 5
+    final: 8
 }
 
 const landscapes_art = {
@@ -50,7 +60,10 @@ const landscapes_art = {
         '../hiRez/landscapes/abigail_fallschurch.jpg',
         '../hiRez/landscapes/abigail_birds.jpg',
         '../hiRez/landscapes/abigail_tree.jpg',
-        '../hiRez/landscapes/abigail_richmond.jpg'
+        '../hiRez/landscapes/abigail_richmond.jpg',
+        '../hiRez/landscapes/abigail_boats.jpg',
+        '../hiRez/landscapes/abigail_bridge.jpg',
+        '../hiRez/landscapes/abigail_monroe.jpg'
     ],
     descs: [
         'Winter, Acrylic on Canvas Board, 14"x11"',
@@ -60,9 +73,12 @@ const landscapes_art = {
         'The Little City, Oil on Canvas, 12"x16"',
         'David\'s Birds, Oil on Canvas, 20"x30"',
         'Twilight\'s Guardian, Gouache on Hardcover Book',
-        'Richmond, Acrylic on Canvas, 20"x16"'
+        'Richmond, Acrylic on Canvas, 20"x16"',
+        'Carrickfergus Marina, Graphite on Drawing Paper',
+        'Hurricane Gulch Bridge (Alaska), Charcoal on Drawing Paper, 18"x24"',
+        'Monroe Park, Charcoal on Drawing Paper, 24"x18"'
     ],
-    final: 7
+    final: 10
 }
 
 const love_art = {
@@ -145,7 +161,11 @@ const stills_art = {
         '../hiRez/stills/abigail_bottles2.jpg',
         '../hiRez/stills/abigail_bottles.jpg',
         '../hiRez/stills/abigail_teapot.jpg',
-        '../hiRez/stills/abigail_nose.jpg'
+        '../hiRez/stills/abigail_nose.jpg',
+        '../hiRez/stills/abigail_cup.jpg',
+        '../hiRez/stills/abigail_jar.jpg',
+        '../hiRez/stills/abigail_bird.jpg',
+        '../hiRez/stills/abigail_plush.jpg'
     ],
     descs: [
         'Pepper, digital drawing on Procreate',
@@ -162,9 +182,13 @@ const stills_art = {
         'Bottles Sketch, Graphite on Drawing Paper, 18"x24"',
         'Bottles, Oil on Canvas, 24"x24"',
         'Teapot, Oil on Canvas, 12"x12"',
-        'The Nose, Oil on Canvas, 16"x20"'
+        'The Nose, Oil on Canvas, 16"x20"',
+        'Teatime, Charcoal on Paper, 18"x24"',
+        'The Jar, Oil on Canvas, 24"x18"',
+        'Taxidermy Still Life, Charcoal on Drawing Paper',
+        'Hiraeth, Oil on Canvas, 24"x18"'
     ],
-    final: 14
+    final: 18
 }
 
 const setList = [ abstract_art, figures_art, landscapes_art, love_art, murals_art, portraits_art, stills_art ]
