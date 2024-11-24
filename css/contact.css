@@ -4,7 +4,7 @@ body {
 
 .content {
     margin-top: 5.5em;
-    width: 60%;
+    width: 90%;
     height: 100%;
     padding: 0;
     display: flex;
@@ -104,6 +104,22 @@ h1 {
     margin-top: 1em;
 }
 
+.contact_split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+#left_split {
+    min-width: 75%;
+}
+
+#right_split {
+    min-width: fit-content;
+}
+
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     .content {
         width: 90%;
@@ -124,6 +140,13 @@ h1 {
     }
 
     .h-captcha {
-        scale: 1.5;
+        scale: 2;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact_split {
+        flex-direction: column-reverse;
+        width: 120%;
     }
 }
