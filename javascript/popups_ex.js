@@ -34,7 +34,24 @@ const afo2024 = {
     final: 2
 }
 
-const setList = [ spuk2023, afo2024 ]
+const papr2025 = {
+    name: 'papr2025',
+    paths: [
+        '../hiRez/exhibitions/salon_im1.jpg',
+        '../hiRez/exhibitions/salon_im2.jpg',
+        '../hiRez/landscapes/abigail_flowers.jpg',
+        '../hiRez/exhibitions/2025paprposter.jpg'
+    ],
+    descs: [
+        'Photo of Exhibition Display #2',
+        'Photo of Exhibition Display #1',
+        'Flowers, Oil on canvas, 24”x36”',
+        '2025 Painting + Printmaking Spring Salon Show Poster'
+    ],
+    final: 3
+}
+
+const setList = [ spuk2023, afo2024, papr2025 ]
 
 document.addEventListener('keydown', (e) => {
     if (document.body.classList.contains('disabled')) {

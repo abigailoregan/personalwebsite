@@ -113,7 +113,7 @@ body {
 }
 
 .nav_drop_content2 {
-    width: 10.3em;
+    width: 11.45em;
     overflow: hidden;
     height: 0px;
     -webkit-transition: height 200ms linear;
@@ -149,7 +149,7 @@ body {
 }
 
 .nav_dropdown2:hover .nav_drop_content2 {
-    height: 3.06em;
+    height: 4.55em;
     -webkit-transition: height 200ms linear;
        -moz-transition: height 200ms linear;
         -ms-transition: height 200ms linear;

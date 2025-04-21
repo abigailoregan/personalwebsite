@@ -20,7 +20,7 @@ const abstract_art = {
         'Overgrowth, Micron Pens on Watercolor Paper, 30"x22"',
         'Fragments of Solitude, Graphite on Drawing Paper Primed with Acrylic',
         'Cosmic Symphony, Oil on Canvas, 24"x24"',
-        'Ingested, Mixed media on two canvases (Oil, Acrylic, attached pieces of food), both 18” x 24”'
+        'Ingested, Mixed media on two canvases (Oil, Acrylic, attached pieces of food), both 18”x24”'
     ],
     final: 8
 }
@@ -82,9 +82,9 @@ const landscapes_art = {
         'Carrickfergus Marina, Graphite on Drawing Paper',
         'Hurricane Gulch Bridge (Alaska), Charcoal on Drawing Paper, 18"x24"',
         'Monroe Park, Charcoal on Drawing Paper, 24"x18"',
-        'Flowers, Oil on canvas, 24” x 36”',
-        'Heaven, Oil on canvas, 40” x 30”',
-        'Hell, Oil on canvas, 40” x 30”'
+        'Flowers, Oil on canvas, 24”x36”',
+        'Heaven, Oil on canvas, 40”x30”',
+        'Hell, Oil on canvas, 40”x30”'
     ],
     final: 13
 }

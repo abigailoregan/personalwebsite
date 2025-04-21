@@ -34,6 +34,7 @@
             <a class=nav_button href="../shop"><span>Shop</span></a>
             <a class=nav_button onclick='toggleExpand(`exbdropdown`)'><span>Exhibitions</span></a>
             <div id=exbdropdown class=mobile_dropdown>
+                <a href="../exhibitions/afocontent2024">PAPR Salon Show 2025</a>
                 <a href="../exhibitions/afocontent2024">AFO CONTENT 2024</a>
                 <a href="../exhibitions/spukhaus2023">Spukhaus 2023</a>
             </div>
@@ -62,6 +63,7 @@
                 <div class=nav_dropdown2>
                     <a href="../exhibitions"><span class=nav_button>Exhibitions</span></a>
                     <div class=nav_drop_content2>
+                        <a href="../exhibitions/afocontent2024">PAPR Salon Show 2025</a>
                         <a href="../exhibitions/afocontent2024">AFO CONTENT 2024</a>
                         <a href="../exhibitions/spukhaus2023">Spukhaus 2023</a>
                     </div>
@@ -99,14 +101,13 @@
             <div class=popup-backer onclick=closePopUp(this)></div>
             <span class=close-popup onclick=closePopUp(this)>X</span>
             <span class=right-popup onclick='moveRight()'>></span>
-            <span class=left-popup onclick='moveLeft()'>
-                << /span>
-                    <div class=popup-image>
-                        <div class=second-container>
-                            <img id=spukhaus2023-rotation current=3 src='../hiRez/figures/abigail_siren.jpg'>
-                        </div>
-                        <span id=spukhaus2023-description class=description>Title, Medium, Size, Availability & Link</span>
-                    </div>
+            <span class=left-popup onclick='moveLeft()'><</span>
+            <div class=popup-image>
+                <div class=second-container>
+                    <img id=spukhaus2023-rotation current=3 src='../hiRez/figures/abigail_siren.jpg'>
+                </div>
+                <span id=spukhaus2023-description class=description>Title, Medium, Size, Availability & Link</span>
+            </div>
         </div>
         <identifier-tag name=spukhaus2023 id=identifier />
     </body>
