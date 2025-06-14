@@ -178,9 +178,17 @@ body {
     font-family: Quicksand;
 }
 
+.footer_links {
+    display: flex;
+    gap: 2em;
+}
+
 .footer_button {
     margin-bottom: 1em;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: .1px;
+    text-decoration-color: var(--violet);
+    text-underline-offset: 3px;
     background-image: linear-gradient( var(--violet),  var(--violet));
     background-size: 0% 0.1em;
     background-position-y: 100%;
