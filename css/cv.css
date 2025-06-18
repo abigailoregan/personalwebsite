@@ -69,4 +69,12 @@ td {
     .footer {
         font-size: 1.2em;
     }
+
+    .td_date {
+        width: 10vw;
+    }
+
+    .td_date2 {
+        width: 15vw;
+    }
 }

@@ -1,0 +1,117 @@
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+}
+
+body {
+    max-height: 100%;
+    overflow-y: hidden;
+}
+
+
+
+.marquee {
+    color: black;
+    /* height: 20vh; */
+    width: 100%;
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
+    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
+    margin-bottom: 2vh;
+}
+
+#landingscroll {
+    display: flex;
+    flex-direction: row;
+    max-height: 80vh;
+    height: 80vh;
+    min-height: fit-content;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+#landingscroll div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+purple {
+    color: var(--violetdark);
+    font-size: 0.9em;
+}
+
+#landingscroll div img {
+    height: 60vh;
+}
+
+#landingscroll div span {
+    max-height: 20vh;
+    padding: .5em;
+    padding-bottom: 0;
+    overflow-y: auto;
+}
+
+.scroll_left {
+    position: absolute;
+    top: 48vh;
+    left: 1vw;
+    color: #000;
+    font-size: 3em;
+    font-family: Quicksand;
+    user-select: none;
+    z-index: 6;
+
+    transition-duration: text-shadow 200ms;
+}
+
+.scroll_left:hover {
+    cursor: pointer;
+    text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+}
+
+.scroll_right {
+    position: absolute;
+    top: 48vh;
+    right: 1vw;
+    color: #000;
+    font-size: 3em;
+    font-family: Quicksand;
+    user-select: none;
+    z-index: 6;
+
+    transition-duration: text-shadow 200ms;
+}
+
+.scroll_right:hover {
+    cursor: pointer;
+    text-shadow: 0 0 .65px #000, 0 0 .65px #000;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+    .content {
+        margin-top: 9em;
+        width: 100%;
+    }
+
+    .marquee {
+        margin-top: 2em;
+        scale: 2;
+        width: 50%;
+        margin-bottom: 3em;
+    }
+
+    #landingscroll {
+        display: none;
+    }
+}

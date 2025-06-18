@@ -1,6 +1,7 @@
 :root {
     --violet: #B2A4D4;
     --violethalf: #B2A4D4BC;
+    --violetdark: #8f6ee1;
 }
 
 @font-face {
@@ -11,6 +12,26 @@
 @font-face {
     font-family: 'Quicksand';
     src: url('../fonts/Quicksand-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Standard';
+    src: url('../fonts/OldStandardTT-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'StandardB';
+    src: url('../fonts/OldStandardTT-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'StandardI';
+    src: url('../fonts/OldStandardTT-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Croissant';
+    src: url('../fonts/CroissantOne-Regular.ttf');
 }
 
 body {
@@ -162,6 +183,18 @@ body {
     margin: auto;
     margin-top: 4.5em;
     font-size: 1.3em;
+    font-family: Standard;
+}
+
+h1 {
+    font-family: Quicksand;
+}
+
+h2 {
+    font-family: Quicksand;
+}
+
+text-desc {
     font-family: Quicksand;
 }
 
