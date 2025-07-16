@@ -12,11 +12,8 @@ body {
     overflow-y: hidden;
 }
 
-
-
 .marquee {
     color: black;
-    /* height: 20vh; */
     width: 100%;
     overflow: hidden;
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
@@ -43,58 +40,6 @@ body {
     margin-top: 0.5em;
     margin-left: 0.5em;
     margin-right: 0.5em;
-}
-
-purple {
-    color: var(--violetdark);
-    font-size: 0.9em;
-}
-
-#landingscroll div img {
-    height: 60vh;
-}
-
-#landingscroll div span {
-    max-height: 20vh;
-    padding: .5em;
-    padding-bottom: 0;
-    overflow-y: auto;
-}
-
-.scroll_left {
-    position: absolute;
-    top: 48vh;
-    left: 1vw;
-    color: #000;
-    font-size: 3em;
-    font-family: Quicksand;
-    user-select: none;
-    z-index: 6;
-
-    transition-duration: text-shadow 200ms;
-}
-
-.scroll_left:hover {
-    cursor: pointer;
-    text-shadow: 0 0 .65px #000, 0 0 .65px #000;
-}
-
-.scroll_right {
-    position: absolute;
-    top: 48vh;
-    right: 1vw;
-    color: #000;
-    font-size: 3em;
-    font-family: Quicksand;
-    user-select: none;
-    z-index: 6;
-
-    transition-duration: text-shadow 200ms;
-}
-
-.scroll_right:hover {
-    cursor: pointer;
-    text-shadow: 0 0 .65px #000, 0 0 .65px #000;
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
