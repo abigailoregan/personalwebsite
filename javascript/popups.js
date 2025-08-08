@@ -9,6 +9,7 @@ const abstract_art = {
         '../hiRez/abstract/abigail_vines.jpg',
         '../hiRez/abstract/abigail_rocks.jpg',
         '../hiRez/abstract/abigail_galaxy.jpg',
+        '../hiRez/abstract/abigail_flowers.jpg',
         '../hiRez/abstract/abigail_ingested.png'
     ],
     descs: [
@@ -20,9 +21,10 @@ const abstract_art = {
         'Overgrowth, Micron Pens on Watercolor Paper, 30"x22"',
         'Fragments of Solitude, Graphite on Drawing Paper Primed with Acrylic',
         'Cosmic Symphony, Oil on Canvas, 24"x24"',
+        'Flowers, Oil on canvas, 24”x36”',
         'Ingested, Mixed media on two canvases (Oil, Acrylic, attached pieces of food), both 18”x24”'
     ],
-    final: 8
+    final: 9
 }
 
 const figures_art = {
@@ -36,7 +38,8 @@ const figures_art = {
         '../hiRez/figures/abigail_oldman.jpg',
         '../hiRez/figures/abigail_woman.jpg',
         '../hiRez/figures/abigail_zombies.jpg',
-        '../hiRez/figures/abigail_campfire.jpg'
+        '../hiRez/figures/abigail_campfire.jpg',
+        '../hiRez/figures/abigail_tryptich.png'
     ],
     descs: [
         'The Siren, digital drawing on Photoshop, 9000x6600px',
@@ -47,9 +50,10 @@ const figures_art = {
         'Male figure drawing, Charcoal on Drawing Paper, 24"x18"',
         'Female figure drawing, Charcoal on Paper',
         'Santa\'s Helpers, Oil on Canvas, 30"x22"',
-        'The James, Charcoal on Toned-Tan Drawing Paper, 36"x24"'
+        'The James, Charcoal on Toned-Tan Drawing Paper, 36"x24"',
+        'Veils of the Self, Oil on canvas, two 36”x24” and other 36”x36”'
     ],
-    final: 8
+    final: 9
 }
 
 const landscapes_art = {
@@ -66,9 +70,9 @@ const landscapes_art = {
         '../hiRez/landscapes/abigail_boats.jpg',
         '../hiRez/landscapes/abigail_bridge.jpg',
         '../hiRez/landscapes/abigail_monroe.jpg',
-        '../hiRez/landscapes/abigail_flowers.jpg',
         '../hiRez/landscapes/abigail_heaven.jpg',
-        '../hiRez/landscapes/abigail_hell.jpg'
+        '../hiRez/landscapes/abigail_hell.jpg',
+        '../hiRez/landscapes/abigail_religious.jpg'
     ],
     descs: [
         'Winter, Acrylic on Canvas Board, 14"x11"',
@@ -82,9 +86,9 @@ const landscapes_art = {
         'Carrickfergus Marina, Graphite on Drawing Paper',
         'Hurricane Gulch Bridge (Alaska), Charcoal on Drawing Paper, 18"x24"',
         'Monroe Park, Charcoal on Drawing Paper, 24"x18"',
-        'Flowers, Oil on canvas, 24”x36”',
         'Heaven, Oil on canvas, 40”x30”',
-        'Hell, Oil on canvas, 40”x30”'
+        'Hell, Oil on canvas, 40”x30”',
+        'Testament of Light, Acrylic on canvas, 12”x16”'
     ],
     final: 13
 }
