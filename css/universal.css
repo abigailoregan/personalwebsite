@@ -135,7 +135,7 @@ body {
 }
 
 .nav_drop_content2 {
-    width: 11.45em;
+    width: 15.35em;
     overflow: hidden;
     height: 0px;
     -webkit-transition: height 200ms linear;
@@ -149,7 +149,10 @@ body {
 }
 
 .nav_drop_content2 a {
-    padding: .4em;
+    display: block;
+    padding-left: .4em;
+    padding-bottom: .05em;
+    padding-top: .05em;
     color: #FFF;
     text-decoration: none;
     background-image: linear-gradient(#FFF,  #FFF);
@@ -158,6 +161,7 @@ body {
     background-position-x: 0%;
     background-repeat: no-repeat;
     transition: background-size 250ms ease-in-out;
+    width: fit-content;
 }
 
 .nav_drop_content2 a:hover {
@@ -171,7 +175,7 @@ body {
 }
 
 .nav_dropdown2:hover .nav_drop_content2 {
-    height: 4.55em;
+    height: 7.87em;
     -webkit-transition: height 200ms linear;
        -moz-transition: height 200ms linear;
         -ms-transition: height 200ms linear;
@@ -268,7 +272,7 @@ a {
 }
 
 .expand2 {
-    height: 35.4em !important;
+    height: 59em !important;
     overflow-y: visible;
 }
 

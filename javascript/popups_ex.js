@@ -77,10 +77,10 @@ const srisaB = {
         '../images/exhibitions/srisa_sB_guildedwall.jpg'
     ],
     descs: [
-        '',
-        '',
-        '',
-        ''
+        'Photo of the room the art gallery room Abigail was featured in',
+        'Photo of abigail\'s Roman floortile artwork',
+        'Photo of Abigail\'s guilded artwork of America',
+        'Photo of the wall holding all of the guilded mini artworks'
     ],
     final: 3
 }
