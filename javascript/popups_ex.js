@@ -39,7 +39,7 @@ const papr2025 = {
     paths: [
         '../hiRez/exhibitions/salon_im1.jpg',
         '../hiRez/exhibitions/salon_im2.jpg',
-        '../hiRez/landscapes/abigail_flowers.jpg',
+        '../hiRez/abstract/abigail_flowers.jpg',
         '../hiRez/exhibitions/2025paprposter.jpg'
     ],
     descs: [
@@ -51,7 +51,41 @@ const papr2025 = {
     final: 3
 }
 
-const setList = [ spuk2023, afo2024, papr2025 ]
+const srisaA = {
+    name: 'srisaA',
+    paths: [
+        '../images/exhibitions/srisa_sA_wide.jpg',
+        '../images/exhibitions/srisa_sA_watercolour.jpg',
+        '../images/exhibitions/srisa_sA_wall.jpg',
+        '../images/exhibitions/srisa_sA_abigail.jpg'
+    ],
+    descs: [
+        'Photo of the exhibition',
+        'Photo of the watercolor paintings at the exhibition',
+        'Photo of the main exhibition wall, with three of my artworks',
+        'Photo of Abigail O\'Regan at the exhibition'
+    ],
+    final: 3
+}
+
+const srisaB = {
+    name: 'srisaB',
+    paths: [
+        '../images/exhibitions/srisa_sB_sideroom.jpg',
+        '../images/exhibitions/srisa_sB_floortile.jpg',
+        '../images/exhibitions/srisa_sB_usa.jpg',
+        '../images/exhibitions/srisa_sB_guildedwall.jpg'
+    ],
+    descs: [
+        '',
+        '',
+        '',
+        ''
+    ],
+    final: 3
+}
+
+const setList = [ spuk2023, afo2024, papr2025, srisaA, srisaB ]
 
 document.addEventListener('keydown', (e) => {
     if (document.body.classList.contains('disabled')) {
