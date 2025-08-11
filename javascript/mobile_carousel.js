@@ -45,3 +45,23 @@ document.querySelector('.next-button').addEventListener('click', function () {
 // Start auto-scrolling initially
 startAutoScroll();
 rotateCarousel();
+
+function adjustSceneHeight() {
+  const scene = document.querySelector('.scene');
+  const cells = document.querySelectorAll('.carousel__cell');
+  
+  let maxHeight = 0;
+  
+  cells.forEach(cell => {
+    // Use scrollHeight to get full height including overflow
+    const cellHeight = cell.scrollHeight;
+    if (cellHeight > maxHeight) maxHeight = cellHeight;
+  });
+  
+  // Add a little padding if needed
+  const padding = 20;
+  scene.style.height = (maxHeight + padding) + 'px';
+}
+
+window.addEventListener('load', adjustSceneHeight);
+window.addEventListener('resize', adjustSceneHeight);
