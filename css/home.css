@@ -1,49 +1,62 @@
 .content {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    overflow-x: hidden;
+    position: relative;
 }
 
-#homepage_image {
-    width: 95%;
+body {
+    max-height: 100%;
 }
 
-#marquee {
+.marquee {
+    color: black;
     width: 100%;
     overflow: hidden;
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
     -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
+    margin-bottom: 2vh;
+    z-index: 1;
 }
 
-#about_me {
-    font-size: 0.9em;
-    line-height: 1.3em;
-    border-left: 1.5px solid darkgrey;
-    border-right: 1.5px solid darkgrey;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+#landingscroll {
+    display: flex;
+    flex-direction: row;
+    max-height: 80vh;
+    height: 80vh;
+    min-height: fit-content;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
-.footer {
-    padding-top: 0;
+#landingscroll div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
-    
+
     .content {
         margin-top: 9em;
         width: 100%;
     }
 
-    #homepage_image {
-        width: 100%;
+    .marquee {
+        margin-top: 2em;
+        scale: 2;
+        width: 50%;
+        margin-bottom: 3em;
     }
 
-    #about_me {
-        font-size: 1.2em;
-        border: 0;
+    #landingscroll {
+        display: none;
     }
 }

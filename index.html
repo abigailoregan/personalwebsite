@@ -5,6 +5,7 @@
     <title> Abigail O'Regan </title>
     <link rel=stylesheet href=./css/universal.css>
     <link rel=stylesheet href=./css/home.css>
+    <link rel=stylesheet href=./css/carousel.css>
     <script src='./javascript/mobilemenu.js'></script>
     <link rel="shortcut icon" type="image/x-icon" href=./images/abigail_weblogo.ico>
     <link rel="apple-touch-icon" type="image/x-icon" href=./images/abigail_weblogo.ico>
@@ -30,17 +31,22 @@
             <a href="./artwork/stills">Still Lifes</a>
         </div>
         <blank-tag></blank-tag>
-        <a class=nav_button href="./shop"><span>Shop</span></a>
         <a class=nav_button onclick='toggleExpand(`exbdropdown`)'><span>Exhibitions</span></a>
         <div id=exbdropdown class=mobile_dropdown>
-            <a href="../exhibitions/paprsalonshow2025">PAPR Salon Show 2025</a>
+            <a href="./exhibitions/srisasummerb">SRISA SUMMER B Art Exhibition</a>
+            <a href="./exhibitions/srisasummera">SRISA SUMMER A Art Exhibition</a>
+            <a href="./exhibitions/paprsalonshow2025">PAPR Salon Show 2025</a>
             <a href="./exhibitions/afocontent2024">AFO CONTENT 2024</a>
             <a href="./exhibitions/spukhaus2023">Spukhaus 2023</a>
         </div>
         <blank-tag></blank-tag>
+        <a class=nav_button href="./about"><span>About</span></a>
         <a class=nav_button href="./contact"><span>Contact</span></a>
+        <a class=nav_button href="./cv"><span>CV</span></a>
         <span class=copyright-link
-            onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
+            onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">Instagram</span>
+        <span class=copyright-link
+            onclick="window.open('https://www.linkedin.com/in/abigail-oregan/', '_blank')">LinkedIn</span>
         <span class=copyright>Copyright © 2025 Abigail O'Regan - All Rights Reserved.</span>
     </div>
     <div class=navbar>
@@ -58,23 +64,23 @@
                     <a href="./artwork/stills">Still Lifes</a>
                 </div>
             </div>
-            <a href="./shop"><span class=nav_button>Shop</span></a>
             <div class=nav_dropdown2>
                 <a href="./exhibitions"><span class=nav_button>Exhibitions</span></a>
                 <div class=nav_drop_content2>
-                    <a href="../exhibitions/paprsalonshow2025">PAPR Salon Show 2025</a>
+                    <a href="./exhibitions/srisasummerb">SRISA SUMMER B Art Exhibition</a>
+                    <a href="./exhibitions/srisasummera">SRISA SUMMER A Art Exhibition</a>
+                    <a href="./exhibitions/paprsalonshow2025">PAPR Salon Show 2025</a>
                     <a href="./exhibitions/afocontent2024">AFO CONTENT 2024</a>
                     <a href="./exhibitions/spukhaus2023">Spukhaus 2023</a>
                 </div>
             </div>
-            <a href='https://www.instagram.com/gabi_oregan/' target="_blank"><span class=nav_button>Instagram</span></a>
+            <a href="./about"><span class=nav_button>About</span></a>
             <a href="./contact"><span class=nav_button>Contact</span></a>
+            <a href="./cv"><span class=nav_button>CV</span></a>
         </div>
     </div>
     <div class=content>
-        <img id=homepage_image src="images/homepage-v2.png">
-        <svg id="marquee" fill="currentColor" aria-hidden="true"
-            style="height: 64px; transform: translateY(3.4px); overflow: visible;">
+        <svg class="marquee" fill="currentColor" aria-hidden="true" style="height: 64px; transform: translateY(3.4px); overflow: visible;">
             <defs>
                 <path id="path1" fill="none" stroke="transparent" stroke-width="0"
                     d="M-600,52.508 L-600,52.508 S-183.15,22.508 0,22.508 S366.85,52.508 600,52.508 S1166.85,22.508 1500,22.508 S2066.85,52.508 2400,52.508">
@@ -82,73 +88,187 @@
             </defs>
             <text>
                 <textPath href="#path1" startOffset="0%">
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
+                    <tspan>Abigail's Portfolio • </tspan>
                     <!-- <animate attributeName="startOffset" from="2%" to="-61.4%" dur="15s" repeatCount="indefinite" /> -->
-                    <animate attributeName="startOffset" from="-61.4%" to="2%" dur="15s" repeatCount="indefinite" />
+                    <animate attributeName="startOffset" from="-61.4%" to="2%" dur="16s" repeatCount="indefinite" />
                 </textPath>
             </text>
         </svg>
-        <p id=about_me>Abigail O'Regan is a Sophomore at VCUarts, majoring in Painting and Printmaking with a minor in
-            Art History. She specializes in traditional and mixed-media painting, focusing on themes of love, beauty,
-            loss, and nature. Abigail's passion for art is deeply rooted in her academic journey and passion for social
-            causes, where she continues to refine her technical skills to develop an artistic voice. In addition to her
-            studio work, Abigail's commissions include murals, allowing her to bring her creative voice and commentary
-            on public causes like environmentalism and social concerns. A desire to create work that resonates with
-            others and provokes meaningful discussions drives her creative journey.</p>
-        <svg id="marquee" fill="currentColor" aria-hidden="true"
-            style="height: 64px; transform: translateY(3.4px); overflow: visible;">
-            <defs>
-                <path id="path2" fill="none" stroke="transparent" stroke-width="0"
-                    d="M-600,22.508 L-600,22.508 S-183.15,52.508 0,52.508 S366.85,22.508 600,22.508 S1166.85,52.508 1500,52.508 S2066.85,22.508 2400,22.508">
-                </path>
-            </defs>
-            <text>
-                <textPath href="#path2" startOffset="0%">
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <tspan>Who is Abigail O'Regan? • </tspan>
-                    <animate attributeName="startOffset" from="2%" to="-61.4%" dur="15s" repeatCount="indefinite" />
-                </textPath>
-            </text>
-        </svg>
-        <br>
-        <img id=homepage_image src="images/homepage-splash.png">
+        <div class="carousel">
+            <div class="carousel__body">
+                <div class="carousel_slider">
+                    <div class="slider_item">
+                        <div class="frame_3d">
+                        <div class="frame_3d_box frame_3d_box_front">
+                            <img style="scale: 1.3; padding-bottom: 2em; padding-top: 2em;" src=./images/home/abigail_ingested.png />
+                            <span><i>Ingested</i>, Oil, Acrylic, and pieces of food on canvas, each 18” x 24”<br><purple>Each painting uses color and a textural dictionary to represent how anxieties about an eating disorder feels in the body.</purple></span>
+                        </div>
+                        <div class="frame_3d_box frame_3d_box_left"></div>
+                        <div class="frame_3d_box frame_3d_box_right"></div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="frame_3d">
+                        <div class="frame_3d_box frame_3d_box_front">
+                            <img src=./images/home/abigail_flowers.png />
+                            <span><i>Flowers</i>, Oil on canvas, 24” x 36”<br><purple>A lesson in covering up old work and letting go. This painting explores evolution and the surrealist qualities of imagination.</purple></span>
+                        </div>
+                        <div class="frame_3d_box frame_3d_box_left"></div>
+                        <div class="frame_3d_box frame_3d_box_right"></div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="frame_3d">
+                        <div class="frame_3d_box frame_3d_box_front">
+                            <img style="scale: 1.2; padding-bottom: 2em; padding-top: 2em;"  src=./images/home/abigail_heaven_hell.png />
+                            <span><i>Heaven and Hell</i>, Oil on canvas, each 40” x 30”<br><purple>A study of emotional opposites through color and abstraction. One painting depicting a descent into chaos and unrest, and the other shows an orderly, yet eerie serenity suspended between comfort and fear.</purple></span>
+                        </div>
+                        <div class="frame_3d_box frame_3d_box_left"></div>
+                        <div class="frame_3d_box frame_3d_box_right"></div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="frame_3d">
+                        <div class="frame_3d_box frame_3d_box_front">
+                            <img src=./images/home/abigail_galaxy.png />
+                            <span><i>Cosmic Symphony</i>, Oil on canvas, 24” x 24”<br><purple>A visualization of the emotional scale of existence and what it feels like to exist within an ever-expanding cosmic drama of being alive and caught in haunting silence of space.</purple></span>
+                        </div>
+                        <div class="frame_3d_box frame_3d_box_left"></div>
+                        <div class="frame_3d_box frame_3d_box_right"></div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="frame_3d">
+                        <div class="frame_3d_box frame_3d_box_front">
+                            <img src=./images/home/abigail_zombies.png />
+                            <span><i>Santa's Helpers</i>, Oil on Canvas, 30” x 22”<br><purple>A satirical commentary on the commercialization and exhaustion embedded in modern holiday culture.</purple></span>
+                        </div>
+                        <div class="frame_3d_box frame_3d_box_left"></div>
+                        <div class="frame_3d_box frame_3d_box_right"></div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="frame_3d">
+                        <div class="frame_3d_box frame_3d_box_front">
+                            <img src=./images/home/abigail_religious.png />
+                            <span><i>Testament of Light</i>, Acrylic on canvas, 12” x 16”<br><purple>Based off of the Monumento a Girolamo Savonarola (piazza Savonarola, Firenze, Italia).</purple></span>
+                        </div>
+                        <div class="frame_3d_box frame_3d_box_left"></div>
+                        <div class="frame_3d_box frame_3d_box_right"></div>
+                        </div>
+                    </div>
+                    <div class="slider_item">
+                        <div class="frame_3d">
+                        <div class="frame_3d_box frame_3d_box_front">
+                            <img style="scale: 1.4; padding-bottom: 2em; padding-top: 2em;" src=./images/home/abigail_tryptich.png />
+                            <span><i>Veils of the Self</i>, Oil on canvas, two 36” x 24” and other 36” x 36”<br><purple>This triptych explores identity through ghosts in a forest, each representing a fragmented self. The work reflects on the complexities of a hybrid identity, rooted and adrift. It navigates the blurred lines between cultures, ancestry, and presence.</purple></span>
+                        </div>
+                        <div class="frame_3d_box frame_3d_box_left"></div>
+                        <div class="frame_3d_box frame_3d_box_right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class=scroll_left><</span>
+        <span class=scroll_right>></span>
+        <div class="scene">
+            <div class="carousel_m">
+                <!-- Order: 1, 8, 7, 6, 5, 4, 3, 2 -->
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_hell.jpg />
+                    <span class=small_t>Hell</span>
+                    <span class=small_cc>Oil on canvas, 40” x 30”</span>
+                    <a class=small_link href='./hiRez/landscapes/abigail_hell.jpg'>View Larger</a>
+                </div>
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_flowers.png />
+                    <span class=small_t>Flowers</span>
+                    <span class=small_cc>Oil on canvas, 24” x 36”</span>
+                    <a class=small_link href='./hiRez/abstract/abigail_flowers.jpg'>View Larger</a>
+                </div>
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_ingested.png />
+                    <span class=small_t>Ingested</span>
+                    <span class=small_cc>Oil, Acrylic, and pieces of food on canvas, each 18” x 24”</span>
+                    <a class=small_link href='./hiRez/abstract/abigail_ingested.png'>View Larger</a>
+                </div>
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_tryptich.png />
+                    <span class=small_t>Veils of the Self</span>
+                    <span class=small_cc>Oil on canvas,</span>
+                    <span class=small_cc>36” x 24”; 36” x 36”; 36” x 24”</span>
+                    <a class=small_link href='./hiRez/figures/abigail_tryptich.png'>View Larger</a>
+                </div>
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_religious.png />
+                    <span class=small_t>Testament of Light</span>
+                    <span class=small_cc>Acrylic on canvas, 12” x 16”</span>
+                    <a class=small_link href='./hiRez/landscapes/abigail_religious.jpg'>View Larger</a>
+                </div>
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_zombies.png />
+                    <span class=small_t>Santa's Helpers</span>
+                    <span class=small_cc>Oil on canvas, 30” x 22”</span>
+                    <a class=small_link href='./hiRez/figures/abigail_zombies.jpg'>View Larger</a>
+                </div>
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_galaxy.png />
+                    <span class=small_t>Cosmic Symphony</span>
+                    <span class=small_cc>Oil on canvas, 24” x 24”</span>
+                    <a class=small_link href='./hiRez/abstract/abigail_galaxy.jpg'>View Larger</a>
+                </div>
+                <div class="carousel__cell">
+                    <img src=./images/home/abigail_heaven.jpg />
+                    <span class=small_t>Heaven</span>
+                    <span class=small_cc>Oil on canvas, 40” x 30”</span>
+                    <a class=small_link href='./hiRez/landscapes/abigail_heaven.jpg'>View Larger</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-controls">
+        <span class="next-button"><</span>
+        <span class="previous-button">></span>
     </div>
     <div class=footer>
-        <span class=footer_button
-            onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">@gabi_oregan</span>
+        <div class=footer_links>
+            <span class=footer_button
+                onclick="window.open('https://www.instagram.com/gabi_oregan/', '_blank')">Instagram</span>
+            <span class=footer_button
+                onclick="window.open('https://www.linkedin.com/in/abigail-oregan/', '_blank')">LinkedIn</span>
+        </div>
         <span class=copyright>Copyright © 2025 Abigail O'Regan - All Rights Reserved.</span>
     </div>
+    <script src='./javascript/carousel.js'></script>
+    <script src='./javascript/mobile_carousel.js'></script>
 </body>
 
 </html>

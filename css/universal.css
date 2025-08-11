@@ -1,6 +1,8 @@
 :root {
     --violet: #B2A4D4;
     --violethalf: #B2A4D4BC;
+    --violetquarter: #b2a4d47a;
+    --violetdark: #8f6ee1;
 }
 
 @font-face {
@@ -11,6 +13,26 @@
 @font-face {
     font-family: 'Quicksand';
     src: url('../fonts/Quicksand-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Standard';
+    src: url('../fonts/OldStandardTT-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'StandardB';
+    src: url('../fonts/OldStandardTT-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'StandardI';
+    src: url('../fonts/OldStandardTT-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Croissant';
+    src: url('../fonts/CroissantOne-Regular.ttf');
 }
 
 body {
@@ -36,7 +58,7 @@ body {
     font-family: Raleway;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 #nav_name {
@@ -113,7 +135,7 @@ body {
 }
 
 .nav_drop_content2 {
-    width: 11.45em;
+    width: 15.35em;
     overflow: hidden;
     height: 0px;
     -webkit-transition: height 200ms linear;
@@ -127,7 +149,10 @@ body {
 }
 
 .nav_drop_content2 a {
-    padding: .4em;
+    display: block;
+    padding-left: .4em;
+    padding-bottom: .05em;
+    padding-top: .05em;
     color: #FFF;
     text-decoration: none;
     background-image: linear-gradient(#FFF,  #FFF);
@@ -136,6 +161,7 @@ body {
     background-position-x: 0%;
     background-repeat: no-repeat;
     transition: background-size 250ms ease-in-out;
+    width: fit-content;
 }
 
 .nav_drop_content2 a:hover {
@@ -149,7 +175,7 @@ body {
 }
 
 .nav_dropdown2:hover .nav_drop_content2 {
-    height: 4.55em;
+    height: 7.87em;
     -webkit-transition: height 200ms linear;
        -moz-transition: height 200ms linear;
         -ms-transition: height 200ms linear;
@@ -162,6 +188,18 @@ body {
     margin: auto;
     margin-top: 4.5em;
     font-size: 1.3em;
+    font-family: Standard;
+}
+
+h1 {
+    font-family: Quicksand;
+}
+
+h2 {
+    font-family: Quicksand;
+}
+
+text-desc {
     font-family: Quicksand;
 }
 
@@ -178,9 +216,17 @@ body {
     font-family: Quicksand;
 }
 
+.footer_links {
+    display: flex;
+    gap: 2em;
+}
+
 .footer_button {
     margin-bottom: 1em;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-thickness: .1px;
+    text-decoration-color: var(--violet);
+    text-underline-offset: 3px;
     background-image: linear-gradient( var(--violet),  var(--violet));
     background-size: 0% 0.1em;
     background-position-y: 100%;
@@ -226,7 +272,7 @@ a {
 }
 
 .expand2 {
-    height: 35.4em !important;
+    height: 59em !important;
     overflow-y: visible;
 }
 
@@ -250,7 +296,7 @@ a {
         font-size: 2em;
         text-align: center;
         flex-direction: column;
-        z-index: 2;
+        z-index: 3;
     }
 
     #nav_buttton_container {
@@ -264,7 +310,7 @@ a {
         align-items: center;
         user-select: none;
         font-family: Raleway;
-        z-index: 1;
+        z-index: 2;
         padding-top: 10em;
 
         position: absolute;
