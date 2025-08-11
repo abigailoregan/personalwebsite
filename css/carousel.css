@@ -195,7 +195,8 @@ purple {
     background-color: white;
     position: absolute;
     width: 90vw;
-    height: 60vh;
+    height: 65vh;
+    max-height: 65vh;
     left: 10px;
     top: 10px;
     font-size: 80px;
