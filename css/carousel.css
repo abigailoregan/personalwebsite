@@ -177,7 +177,7 @@ purple {
     box-sizing: border-box;
     position: relative;
     width: 90vw;
-    height: 60vh;
+    height: 65vh;
     margin: 80px auto;
     perspective: 1000px;
     overflow: hidden;
@@ -195,7 +195,7 @@ purple {
     background-color: white;
     position: absolute;
     width: 90vw;
-    height: 61vh;
+    height: 66vh;
     left: 10px;
     top: 10px;
     font-size: 80px;
@@ -213,7 +213,7 @@ purple {
   .carousel__cell img {
     max-width: 90vw;
     width: auto;
-    max-height: 45vh;
+    max-height: 50vh;
   }
 
   .small_link {
@@ -247,7 +247,7 @@ purple {
   .carousel-controls {
     position: absolute;
     z-index: 1;
-    bottom: 10em;
+    bottom: 7em;
     width: 100%;
     display: flex;
     justify-content: center;
