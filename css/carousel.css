@@ -168,16 +168,15 @@ purple {
     display: none;
   }
 
-  body {
-    height: 100vh;
+  .marquee {
+    margin-bottom: 0 !important;
   }
 
   .scene {
     display: block;
     position: relative;
     width: 90vw;
-    height: 70vh;
-    margin: 80px auto;
+    min-height: 70vh;
     perspective: 1000px;
     overflow: hidden;
   }
@@ -191,6 +190,7 @@ purple {
   }
 
   .carousel__cell {
+    background-color: white;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     will-change: transform, opacity;
@@ -213,11 +213,9 @@ purple {
     max-width: 90vw;
     width: auto;
     max-height: 40vh;
-    background-color: white;
   }
 
   .small_link {
-    background-color: white;
     font-weight: normal;
     color: var(--violetdark);
     font-size: 0.7em;
@@ -232,12 +230,10 @@ purple {
 
   .small_t {
     margin-top: 0.3em;
-    background-color: white;
     font-style: italic;
   }
 
   .small_cc {
-    background-color: white;
     font-weight: normal;
     color: black;
     font-size: 0.7em;
@@ -245,13 +241,12 @@ purple {
   }
 
   .carousel-controls {
-    /* position: absolute; */
     z-index: 1;
-    bottom: 6em;
     width: 100%;
     display: flex;
     justify-content: center;
     gap: 40%;
+    margin-bottom: -1em;
   }
 
   .previous-button, .next-button {
