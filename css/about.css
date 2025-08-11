@@ -17,6 +17,10 @@
     height: 40vh;
 }
 
+#homepage_image_2 {
+    width: 70%;
+}
+
 #homepage_imageself {
     height: 50vh;
     margin-bottom: -1rem;
@@ -54,6 +58,10 @@
     .content {
         margin-top: 9em;
         width: 100%;
+    }
+
+    .image_tab_pc {
+        display: none;
     }
 
     .inner_container {

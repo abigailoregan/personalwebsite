@@ -32,6 +32,8 @@ li:not(:last-child) {
 table {
     margin-top: 0.4rem;
     margin-bottom: -0.1rem;
+    border-collapse: separate; 
+    border-spacing: 0.5em;
 }
 
 tr {
