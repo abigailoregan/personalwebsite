@@ -194,7 +194,6 @@ purple {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     will-change: transform, opacity;
-    background-color: white;
     position: absolute;
     width: 90vw;
     height: 70vh;
@@ -214,6 +213,7 @@ purple {
     max-width: 90vw;
     width: auto;
     max-height: 40vh;
+    background-color: white;
   }
 
   .small_link {
