@@ -50,6 +50,25 @@ td {
     width: 10vw;
 }
 
+.cv_link {
+    margin-bottom: 1em;
+    text-decoration: underline;
+    text-decoration-thickness: .1px;
+    text-decoration-color: var(--violet);
+    text-underline-offset: 3px;
+    background-image: linear-gradient( var(--violet),  var(--violet));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.cv_link:hover {
+    cursor: pointer;
+    background-size: 100% 0.1em;
+}
+
 @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
 
     .content {
