@@ -245,7 +245,7 @@ purple {
   }
 
   .carousel-controls {
-    position: absolute;
+    /* position: absolute; */
     z-index: 1;
     bottom: 6em;
     width: 100%;
