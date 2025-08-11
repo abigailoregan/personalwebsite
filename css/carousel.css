@@ -195,7 +195,7 @@ purple {
     background-color: white;
     position: absolute;
     width: 90vw;
-    height: 61vh;
+    height: 60vh;
     left: 10px;
     top: 10px;
     font-size: 80px;
@@ -213,7 +213,7 @@ purple {
   .carousel__cell img {
     max-width: 90vw;
     width: auto;
-    max-height: 45vh;
+    max-height: 40vh;
   }
 
   .small_link {
