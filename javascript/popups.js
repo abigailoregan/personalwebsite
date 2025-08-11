@@ -22,7 +22,7 @@ const abstract_art = {
         'Fragments of Solitude, Graphite on Drawing Paper Primed with Acrylic',
         'Cosmic Symphony, Oil on Canvas, 24"x24"',
         'Flowers, Oil on canvas, 24”x36”',
-        'Ingested, Mixed media on two canvases (Oil, Acrylic, attached pieces of food), both 18”x24”'
+        'Ingested, Oil, Acrylic, and pieces of food on canvas, each 18"x24"'
     ],
     final: 9
 }

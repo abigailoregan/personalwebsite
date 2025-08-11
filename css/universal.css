@@ -58,7 +58,7 @@ body {
     font-family: Raleway;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 #nav_name {
@@ -296,7 +296,7 @@ a {
         font-size: 2em;
         text-align: center;
         flex-direction: column;
-        z-index: 2;
+        z-index: 3;
     }
 
     #nav_buttton_container {
@@ -310,7 +310,7 @@ a {
         align-items: center;
         user-select: none;
         font-family: Raleway;
-        z-index: 1;
+        z-index: 2;
         padding-top: 10em;
 
         position: absolute;

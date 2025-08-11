@@ -9,7 +9,6 @@
 
 body {
     max-height: 100%;
-    overflow-y: hidden;
 }
 
 .marquee {
@@ -19,6 +18,7 @@ body {
     mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
     -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 99%);
     margin-bottom: 2vh;
+    z-index: 1;
 }
 
 #landingscroll {
