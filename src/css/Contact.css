@@ -1,0 +1,212 @@
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-page {
+    max-width: 70vw;
+    margin: 0 auto;
+    margin-top: 14vh;
+    text-align: center;
+}
+
+/* Title */
+
+.contact-title {
+    font-family: Quicksand;
+    font-size: 2.6rem;
+    font-weight: 500;
+    letter-spacing: .04em;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+
+.contact-subtitle {
+    font-family: Quicksand;
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 520px;
+    margin: 2rem auto;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTACT CARD
+========================= */
+
+.contact-card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 48px;
+    margin-bottom: 60px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Inputs */
+
+.contact-input {
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+    width: 90%;
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    font-size: 1.2rem;
+    font-family: Quicksand;
+    background: transparent;
+    background-image: linear-gradient(var(--violethalf), var(--violethalf));
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.contact-input:focus {
+    background-size: 100% 0.1em;
+}
+
+/* Textarea */
+
+.contact-textarea {
+    width: 90%;
+    min-height: 140px;
+    padding: 0.5em 5%;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    border: 0;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    outline: none;
+    resize: vertical;
+    font-size: 1.2rem;
+    font-family: Quicksand;
+    background: transparent;
+    background-image: linear-gradient(var(--violethalf), var(--violethalf)), linear-gradient(var(--violethalf), var(--violethalf));
+    background-size: 0.1em 0%, 0.1em 0%;
+    background-position-y: 0%, 100%;
+    background-position-x: 0%, 100%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+}
+
+.contact-textarea:focus {
+    background-size: 0.1em 100%, 0.1em 100%;
+}
+
+/* hCaptcha */
+
+.h-captcha {
+    margin: 1em 0;
+    scale: 1.1;
+}
+
+/* Submit Button */
+
+.contact-submit {
+    margin-top: 1em;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 0.7em;
+    width: 90%;
+    font-size: 1em;
+    font-family: Quicksand;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+    background-image: linear-gradient(var(--violethalf), var(--violethalf));
+    background-size: 0% 100%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    transition: background-size 250ms ease-in-out;
+    border-radius: 4px;
+    color: #666;
+}
+
+.contact-submit:hover {
+    background-size: 100% 100%;
+    /* background-size: 100% 0.1em; */
+    color: #fff;
+}
+
+/* =========================
+   ALTERNATIVE CONTACT INFO
+========================= */
+
+.contact-alt {
+    margin-top: 50px;
+}
+
+.contact-alt h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    font-size: .9rem;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: border .2s ease;
+}
+
+.contact-links a:hover {
+    border-bottom: 1px solid #333;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .contact-page {
+        max-width: 90vw;
+    }
+
+    .contact-card {
+        padding: 32px;
+    }
+
+    .contact-input {
+        border-bottom: 2px solid #ddd;
+    }
+
+    .contact-textarea {
+        border-left: 2px solid #ddd;
+        border-right: 2px solid #ddd;
+    }
+
+    .contact-submit {
+        border: 2px solid #000;
+    }
+
+    .h-captcha {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+}
