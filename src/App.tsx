@@ -22,6 +22,9 @@ import AfoContent2024 from "./pages/exhibitions/AfoContent2024";
 import PaprSalonShow2025 from "./pages/exhibitions/PaprSalonShow2025";
 import SriSaSummerA from "./pages/exhibitions/SriSaSummerA";
 import SriSaSummerB from "./pages/exhibitions/SriSaSummerB";
+import Home from "./pages/Home";
+
+import './css/App.css'
 
 function App() {
   return (
@@ -29,7 +32,7 @@ function App() {
       <Navbar />
 
       <Routes>
-
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<CV />} />

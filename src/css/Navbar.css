@@ -3,11 +3,6 @@
     --violetdark: #8f6ee1;
 }
 
-@font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway-VariableFont_wght.ttf');
-}
-
 /* --- Global Reset --- */
 .navbar a {
     text-decoration: none;
