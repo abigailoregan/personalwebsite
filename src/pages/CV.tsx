@@ -6,7 +6,6 @@ function CV() {
       <header className="cv-header">
         <h1>Curriculum Vitae</h1>
         <p className="cv-title">Visual Artist | Museum Educator | Musician - Please use the contact page to request full CV.</p>
-        {/* <p className="cv-title">Please use the contact page to request full CV.</p> */}
       </header>
 
       <section className="cv-section">

@@ -182,5 +182,40 @@ export const exhibitions: Record<string, ArtworkItem[]> = {
             height: 1000,
             width: 1745
         }
+    ],
+
+    parcviewexpo: [
+        {
+            id: "pcve-5",
+            img: "/images/figures/abigail_baby.jpg",
+            imgH: "/images/hi-resolution/figures/abigail_baby.jpg",
+            desc: "Childhood, Oil on canvas, two 24”x24”",
+            height: 1000,
+            width: 976
+        },
+        {
+            id: "pcve-4",
+            img: "/images/exhibitions/pcve-4.jpg",
+            imgH: "/images/hi-resolution/exhibitions/pcve-4.jpg",
+            desc: "Photo of the art gallery room",
+            height: 1000,
+            width: 1333
+        },
+        {
+            id: "pcve-1",
+            img: "/images/exhibitions/pcve-1.jpg",
+            imgH: "/images/hi-resolution/exhibitions/pcve-1.jpg",
+            desc: "Photo of the Abigail's artwork on the wall",
+            height: 1000,
+            width: 667
+        },
+        {
+            id: "pcve-3",
+            img: "/images/exhibitions/pcve-3.jpg",
+            imgH: "/images/hi-resolution/exhibitions/pcve-3.jpg",
+            desc: "Photo of Abigail with one of her artworks",
+            height: 1000,
+            width: 667
+        },
     ]
 }

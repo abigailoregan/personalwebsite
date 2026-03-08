@@ -5,6 +5,14 @@ function ExhibitionsHome() {
   return (
     <div className='content'>
       <div className='cover-photo'>
+        <img src='/images/exhibitions/pcve-cover.jpg' alt='Parc View Art Expo' />
+        <Link to='/exhibitions/parcviewexpo'>
+          <div className='backdrop'>
+            <div className='text-desc'>Parc View Art Expo</div>
+          </div>
+        </Link>
+      </div>
+      <div className='cover-photo'>
         <img src='/images/exhibitions/srisa_sB_guildedwallcard.jpg' alt='SRISA Summer B Art Exhibition' />
         <Link to='/exhibitions/srisasummerb'>
           <div className='backdrop'>

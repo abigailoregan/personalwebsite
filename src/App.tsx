@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
+import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import CV from "./pages/CV";
@@ -22,7 +23,7 @@ import AfoContent2024 from "./pages/exhibitions/AfoContent2024";
 import PaprSalonShow2025 from "./pages/exhibitions/PaprSalonShow2025";
 import SriSaSummerA from "./pages/exhibitions/SriSaSummerA";
 import SriSaSummerB from "./pages/exhibitions/SriSaSummerB";
-import Home from "./pages/Home";
+import ParcViewExpo from "./pages/exhibitions/ParcViewExpo";
 
 import './css/App.css'
 
@@ -52,6 +53,7 @@ function App() {
         {/* Exhibitions */}
         <Route path="/exhibitions" element={<ExhibitionsLayout />}>
           <Route index element={<ExhibitionsHome />} />
+          <Route path="parcviewexpo" element={<ParcViewExpo />} />
           <Route path="spukhaus2023" element={<Spukhaus2023 />} />
           <Route path="afocontent2024" element={<AfoContent2024 />} />
           <Route path="paprsalonshow2025" element={<PaprSalonShow2025 />} />

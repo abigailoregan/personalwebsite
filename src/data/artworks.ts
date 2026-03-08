@@ -171,6 +171,14 @@ export const artworks: Record<string, ArtworkItem[]> = {
             desc:"Veils of the Self, Oil on canvas, two 36”x24” and other 36”x36”",
             height: 1000,
             width: 2495
+        },
+        {
+            id:"figures-11",
+            img: "/images/figures/abigail_baby.jpg",
+            imgH: "/images/hi-resolution/figures/abigail_baby.jpg",
+            desc:"Childhood, Oil on canvas, two 24”x24”",
+            height: 1000,
+            width: 976
         }
     ],
 

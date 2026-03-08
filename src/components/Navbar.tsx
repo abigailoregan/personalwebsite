@@ -13,6 +13,7 @@ const ARTWORK_CATEGORIES = [
 ]
 
 const EXHIBITIONS = [
+    { name: 'Parc View Art Expo', path: 'parcviewexpo' },
     { name: 'SRISA SUMMER B Art Exhibition', path: 'srisasummerb' },
     { name: 'SRISA SUMMER A Art Exhibition', path: 'srisasummera' },
     { name: 'PAPR Salon Show 2025', path: 'paprsalonshow2025' },
