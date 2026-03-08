@@ -83,14 +83,17 @@ export default function Home3DCarousel() {
       </div>
 
       {viewerImage && (
-        <div className="image-viewer">
+        <div className="image-viewer" onClick={() => setViewerImage(null)}>
           <button
             className="viewer-close"
-            onClick={() => setViewerImage(null)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setViewerImage(null);
+            }}
           >
             X
           </button>
-          <img src={viewerImage} alt="High resolution artwork" />
+          <img src={viewerImage} alt="High resolution artwork" onClick={(e) => e.stopPropagation()} />
         </div>
       )}
     </>

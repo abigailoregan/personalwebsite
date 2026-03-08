@@ -1,17 +1,11 @@
+import Masonry from "../../components/Masonry"
+import { artworks } from "../../data/artworks"
+
 function Portraits() {
+  const items = artworks.portraits
+
   return (
-    <div
-      style={{
-        height: "80vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "2rem",
-        fontWeight: "600"
-      }}
-    >
-      Portraits
-    </div>
+    <Masonry items={items} />
   )
 }
 

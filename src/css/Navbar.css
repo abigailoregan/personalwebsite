@@ -12,6 +12,7 @@
 /* --- Desktop Layout (Default) --- */
 .navbar {
     position: fixed;
+    top: 0;
     background-color: white;
     width: 70%;
     padding: 2em 15% 1.5em 15%;
