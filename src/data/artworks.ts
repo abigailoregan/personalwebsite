@@ -321,8 +321,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"murals-1",
             img:"/images/murals/abigail_drain.jpg",
             imgH:"/images/hi-resolution/murals/abigail_drain.jpg",
-            // url:"https://sites.google.com/view/falls-church-art-walk/home-artwork-inventory/storm-drain-mural-1?authuser=0",
-            desc:"Storm Drain Mural 1 (Co-Artist: Alex Schwartz)",
+            desc:"Storm Drain Mural 1 (Co-Artist: Alex Schwartz). Click above to see more!",
             height: 1000,
             width: 1594
         },

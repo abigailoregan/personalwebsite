@@ -170,10 +170,20 @@ const Masonry: React.FC<MasonryProps> = ({ items }) => {
             &gt;
           </button>
           <img
+            id={items[currentIndex].id}
             src={items[currentIndex].imgH}
             alt={items[currentIndex].desc}
-            onClick={(e) => e.stopPropagation()}
+            onClick={(e) => {
+              e.stopPropagation();
+              if (items[currentIndex].id === "spukhaus2023-4") {
+                window.open("https://www.youtube.com/watch?v=uyAAM00vIRg", "_blank")
+              }
+              else if (items[currentIndex].id === "murals-1") {
+                window.open("https://sites.google.com/view/falls-church-art-walk/home-artwork-inventory/storm-drain-mural-1?authuser=0")
+              }
+            }}
           />
+          <div className="viewer-caption">{items[currentIndex].desc}</div>
         </div>
       )}
     </>
