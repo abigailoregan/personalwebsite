@@ -1,17 +1,11 @@
+import Masonry from "../../components/Masonry"
+import { exhibitions } from "../../data/exhibitions"
+
 function Spukhaus2023() {
+  const items = exhibitions.spukhaus2023
+
   return (
-    <div
-      style={{
-        height: "80vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "2rem",
-        fontWeight: "600"
-      }}
-    >
-      Spukhaus2023
-    </div>
+    <Masonry items={items} />
   )
 }
 

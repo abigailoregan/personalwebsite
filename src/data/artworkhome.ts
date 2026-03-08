@@ -1,10 +1,10 @@
 export interface ArtworkHome {
-  title: string;
-  medium: string;
-  description: string;
-  image: string;
-  hiRes?: string;
-  dimensions?: string;
+  title: string
+  medium: string
+  description: string
+  image: string
+  hiRes?: string
+  dimensions?: string
 }
 
 export const artworks: ArtworkHome[] = [
@@ -52,9 +52,9 @@ export const artworks: ArtworkHome[] = [
   },
   {
     title: "Veils of the Self",
-    medium: "Oil on canvas, triptych (36” x 24”; 36” x 36”; 36” x 24”).",
+    medium: "Oil on canvas, triptych (36” x 24” 36” x 36” 36” x 24”).",
     description: "Explores identity through ghosts in a forest, each representing a fragmented self. Reflects on hybrid identity, ancestry, and presence.",
     image: "/images/home/abigail_tryptich.png",
     hiRes: "/images/hi-resolution/figures/abigail_tryptich.png",
   },
-];
+]

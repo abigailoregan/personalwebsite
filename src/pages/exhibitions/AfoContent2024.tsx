@@ -1,17 +1,11 @@
+import Masonry from "../../components/Masonry"
+import { exhibitions } from "../../data/exhibitions"
+
 function AfoContent2024() {
+  const items = exhibitions.afo2024
+
   return (
-    <div
-      style={{
-        height: "80vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "2rem",
-        fontWeight: "600"
-      }}
-    >
-      AfoContent2024
-    </div>
+    <Masonry items={items} />
   )
 }
 

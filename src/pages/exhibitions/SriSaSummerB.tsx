@@ -1,17 +1,11 @@
+import Masonry from "../../components/Masonry"
+import { exhibitions } from "../../data/exhibitions"
+
 function SriSaSummerB() {
+  const items = exhibitions.srisaB
+
   return (
-    <div
-      style={{
-        height: "80vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        fontSize: "2rem",
-        fontWeight: "600"
-      }}
-    >
-      SriSaSummerB
-    </div>
+    <Masonry items={items} />
   )
 }
 
