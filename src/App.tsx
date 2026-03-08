@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './images/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import CV from "./pages/CV";
+
+import ArtworkLayout from "./pages/artwork/ArtworkLayout";
+import ArtworkHome from "./pages/artwork/ArtworkHome";
+import Abstract from "./pages/artwork/Abstract";
+import Figures from "./pages/artwork/Figures";
+import Landscapes from "./pages/artwork/Landscapes";
+import Love from "./pages/artwork/Love";
+import Murals from "./pages/artwork/Murals";
+import Portraits from "./pages/artwork/Portraits";
+import Stills from "./pages/artwork/Stills";
+
+import ExhibitionsLayout from "./pages/exhibitions/ExhibitionsLayout";
+import ExhibitionsHome from "./pages/exhibitions/ExhibitionsHome";
+import Spukhaus2023 from "./pages/exhibitions/Spukhaus2023";
+import AfoContent2024 from "./pages/exhibitions/AfoContent2024";
+import PaprSalonShow2025 from "./pages/exhibitions/PaprSalonShow2025";
+import SriSaSummerA from "./pages/exhibitions/SriSaSummerA";
+import SriSaSummerB from "./pages/exhibitions/SriSaSummerB";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar />
+
+      <Routes>
+
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cv" element={<CV />} />
+
+        {/* Artwork */}
+        <Route path="/artwork" element={<ArtworkLayout />}>
+          <Route index element={<ArtworkHome />} />
+          <Route path="abstract" element={<Abstract />} />
+          <Route path="figures" element={<Figures />} />
+          <Route path="landscapes" element={<Landscapes />} />
+          <Route path="love" element={<Love />} />
+          <Route path="murals" element={<Murals />} />
+          <Route path="portraits" element={<Portraits />} />
+          <Route path="stills" element={<Stills />} />
+        </Route>
+
+        {/* Exhibitions */}
+        <Route path="/exhibitions" element={<ExhibitionsLayout />}>
+          <Route index element={<ExhibitionsHome />} />
+          <Route path="spukhaus2023" element={<Spukhaus2023 />} />
+          <Route path="afocontent2024" element={<AfoContent2024 />} />
+          <Route path="paprsalonshow2025" element={<PaprSalonShow2025 />} />
+          <Route path="srisasummera" element={<SriSaSummerA />} />
+          <Route path="srisasummerb" element={<SriSaSummerB />} />
+        </Route>
+
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
