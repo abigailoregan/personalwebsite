@@ -124,6 +124,14 @@ export const exhibitions: Record<string, ArtworkItem[]> = {
             width: 1333
         },
         {
+            id: "srisaA-5",
+            img:"/images/landscapes/abigail_religious.jpg",
+            imgH:"/images/hi-resolution/landscapes/abigail_religious.jpg",
+            desc:"Testament of Light, Acrylic on canvas, 12”x16”",
+            height: 1000,
+            width: 1375
+        },
+        {
             id: "srisaA-2",
             img: "/images/exhibitions/srisa_sA_watercolour.jpg",
             imgH: "/images/hi-resolution/exhibitions/srisa_sA_watercolour.jpg",
@@ -185,6 +193,14 @@ export const exhibitions: Record<string, ArtworkItem[]> = {
     ],
 
     parcviewexpo: [
+        {
+            id: "pcve-2",
+            img: "/images/figures/abigail_zombies.jpg",
+            imgH: "/images/hi-resolution/figures/abigail_zombies.jpg",
+            desc: "Santa's Helpers, Oil on Canvas, 30\"x22\"",
+            height: 1000,
+            width: 748
+        },
         {
             id: "pcve-5",
             img: "/images/figures/abigail_baby.jpg",

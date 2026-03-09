@@ -89,14 +89,22 @@ const Masonry: React.FC<MasonryProps> = ({ items }) => {
   // Close viewer with ESC
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
+      if (!viewerOpen) return;
+
       if (e.key === "Escape") {
         closeViewer();
+      } 
+      else if (e.key === "ArrowLeft") {
+        prevImage();
+      } 
+      else if (e.key === "ArrowRight") {
+        nextImage();
       }
     };
 
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, []);
+  }, [viewerOpen]);
 
   return (
     <>

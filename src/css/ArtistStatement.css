@@ -1,0 +1,9 @@
+.artiststatement {
+    font-family: Quicksand, sans-serif;
+    width: 70rem;
+    max-width: 90vw;
+    margin: 1.5rem auto;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.3rem;
+}

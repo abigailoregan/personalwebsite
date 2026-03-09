@@ -1,18 +1,45 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { artworks } from "../data/artworkhome";
 import "../css/Home3DCarousel.css";
 
 export default function Home3DCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [viewerImage, setViewerImage] = useState<string | null>(null);
+  const autoScrollRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  const resetAutoScroll = () => {
+    if (autoScrollRef.current) {
+      clearInterval(autoScrollRef.current);
+    }
+
+    // Only restart if viewer is NOT open
+    if (!viewerImage) {
+      autoScrollRef.current = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % artworks.length);
+      }, 10000);
+    }
+  };
 
   const prevSlide = () => {
     setCurrentIndex((prev) => (prev - 1 + artworks.length) % artworks.length);
+    resetAutoScroll();
   };
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % artworks.length);
+    resetAutoScroll();
   };
+
+  // Initialize auto-scroll and pause when viewer opens
+  useEffect(() => {
+    resetAutoScroll();
+
+    return () => {
+      if (autoScrollRef.current) {
+        clearInterval(autoScrollRef.current);
+      }
+    };
+  }, [viewerImage]);
 
   // Close viewer with ESC
   useEffect(() => {
@@ -59,7 +86,9 @@ export default function Home3DCarousel() {
 
                   <div className="carousel-hover">
                     <button
-                      onClick={() => setViewerImage(artwork.hiRes || artwork.image)}
+                      onClick={() =>
+                        setViewerImage(artwork.hiRes || artwork.image)
+                      }
                     >
                       View
                     </button>
@@ -93,7 +122,11 @@ export default function Home3DCarousel() {
           >
             X
           </button>
-          <img src={viewerImage} alt="High resolution artwork" onClick={(e) => e.stopPropagation()} />
+          <img
+            src={viewerImage}
+            alt="High resolution artwork"
+            onClick={(e) => e.stopPropagation()}
+          />
         </div>
       )}
     </>
