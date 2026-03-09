@@ -101,36 +101,6 @@
   border-bottom: 1px solid var(--violet);
 }
 
-/* Footer */
-.cv-footer {
-  text-align: center;
-  margin-top: 4rem;
-  font-size: 0.95rem;
-  color: #666;
-}
-
-.cv-footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 0.5rem;
-}
-
-.cv-footer-btn {
-  cursor: pointer;
-  color: #222;
-  font-weight: 500;
-  transition: color 0.2s;
-}
-
-.cv-footer-btn:hover {
-  color: #6a0dad;
-}
-
-.cv-copyright {
-  font-size: 0.85rem;
-}
-
 /* Responsive */
 @media (max-width: 600px) {
   .cv-container {

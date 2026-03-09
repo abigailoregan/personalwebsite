@@ -26,6 +26,7 @@ import SriSaSummerB from "./pages/exhibitions/SriSaSummerB";
 import ParcViewExpo from "./pages/exhibitions/ParcViewExpo";
 
 import './css/App.css'
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -62,6 +63,8 @@ function App() {
         </Route>
 
       </Routes>
+
+      <Footer />
     </>
   );
 }

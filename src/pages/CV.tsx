@@ -127,14 +127,6 @@ function CV() {
           </div>
         </div>
       </section>
-
-      <footer className="cv-footer">
-        <div className="cv-footer-links">
-          <span onClick={() => window.open('https://www.instagram.com/gabi_oregan/', '_blank')} className="cv-footer-btn">Instagram</span>
-          <span onClick={() => window.open('https://www.linkedin.com/in/abigail-oregan/', '_blank')} className="cv-footer-btn">LinkedIn</span>
-        </div>
-        <p className="cv-copyright">© 2025 Abigail O'Regan - All Rights Reserved</p>
-      </footer>
     </div>
   );
 }
