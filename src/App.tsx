@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
 import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
@@ -33,12 +34,14 @@ function App() {
     <>
       <Navbar />
 
+      <ScrollToTop />
+
       <Routes>
+        {/* Standalone Pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/cv" element={<CV />} />
-
         {/* Artwork */}
         <Route path="/artwork" element={<ArtworkLayout />}>
           <Route index element={<ArtworkHome />} />
@@ -50,7 +53,6 @@ function App() {
           <Route path="portraits" element={<Portraits />} />
           <Route path="stills" element={<Stills />} />
         </Route>
-
         {/* Exhibitions */}
         <Route path="/exhibitions" element={<ExhibitionsLayout />}>
           <Route index element={<ExhibitionsHome />} />
