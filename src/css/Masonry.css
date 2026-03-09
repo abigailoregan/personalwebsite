@@ -1,0 +1,87 @@
+.imagecontainerdiv {
+    margin-top: 12vh;
+    width: 85vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+}
+
+/* FULLSCREEN VIEWER */
+
+.masonry-viewer {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.masonry-viewer img {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+}
+
+.viewer-close {
+  position: absolute;
+  top: 25px;
+  right: 35px;
+  font-size: 36px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Quicksand;
+}
+
+.viewer-prev,
+.viewer-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3rem;
+  color: white;
+  background: rgba(255,255,255,0.1);
+  border: none;
+  cursor: pointer;
+  padding: .5rem 1rem;
+  padding-right: .8rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  font-family: Quicksand;
+}
+
+.viewer-prev:hover,
+.viewer-next:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+.viewer-prev {
+  left: 35px;
+}
+
+.viewer-next {
+  right: 35px;
+}
+
+.viewer-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: Quicksand;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Custom styling for onclick images */
+#spukhaus2023-4, #murals-1 {
+  cursor: pointer;
+}

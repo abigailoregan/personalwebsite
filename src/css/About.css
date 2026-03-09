@@ -1,0 +1,34 @@
+#abt-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    align-items: center;
+    font-family: Quicksand, sans-serif;
+}
+
+#abt-title {
+    font-size: 3rem;
+}
+
+#abt-im1 {
+    max-width: 34rem;
+    width: 90vw;
+}
+
+#abt-container-p {
+    max-width: 52rem;
+    width: 90vw;
+    margin: 0 1vw;
+    padding: 0 2.5vw;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+}
+
+.abt-p {
+    font-size: 1.2rem;
+}
+
+#abt-im2 {
+    max-width: 52rem;
+    width: 90vw;
+}

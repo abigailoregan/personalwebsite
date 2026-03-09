@@ -1,0 +1,29 @@
+.footer {
+    font-family: Quicksand;
+    padding-bottom: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #666;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer-btn {
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.footer-btn:hover {
+    color: #6a0dad;
+}
+
+.copyright {
+    font-size: .9rem;
+}
