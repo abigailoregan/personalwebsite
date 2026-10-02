@@ -5,7 +5,6 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import CV from "./pages/CV";
 
 import ArtworkLayout from "./pages/artwork/ArtworkLayout";
 import ArtworkHome from "./pages/artwork/ArtworkHome";
@@ -42,7 +41,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/cv" element={<CV />} />
         {/* Artwork */}
         <Route path="/artwork" element={<ArtworkLayout />}>
           <Route index element={<ArtworkHome />} />

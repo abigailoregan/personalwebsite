@@ -1,0 +1,190 @@
+#front-scroll-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #111;
+  color: #fff;
+}
+
+.front-scroll-item {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 900ms ease, visibility 900ms ease;
+  pointer-events: none;
+}
+
+.front-scroll-item.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.front-scroll-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.front-scroll-gradient {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.2) 38%,
+    rgba(0, 0, 0, 0.05) 70%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.front-scroll-overlay {
+  position: absolute;
+  left: clamp(1.25rem, 4vw, 4rem);
+  bottom: clamp(5rem, 10vh, 7.5rem);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  max-width: min(34rem, 86vw);
+  font-family: Quicksand, sans-serif;
+}
+
+.front-scroll-eyebrow {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+.front-scroll-title {
+  margin: 0.15rem 0 0;
+  font-family: Raleway, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.front-scroll-subtitle {
+  margin: 0.35rem 0 0;
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.front-scroll-meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.front-scroll-cta {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1.15rem;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.front-scroll-cta:hover {
+  background: #fff;
+  color: #111;
+}
+
+.front-scroll-controls {
+  position: absolute;
+  left: clamp(1.25rem, 4vw, 4rem);
+  right: clamp(1.25rem, 4vw, 4rem);
+  bottom: 1.35rem;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+}
+
+.front-scroll-pause,
+.front-scroll-nav button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  padding: 0.35rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-scroll-pause svg,
+.front-scroll-nav button svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  fill: currentColor;
+}
+
+.front-scroll-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+}
+
+.front-scroll-progress-segment {
+  flex: 1;
+  height: 2px;
+  border: 0;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: background-color 200ms ease, height 200ms ease;
+}
+
+.front-scroll-progress-segment.is-active {
+  height: 3px;
+  background: #fff;
+}
+
+.front-scroll-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: Quicksand, sans-serif;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.front-scroll-counter {
+  margin-right: 0.35rem;
+  opacity: 0.95;
+}
+
+@media (max-width: 700px) {
+  .front-scroll-overlay {
+    bottom: clamp(5.5rem, 14vh, 7rem);
+  }
+
+  .front-scroll-controls {
+    grid-template-columns: auto 1fr;
+    row-gap: 0.75rem;
+  }
+
+  .front-scroll-nav {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+  }
+}
