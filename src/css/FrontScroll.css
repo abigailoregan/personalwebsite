@@ -7,6 +7,11 @@
   color: #fff;
 }
 
+#front-scroll-container.is-split-active {
+  background: #fff;
+  color: #111;
+}
+
 .front-scroll-item {
   position: absolute;
   inset: 0;
@@ -105,6 +110,121 @@
   color: #111;
 }
 
+/* Split layout: white field + inset image opposite the text */
+.front-scroll-item.is-split {
+  background: #fff;
+  color: #111;
+}
+
+.front-scroll-item.is-split .front-scroll-image {
+  inset: auto;
+  /* Clear the fixed navbar, then keep air around the frame */
+  top: clamp(7.25rem, 15vh, 9rem);
+  bottom: clamp(5.75rem, 12vh, 7.5rem);
+  /* Center in the right half instead of hugging the edge */
+  left: 72%;
+  right: auto;
+  width: min(36vw, 460px);
+  height: calc(100% - clamp(7.25rem, 15vh, 9rem) - clamp(5.75rem, 12vh, 7.5rem));
+  transform: translateX(-50%);
+  object-fit: contain;
+  object-position: center;
+}
+
+.front-scroll-item.is-split .front-scroll-overlay {
+  left: clamp(1.5rem, 6vw, 5.5rem);
+  right: auto;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  max-width: min(28rem, 40vw);
+  color: #111;
+}
+
+.front-scroll-item.is-split .front-scroll-eyebrow {
+  color: #777;
+}
+
+.front-scroll-item.is-split .front-scroll-meta {
+  opacity: 1;
+  color: #222;
+}
+
+.front-scroll-item.is-split .front-scroll-cta {
+  border-color: #111;
+  color: #111;
+  background: transparent;
+}
+
+.front-scroll-item.is-split .front-scroll-cta:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* Dual staggered split: two inset images on the right */
+.front-scroll-item.is-split-pair {
+  background: #fff;
+  color: #111;
+}
+
+.front-scroll-item.is-split-pair .front-scroll-image {
+  inset: auto;
+  left: auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.front-scroll-item.is-split-pair .front-scroll-image--a {
+  top: clamp(7.25rem, 15vh, 9rem);
+  /* Same center-right stance as solo split, nudged right within the pair */
+  left: calc(72% + clamp(4rem, 5.5vw, 5.5rem));
+  right: auto;
+  width: min(22vw, 280px);
+  height: calc(46% - 2rem);
+  transform: translateX(-50%);
+}
+
+.front-scroll-item.is-split-pair .front-scroll-image--b {
+  top: auto;
+  bottom: clamp(5.75rem, 12vh, 7.5rem);
+  /* Same center-right stance, nudged left within the pair */
+  left: calc(72% - clamp(4rem, 5.5vw, 5.5rem));
+  right: auto;
+  width: min(22vw, 280px);
+  height: calc(46% - 2rem);
+  transform: translateX(-50%);
+}
+
+.front-scroll-item.is-split-pair .front-scroll-overlay {
+  left: clamp(1.5rem, 6vw, 5.5rem);
+  right: auto;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  max-width: min(28rem, 40vw);
+  color: #111;
+}
+
+.front-scroll-item.is-split-pair .front-scroll-eyebrow {
+  color: #777;
+}
+
+.front-scroll-item.is-split-pair .front-scroll-meta {
+  opacity: 1;
+  color: #222;
+}
+
+.front-scroll-item.is-split-pair .front-scroll-cta {
+  border-color: #111;
+  color: #111;
+  background: transparent;
+}
+
+.front-scroll-item.is-split-pair .front-scroll-cta:hover {
+  background: #111;
+  color: #fff;
+}
+
 .front-scroll-controls {
   position: absolute;
   left: clamp(1.25rem, 4vw, 4rem);
@@ -122,7 +242,7 @@
   appearance: none;
   border: 0;
   background: transparent;
-  color: #fff;
+  color: inherit;
   padding: 0.35rem;
   cursor: pointer;
   display: inline-flex;
@@ -159,6 +279,14 @@
   background: #fff;
 }
 
+#front-scroll-container.is-split-active .front-scroll-progress-segment {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#front-scroll-container.is-split-active .front-scroll-progress-segment.is-active {
+  background: #111;
+}
+
 .front-scroll-nav {
   display: flex;
   align-items: center;
@@ -173,8 +301,129 @@
   opacity: 0.95;
 }
 
+@media (max-width: 980px) {
+  /* Collapse single split into full-bleed like the other slides */
+  .front-scroll-item.is-split .front-scroll-image {
+    inset: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    transform: none;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .front-scroll-item.is-split::after,
+  .front-scroll-item.is-split-pair::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.55) 0%,
+      rgba(0, 0, 0, 0.2) 38%,
+      rgba(0, 0, 0, 0.05) 70%,
+      transparent 100%
+    );
+    pointer-events: none;
+  }
+
+  .front-scroll-item.is-split .front-scroll-overlay,
+  .front-scroll-item.is-split-pair .front-scroll-overlay {
+    top: auto;
+    left: clamp(1.25rem, 4vw, 4rem);
+    bottom: clamp(5rem, 10vh, 7.5rem);
+    transform: none;
+    max-width: min(34rem, 86vw);
+    color: #fff;
+  }
+
+  .front-scroll-item.is-split .front-scroll-eyebrow,
+  .front-scroll-item.is-split .front-scroll-meta,
+  .front-scroll-item.is-split-pair .front-scroll-eyebrow,
+  .front-scroll-item.is-split-pair .front-scroll-meta {
+    color: inherit;
+  }
+
+  .front-scroll-item.is-split .front-scroll-cta,
+  .front-scroll-item.is-split-pair .front-scroll-cta {
+    border-color: rgba(255, 255, 255, 0.85);
+    color: #fff;
+  }
+
+  .front-scroll-item.is-split .front-scroll-cta:hover,
+  .front-scroll-item.is-split-pair .front-scroll-cta:hover {
+    background: #fff;
+    color: #111;
+  }
+
+  /* Pair collapse: primary — first image only, full bleed */
+  .front-scroll-item.is-split-pair.is-collapse-primary .front-scroll-image--a {
+    inset: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .front-scroll-item.is-split-pair.is-collapse-primary .front-scroll-image--b {
+    display: none;
+  }
+
+  /* Pair collapse: diagonal — both images as half backgrounds with a slash */
+  .front-scroll-item.is-split-pair.is-collapse-diagonal .front-scroll-image--a,
+  .front-scroll-item.is-split-pair.is-collapse-diagonal .front-scroll-image--b {
+    inset: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .front-scroll-item.is-split-pair.is-collapse-diagonal .front-scroll-image--a {
+    clip-path: polygon(0 0, 62% 0, 38% 100%, 0 100%);
+    z-index: 0;
+  }
+
+  .front-scroll-item.is-split-pair.is-collapse-diagonal .front-scroll-image--b {
+    clip-path: polygon(62% 0, 100% 0, 100% 100%, 38% 100%);
+    z-index: 0;
+  }
+
+  .front-scroll-item.is-split-pair.is-collapse-diagonal::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    /* Thin white slash aligned to the diagonal seam */
+    clip-path: polygon(60.8% 0, 63.2% 0, 39.2% 100%, 36.8% 100%);
+    background: #fff;
+  }
+
+  #front-scroll-container.is-split-active {
+    color: #fff;
+  }
+
+  #front-scroll-container.is-split-active .front-scroll-progress-segment {
+    background: rgba(255, 255, 255, 0.35);
+  }
+
+  #front-scroll-container.is-split-active .front-scroll-progress-segment.is-active {
+    background: #fff;
+  }
+}
+
 @media (max-width: 700px) {
-  .front-scroll-overlay {
+  .front-scroll-overlay,
+  .front-scroll-item.is-split .front-scroll-overlay,
+  .front-scroll-item.is-split-pair .front-scroll-overlay {
     bottom: clamp(5.5rem, 14vh, 7rem);
   }
 
