@@ -28,6 +28,7 @@ import ParcViewExpo from "./pages/exhibitions/ParcViewExpo";
 
 import './css/App.css'
 import Footer from "./components/Footer";
+import OnlineExhibition from "./pages/exhibitions/OnlineExhibition";
 
 function App() {
   return (
@@ -55,13 +56,14 @@ function App() {
         </Route>
         {/* Exhibitions */}
         <Route path="/exhibitions" element={<ExhibitionsLayout />}>
-          <Route index element={<ExhibitionsHome />} />
-          <Route path="parcviewexpo" element={<ParcViewExpo />} />
-          <Route path="spukhaus2023" element={<Spukhaus2023 />} />
-          <Route path="afocontent2024" element={<AfoContent2024 />} />
-          <Route path="paprsalonshow2025" element={<PaprSalonShow2025 />} />
-          <Route path="srisasummera" element={<SriSaSummerA />} />
-          <Route path="srisasummerb" element={<SriSaSummerB />} />
+            <Route index element={<ExhibitionsHome />} />
+            <Route path="onlineexhibition" element={<OnlineExhibition />} />
+            <Route path="parcviewexpo" element={<ParcViewExpo />} />
+            <Route path="spukhaus2023" element={<Spukhaus2023 />} />
+            <Route path="afocontent2024" element={<AfoContent2024 />} />
+            <Route path="paprsalonshow2025" element={<PaprSalonShow2025 />} />
+            <Route path="srisasummera" element={<SriSaSummerA />} />
+            <Route path="srisasummerb" element={<SriSaSummerB />} />
         </Route>
 
       </Routes>

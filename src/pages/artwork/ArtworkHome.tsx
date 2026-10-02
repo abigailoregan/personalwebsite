@@ -1,65 +1,16 @@
-import { Link } from 'react-router-dom';
 import '../../css/ArtworkHome.css';
+import LinkTile from '../../components/LinkTile';
 
 function ArtworkHome() {
   return (
     <div className='content'>
-      <div className='cover-photo'>
-        <img src='/images/abstract/cover.png' alt='Abstract' />
-        <Link to='/artwork/abstract'>
-          <div className='backdrop'>
-            <div className='text-desc'>Abstract</div>
-          </div>
-        </Link>
-      </div>
-      <div className='cover-photo'>
-        <img src='/images/figures/cover.jpg' alt='Figures' />
-        <Link to='/artwork/figures'>
-          <div className='backdrop'>
-            <div className='text-desc'>Figures</div>
-          </div>
-        </Link>
-      </div>
-      <div className='cover-photo'>
-        <img src='/images/landscapes/cover.png' alt='Landscapes' />
-        <Link to='/artwork/landscapes'>
-          <div className='backdrop'>
-            <div className='text-desc'>Landscapes</div>
-          </div>
-        </Link>
-      </div>
-      <div className='cover-photo'>
-        <img src='/images/love/cover.png' alt='Love' />
-        <Link to='/artwork/love'>
-          <div className='backdrop'>
-            <div className='text-desc'>Love</div>
-          </div>
-        </Link>
-      </div>
-      <div className='cover-photo'>
-        <img src='/images/murals/cover.png' alt='Murals' />
-        <Link to='/artwork/murals'>
-          <div className='backdrop'>
-            <div className='text-desc'>Murals</div>
-          </div>
-        </Link>
-      </div>
-      <div className='cover-photo'>
-        <img src='/images/portraits/cover.png' alt='Portraits' />
-        <Link to='/artwork/portraits'>
-          <div className='backdrop'>
-            <div className='text-desc'>Portraits</div>
-          </div>
-        </Link>
-      </div>
-      <div className='cover-photo'>
-        <img src='/images/stills/cover.png' alt='Still Lifes' />
-        <Link to='/artwork/stills'>
-          <div className='backdrop'>
-            <div className='text-desc'>Still Lifes</div>
-          </div>
-        </Link>
-      </div>
+        <LinkTile title='Abstract' image='/images/abstract/cover.png' link='/artwork/abstract' />
+        <LinkTile title='Figures' image='/images/figures/cover.jpg' link='/artwork/figures' />
+        <LinkTile title='Landscapes' image='/images/landscapes/cover.png' link='/artwork/landscapes' />
+        <LinkTile title='Love' image='/images/love/cover.png' link='/artwork/love' />
+        <LinkTile title='Murals' image='/images/murals/cover.png' link='/artwork/murals' />
+        <LinkTile title='Portraits' image='/images/portraits/cover.png' link='/artwork/portraits' />
+        <LinkTile title='Still Lifes' image='/images/stills/cover.png' link='/artwork/stills' />
     </div>
   );
 }

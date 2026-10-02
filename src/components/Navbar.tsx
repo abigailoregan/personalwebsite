@@ -13,6 +13,7 @@ const ARTWORK_CATEGORIES = [
 ]
 
 const EXHIBITIONS = [
+    { name: 'Virtual Exhibition', path: 'onlineexhibition' },
     { name: 'Parc View Art Expo', path: 'parcviewexpo' },
     { name: 'SRISA SUMMER B Art Exhibition', path: 'srisasummerb' },
     { name: 'SRISA SUMMER A Art Exhibition', path: 'srisasummera' },
@@ -75,7 +76,6 @@ function Navbar() {
 
                 <Link to='/about' onClick={toggleMenu}><span className='nav_button'>About</span></Link>
                 <Link to='/contact' onClick={toggleMenu}><span className='nav_button'>Contact</span></Link>
-                <Link to='/cv' onClick={toggleMenu}><span className='nav_button'>CV</span></Link>
             </div>
         </div>
     )
