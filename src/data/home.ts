@@ -140,7 +140,6 @@ export const slides: Slide[] = [
   {
     id: 'split-14',
     image: '/images/frontscroll/14.JPG',
-    layout: 'split',
     eyebrow: 'Artwork',
     title: 'Selected Work',
     subtitle: 'FEATURED PIECE',
@@ -150,7 +149,7 @@ export const slides: Slide[] = [
   {
     id: 'on-view',
     image: '/images/frontscroll/15.png',
-    shift: 5,
+    layout: 'split',
     eyebrow: 'Exhibitions',
     title: 'On View',
     subtitle: 'CURRENT & PAST SHOWS',
@@ -160,6 +159,7 @@ export const slides: Slide[] = [
   {
     id: 'about',
     image: '/images/frontscroll/16.png',
+    shift: 15,
     eyebrow: 'About',
     title: "Abigail O'Regan",
     subtitle: 'ARTIST',
