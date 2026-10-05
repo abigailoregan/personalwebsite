@@ -35,8 +35,11 @@ function FrontScroll() {
       {slides.map((slide, i) => {
         const isSplit = slide.layout === 'split'
         const isSplitPair = slide.layout === 'split-pair'
-        const isFullSlide = slide.layout === 'full-slide'
+        const isDiagonalPair =
+          isSplitPair && slide.collapse === 'diagonal'
         const isAnySplit = isSplit || isSplitPair
+        const isFull = !isAnySplit
+        const usesShift = isFull || isDiagonalPair
 
         return (
           <article
@@ -45,11 +48,8 @@ function FrontScroll() {
               'front-scroll-item',
               isSplit ? 'is-split' : '',
               isSplitPair ? 'is-split-pair' : '',
-              !isAnySplit ? 'is-full' : '',
-              isFullSlide ? 'is-full-slide' : '',
-              isSplitPair && slide.collapse === 'diagonal'
-                ? 'is-collapse-diagonal'
-                : '',
+              isFull ? 'is-full' : '',
+              isDiagonalPair ? 'is-collapse-diagonal' : '',
               isSplitPair && slide.collapse === 'primary'
                 ? 'is-collapse-primary'
                 : '',
@@ -58,8 +58,13 @@ function FrontScroll() {
               .filter(Boolean)
               .join(' ')}
             style={
-              isFullSlide && slide.fullSlideShift != null
-                ? { ['--full-slide-shift' as string]: `${slide.fullSlideShift}%` }
+              usesShift
+                ? {
+                    ['--slide-shift' as string]: `${slide.shift ?? 0}%`,
+                    // true/default = down (-1); false = up (+1)
+                    ['--slide-shift-sign' as string]:
+                      slide.shiftDown === false ? 1 : -1,
+                  }
                 : undefined
             }
             aria-hidden={i !== index}

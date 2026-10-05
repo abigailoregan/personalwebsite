@@ -37,12 +37,14 @@
   display: block;
 }
 
-/* full-slide: smoothly bias the cover crop downward as the viewport widens (no extra zoom) */
-.front-scroll-item.is-full-slide .front-scroll-image {
+/* Full + diagonal-pair slides: optional cover-crop shift as the viewport widens */
+.front-scroll-item.is-full .front-scroll-image,
+.front-scroll-item.is-collapse-diagonal .front-scroll-image {
   /* progress 0 below burger breakpoint, 1 at large desktop */
-  --full-slide-t: clamp(0, (100vw - 981px) / 819px, 1);
-  /* --full-slide-shift set per slide (e.g. 55% / 40%) */
-  object-position: center calc(50% - var(--full-slide-t) * var(--full-slide-shift, 40%));
+  --slide-t: clamp(0, (100vw - 981px) / 819px, 1);
+  /* sign -1 = down, +1 = up; shift amount from --slide-shift */
+  object-position: center
+    calc(50% + var(--slide-shift-sign, -1) * var(--slide-t) * var(--slide-shift, 0%));
 }
 
 .front-scroll-gradient {
@@ -247,7 +249,6 @@
   height: 100%;
   transform: none;
   object-fit: cover;
-  object-position: center;
 }
 
 .front-scroll-item.is-split-pair.is-collapse-diagonal .front-scroll-image--a {
@@ -301,7 +302,6 @@
     width: 66%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
     /* Same diagonal seam, remapped into the left 66% box */
     clip-path: polygon(0 0, 93.9% 0, 57.6% 100%, 0 100%);
   }
@@ -315,7 +315,6 @@
     width: 66%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
     /* Same diagonal seam, remapped into the right 66% box */
     clip-path: polygon(42.4% 0, 100% 0, 100% 100%, 6.1% 100%);
   }

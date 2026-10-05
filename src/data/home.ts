@@ -5,12 +5,17 @@ export type Slide = {
   subtitle: string
   meta: string
   cta: { label: string; to: string }
-  layout?: 'full' | 'full-slide' | 'split' | 'split-pair'
+  layout?: 'full' | 'split' | 'split-pair'
   /**
-   * Max downward object-position shift (%) for full-slide layouts.
-   * Used as: object-position: center calc(50% - t * N%)
+   * Max object-position shift (%) as the viewport widens.
+   * Optional; defaults to 0.
    */
-  fullSlideShift?: number
+  shift?: number
+  /**
+   * Shift direction: true = down, false = up.
+   * Optional; defaults to true (down).
+   */
+  shiftDown?: boolean
   /** Primary / single image (full + single-split slides). */
   image?: string
   /** Pair of images for split-pair slides. */
@@ -84,8 +89,7 @@ export const slides: Slide[] = [
   {
     id: 'full-08',
     image: '/images/frontscroll/08.JPG',
-    layout: 'full-slide',
-    fullSlideShift: 55,
+    shift: 55,
     eyebrow: 'Artwork',
     title: 'In Focus',
     subtitle: 'PAINTING',
@@ -96,6 +100,7 @@ export const slides: Slide[] = [
     id: 'pair-09-10',
     layout: 'split-pair',
     images: ['/images/frontscroll/09.jpg', '/images/frontscroll/10.jpg'],
+    shift: 70,
     collapse: 'diagonal',
     eyebrow: 'Artwork',
     title: 'Selected Works',
@@ -106,8 +111,7 @@ export const slides: Slide[] = [
   {
     id: 'full-11',
     image: '/images/frontscroll/11.jpg',
-    layout: 'full-slide',
-    fullSlideShift: 35,
+    shift: 35,
     eyebrow: 'Artwork',
     title: 'In Focus',
     subtitle: 'PAINTING',
@@ -146,6 +150,7 @@ export const slides: Slide[] = [
   {
     id: 'on-view',
     image: '/images/frontscroll/15.png',
+    shift: 5,
     eyebrow: 'Exhibitions',
     title: 'On View',
     subtitle: 'CURRENT & PAST SHOWS',
