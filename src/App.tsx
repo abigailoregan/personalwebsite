@@ -11,7 +11,6 @@ import ArtworkHome from "./pages/artwork/ArtworkHome";
 import Abstract from "./pages/artwork/Abstract";
 import Figures from "./pages/artwork/Figures";
 import Landscapes from "./pages/artwork/Landscapes";
-import Love from "./pages/artwork/Love";
 import Murals from "./pages/artwork/Murals";
 import Portraits from "./pages/artwork/Portraits";
 import Stills from "./pages/artwork/Stills";
@@ -24,10 +23,11 @@ import PaprSalonShow2025 from "./pages/exhibitions/PaprSalonShow2025";
 import SriSaSummerA from "./pages/exhibitions/SriSaSummerA";
 import SriSaSummerB from "./pages/exhibitions/SriSaSummerB";
 import ParcViewExpo from "./pages/exhibitions/ParcViewExpo";
+import Portfolio2025 from "./pages/exhibitions/Portfolio2025";
+import Love from "./pages/exhibitions/Love";
 
 import './css/App.css'
 import Footer from "./components/Footer";
-import OnlineExhibition from "./pages/exhibitions/OnlineExhibition";
 
 function App() {
   return (
@@ -47,7 +47,6 @@ function App() {
           <Route path="abstract" element={<Abstract />} />
           <Route path="figures" element={<Figures />} />
           <Route path="landscapes" element={<Landscapes />} />
-          <Route path="love" element={<Love />} />
           <Route path="murals" element={<Murals />} />
           <Route path="portraits" element={<Portraits />} />
           <Route path="stills" element={<Stills />} />
@@ -55,10 +54,11 @@ function App() {
         {/* Exhibitions */}
         <Route path="/exhibitions" element={<ExhibitionsLayout />}>
             <Route index element={<ExhibitionsHome />} />
-            <Route path="onlineexhibition" element={<OnlineExhibition />} />
+            <Route path="2025portfolio" element={<Portfolio2025 />} />
             <Route path="parcviewexpo" element={<ParcViewExpo />} />
             <Route path="spukhaus2023" element={<Spukhaus2023 />} />
             <Route path="afocontent2024" element={<AfoContent2024 />} />
+            <Route path="love" element={<Love />} />
             <Route path="paprsalonshow2025" element={<PaprSalonShow2025 />} />
             <Route path="srisasummera" element={<SriSaSummerA />} />
             <Route path="srisasummerb" element={<SriSaSummerB />} />

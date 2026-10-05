@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { artworks } from "../data/artworkhome";
+import { portfolio25 } from "../data/portfolio25";
 import "../css/Home3DCarousel.css";
 
 export default function Home3DCarousel() {
@@ -15,18 +15,18 @@ export default function Home3DCarousel() {
     // Only restart if viewer is NOT open
     if (!viewerImage) {
       autoScrollRef.current = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % artworks.length);
+        setCurrentIndex((prev) => (prev + 1) % portfolio25.length);
       }, 10000);
     }
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + artworks.length) % artworks.length);
+    setCurrentIndex((prev) => (prev - 1 + portfolio25.length) % portfolio25.length);
     resetAutoScroll();
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % artworks.length);
+    setCurrentIndex((prev) => (prev + 1) % portfolio25.length);
     resetAutoScroll();
   };
 
@@ -57,19 +57,19 @@ export default function Home3DCarousel() {
     <>
       <div className="carousel-container">
         <div className="carousel-wrapper">
-          {artworks.map((artwork, index) => {
+          {portfolio25.map((piece, index) => {
             let offset = index - currentIndex;
 
-            if (offset < -Math.floor(artworks.length / 2)) {
-              offset += artworks.length;
+            if (offset < -Math.floor(portfolio25.length / 2)) {
+              offset += portfolio25.length;
             }
-            if (offset > Math.floor(artworks.length / 2)) {
-              offset -= artworks.length;
+            if (offset > Math.floor(portfolio25.length / 2)) {
+              offset -= portfolio25.length;
             }
 
             return (
               <div
-                key={artwork.title}
+                key={piece.title}
                 className="carousel-card"
                 style={{
                   transform: `
@@ -82,12 +82,12 @@ export default function Home3DCarousel() {
                 }}
               >
                 <div className="carousel-image-wrapper">
-                  <img src={artwork.image} alt={artwork.title} />
+                  <img src={piece.image} alt={piece.title} />
 
                   <div className="carousel-hover">
                     <button
                       onClick={() =>
-                        setViewerImage(artwork.hiRes || artwork.image)
+                        setViewerImage(piece.hiRes || piece.image)
                       }
                     >
                       View
@@ -96,9 +96,9 @@ export default function Home3DCarousel() {
                 </div>
 
                 <div className="carousel-info">
-                  <h3>{artwork.title}</h3>
-                  <p>{artwork.medium}</p>
-                  <p>{artwork.description}</p>
+                  <h3>{piece.title}</h3>
+                  <p>{piece.medium}</p>
+                  <p>{piece.description}</p>
                 </div>
               </div>
             );

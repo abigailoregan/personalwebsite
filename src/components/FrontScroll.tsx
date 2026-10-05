@@ -1,95 +1,15 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { slides } from '../data/home'
 import '../css/FrontScroll.css'
-
-type Slide = {
-  id: string
-  eyebrow: string
-  title: string
-  subtitle: string
-  meta: string
-  cta: { label: string; to: string }
-  layout?: 'full' | 'split' | 'split-pair'
-  /** Primary / single image (full + single-split slides). */
-  image?: string
-  /** Pair of images for split-pair slides. */
-  images?: [string, string]
-  /**
-   * Narrow-screen behavior for split-pair:
-   * - diagonal: both images as half-backgrounds with a slash
-   * - primary: only the first image fills the slide
-   */
-  collapse?: 'diagonal' | 'primary'
-}
-
-const slides: Slide[] = [
-  {
-    id: 'recent-work',
-    image: '/images/frontscroll/04.jpg',
-    eyebrow: 'Artwork',
-    title: 'Recent Work',
-    subtitle: 'PAINTINGS & DRAWINGS',
-    meta: 'Selected pieces',
-    cta: { label: 'Explore Now', to: '/artwork' },
-  },
-  {
-    id: 'on-view',
-    image: '/images/frontscroll/15.png',
-    eyebrow: 'Exhibitions',
-    title: 'On View',
-    subtitle: 'CURRENT & PAST SHOWS',
-    meta: 'Gallery installations',
-    cta: { label: 'Explore Now', to: '/exhibitions' },
-  },
-  {
-    id: 'studio-portrait',
-    image: '/images/frontscroll/12.JPG',
-    layout: 'split',
-    eyebrow: 'Featured',
-    title: "Abigail O'Regan",
-    subtitle: 'Studio Portrait',
-    meta: 'Artist',
-    cta: { label: 'Learn More', to: '/about' },
-  },
-  {
-    id: 'pair-09-10',
-    layout: 'split-pair',
-    images: ['/images/frontscroll/09.jpg', '/images/frontscroll/10.jpg'],
-    collapse: 'diagonal',
-    eyebrow: 'Artwork',
-    title: 'Selected Works',
-    subtitle: 'PAIR STUDY',
-    meta: 'Two pieces',
-    cta: { label: 'Explore Now', to: '/artwork' },
-  },
-  {
-    id: 'pair-02-01',
-    layout: 'split-pair',
-    images: ['/images/frontscroll/01.JPG', '/images/frontscroll/02.jpg'],
-    collapse: 'primary',
-    eyebrow: 'Artwork',
-    title: 'Featured Pair',
-    subtitle: 'STUDIES',
-    meta: 'Selected pieces',
-    cta: { label: 'Explore Now', to: '/artwork' },
-  },
-  {
-    id: 'about',
-    image: '/images/frontscroll/16.png',
-    eyebrow: 'About',
-    title: "Abigail O'Regan",
-    subtitle: 'ARTIST',
-    meta: 'Biography & statement',
-    cta: { label: 'Learn More', to: '/about' },
-  },
-]
 
 function FrontScroll() {
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
   const active = slides[index]
   const isSplitActive =
-    active.layout === 'split' || active.layout === 'split-pair'
+    active.layout === 'split' ||
+    (active.layout === 'split-pair' && active.collapse !== 'diagonal')
 
   useEffect(() => {
     if (paused) return
@@ -115,6 +35,7 @@ function FrontScroll() {
       {slides.map((slide, i) => {
         const isSplit = slide.layout === 'split'
         const isSplitPair = slide.layout === 'split-pair'
+        const isFullSlide = slide.layout === 'full-slide'
         const isAnySplit = isSplit || isSplitPair
 
         return (
@@ -125,6 +46,7 @@ function FrontScroll() {
               isSplit ? 'is-split' : '',
               isSplitPair ? 'is-split-pair' : '',
               !isAnySplit ? 'is-full' : '',
+              isFullSlide ? 'is-full-slide' : '',
               isSplitPair && slide.collapse === 'diagonal'
                 ? 'is-collapse-diagonal'
                 : '',
@@ -135,6 +57,11 @@ function FrontScroll() {
             ]
               .filter(Boolean)
               .join(' ')}
+            style={
+              isFullSlide && slide.fullSlideShift != null
+                ? { ['--full-slide-shift' as string]: `${slide.fullSlideShift}%` }
+                : undefined
+            }
             aria-hidden={i !== index}
           >
             {isSplitPair && slide.images ? (

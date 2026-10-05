@@ -1,4 +1,4 @@
-export interface ArtworkHome {
+export interface Portfolio25 {
   title: string
   medium: string
   description: string
@@ -7,7 +7,7 @@ export interface ArtworkHome {
   dimensions?: string
 }
 
-export const artworks: ArtworkHome[] = [
+export const portfolio25: Portfolio25[] = [
   {
     title: "Ingested",
     medium: "Oil, Acrylic, and pieces of food on canvas, each 18” x 24”.",

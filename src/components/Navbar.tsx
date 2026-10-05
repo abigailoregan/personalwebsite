@@ -6,18 +6,18 @@ const ARTWORK_CATEGORIES = [
     { name: 'Abstract', path: 'abstract' },
     { name: 'Figures', path: 'figures' },
     { name: 'Landscapes', path: 'landscapes' },
-    { name: 'Love', path: 'love' },
     { name: 'Murals', path: 'murals' },
     { name: 'Portraits', path: 'portraits' },
     { name: 'Still Lifes', path: 'stills' },
 ]
 
 const EXHIBITIONS = [
-    { name: 'Virtual Exhibition', path: 'onlineexhibition' },
     { name: 'Parc View Art Expo', path: 'parcviewexpo' },
+    { name: '2025 Portfolio', path: '2025portfolio' },
     { name: 'SRISA SUMMER B Art Exhibition', path: 'srisasummerb' },
     { name: 'SRISA SUMMER A Art Exhibition', path: 'srisasummera' },
     { name: 'PAPR Salon Show 2025', path: 'paprsalonshow2025' },
+    { name: 'Love', path: 'love' },
     { name: 'AFO CONTENT 2024', path: 'afocontent2024' },
     { name: 'Spukhaus 2023', path: 'spukhaus2023' },
 ]
