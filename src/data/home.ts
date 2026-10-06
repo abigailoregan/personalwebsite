@@ -43,7 +43,7 @@ export const slides: Slide[] = [
   {
     id: 'split-03',
     image: '/images/frontscroll/03.jpg',
-    layout: 'split',
+    shift: 5,
     eyebrow: 'Artwork',
     title: 'Selected Work',
     subtitle: 'FEATURED PIECE',
