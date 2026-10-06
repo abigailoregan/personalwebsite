@@ -360,26 +360,27 @@
 }
 
 .front-scroll-progress-segment {
+  position: relative;
   flex: 1;
-  height: 2px;
+  height: 3px;
   border: 0;
   padding: 0;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.35);
   cursor: pointer;
-  transition: background-color 200ms ease, height 200ms ease;
 }
 
-.front-scroll-progress-segment.is-active {
-  height: 3px;
-  background: #fff;
+.front-scroll-progress-fill {
+  position: absolute;
+  inset: 0;
+  background: var(--violetdark, --violetdark);
+  transform: scaleX(0);
+  transform-origin: left center;
+  pointer-events: none;
 }
 
 #front-scroll-container.is-split-active .front-scroll-progress-segment {
   background: rgba(0, 0, 0, 0.2);
-}
-
-#front-scroll-container.is-split-active .front-scroll-progress-segment.is-active {
-  background: #111;
 }
 
 .front-scroll-nav {
@@ -475,10 +476,6 @@
 
   #front-scroll-container.is-split-active .front-scroll-progress-segment {
     background: rgba(255, 255, 255, 0.35);
-  }
-
-  #front-scroll-container.is-split-active .front-scroll-progress-segment.is-active {
-    background: #fff;
   }
 }
 

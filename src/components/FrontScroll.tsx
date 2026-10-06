@@ -1,27 +1,52 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { slides } from '../data/home'
 import '../css/FrontScroll.css'
 
+const SLIDE_MS = 6000
+
 function FrontScroll() {
   const [index, setIndex] = useState(0)
   const [paused, setPaused] = useState(false)
+  const [progress, setProgress] = useState(0)
+  const progressRef = useRef(0)
   const active = slides[index]
   const isSplitActive =
     active.layout === 'split' ||
     (active.layout === 'split-pair' && active.collapse !== 'diagonal')
 
   useEffect(() => {
+    progressRef.current = progress
+  }, [progress])
+
+  useEffect(() => {
     if (paused) return
 
-    const id = window.setInterval(() => {
-      setIndex((current) => (current + 1) % slides.length)
-    }, 6000)
+    let frame = 0
+    const startedAt = performance.now() - progressRef.current * SLIDE_MS
 
-    return () => window.clearInterval(id)
+    const tick = (now: number) => {
+      const next = Math.min(1, (now - startedAt) / SLIDE_MS)
+      progressRef.current = next
+      setProgress(next)
+
+      if (next >= 1) {
+        setIndex((current) => (current + 1) % slides.length)
+        progressRef.current = 0
+        setProgress(0)
+        return
+      }
+
+      frame = window.requestAnimationFrame(tick)
+    }
+
+    frame = window.requestAnimationFrame(tick)
+    return () => window.cancelAnimationFrame(frame)
   }, [paused, index])
 
   const goTo = (next: number) => {
+    progressRef.current = 0
+    setProgress(0)
     setIndex((next + slides.length) % slides.length)
   }
 
@@ -122,17 +147,27 @@ function FrontScroll() {
         </button>
 
         <div className="front-scroll-progress" role="tablist" aria-label="Slides">
-          {slides.map((slide, i) => (
-            <button
-              key={slide.id}
-              type="button"
-              role="tab"
-              aria-selected={i === index}
-              className={`front-scroll-progress-segment${i === index ? ' is-active' : ''}`}
-              onClick={() => goTo(i)}
-              aria-label={`Go to slide ${i + 1}`}
-            />
-          ))}
+          {slides.map((slide, i) => {
+            const fill =
+              i < index ? 1 : i === index ? progress : 0
+
+            return (
+              <button
+                key={slide.id}
+                type="button"
+                role="tab"
+                aria-selected={i === index}
+                className={`front-scroll-progress-segment${i === index ? ' is-active' : ''}${i < index ? ' is-complete' : ''}`}
+                onClick={() => goTo(i)}
+                aria-label={`Go to slide ${i + 1}`}
+              >
+                <span
+                  className="front-scroll-progress-fill"
+                  style={{ transform: `scaleX(${fill})` }}
+                />
+              </button>
+            )
+          })}
         </div>
 
         <div className="front-scroll-nav">
