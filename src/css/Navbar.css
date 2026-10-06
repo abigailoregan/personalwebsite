@@ -78,7 +78,7 @@
 }
 
 /* Desktop Hover Trigger */
-@media (min-width: 769px) {
+@media (min-width: 981px) {
     .nav_dropdown:hover .nav_drop_content {
         max-height: 600px;
     }
@@ -88,7 +88,7 @@
     .mobile_arrow, #mobile_menu_icon { display: none; }
 }
 
-/* --- Mobile Redesign (768px and below) --- */
+/* --- Mobile Redesign --- */
 @media only screen and (max-width: 980px) {
     .navbar {
         width: 100%;
@@ -134,17 +134,16 @@
         gap: 1em;
         transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
         box-sizing: border-box;
+        overflow-y: auto;
     }
 
     #nav_buttton_container.active { right: 0; }
 
-    /* Accordion Style Links */
     .nav_header_wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-bottom: 1px solid #eee;
-        padding-bottom: 0.5em;
+        cursor: pointer;
     }
 
     .nav_button { font-size: 1.5em; }
@@ -153,7 +152,8 @@
         width: 30px;
         height: 30px;
         position: relative;
-        cursor: pointer;
+        flex-shrink: 0;
+        pointer-events: none;
     }
 
     .mobile_arrow::before {
@@ -161,24 +161,37 @@
         font-size: 1.5em;
         position: absolute;
         right: 0;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .nav_dropdown.mobile_open .mobile_arrow::before { content: '-'; }
 
+    /* Match desktop violet dropdown look */
     .nav_drop_content {
         position: static;
-        background-color: #fafafa;
+        background-color: var(--violet);
         width: 100%;
+        transition: max-height 300ms ease-in-out, margin-top 300ms ease-in-out;
     }
 
     .nav_dropdown.mobile_open .nav_drop_content {
-        max-height: 500px;
+        max-height: 600px;
         margin-top: 0.5em;
     }
 
+    .exhibitions_width {
+        width: 100%;
+    }
+
     .nav_drop_content a {
-        color: var(--violetdark);
-        font-size: 1.1em;
-        padding: 0.8em 1em;
+        color: #FFF;
+        font-size: 0.95em;
+        padding: 0.7em 1em;
+        white-space: normal;
+    }
+
+    .nav_drop_content a:hover {
+        background-color: var(--violetdark);
     }
 }

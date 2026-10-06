@@ -10,18 +10,29 @@
     font-size: 3rem;
 }
 
+.abt-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+    width: min(92vw, 70rem);
+}
+
 #abt-im1 {
-    max-width: 34rem;
-    width: 90vw;
+    width: 48%;
+    max-width: none;
+    height: auto;
+    object-fit: cover;
+    object-view-box: inset(15% 0 0 0);
+    flex: 1 1 48%;
 }
 
 #abt-container-p {
-    max-width: 52rem;
-    width: 90vw;
-    margin: 0 1vw;
-    padding: 0 2.5vw;
-    border-left: 1px solid #666;
-    border-right: 1px solid #666;
+    width: 48%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    flex: 1 1 48%;
 }
 
 .abt-p {
@@ -31,4 +42,18 @@
 #abt-im2 {
     max-width: 52rem;
     width: 90vw;
+}
+
+@media (max-width: 700px) {
+    .abt-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    #abt-im1,
+    #abt-container-p {
+        width: 100%;
+        flex: 1 1 auto;
+    }
 }

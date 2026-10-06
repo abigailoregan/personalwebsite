@@ -22,6 +22,9 @@ const EXHIBITIONS = [
     { name: 'Spukhaus 2023', path: 'spukhaus2023' },
 ]
 
+const isMobileNav = () =>
+    typeof window !== 'undefined' && window.matchMedia('(max-width: 980px)').matches
+
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [mobileSubmenu, setMobileSubmenu] = useState<string | null>(null)
@@ -33,6 +36,13 @@ function Navbar() {
 
     const toggleSubmenu = (name: string) => {
         setMobileSubmenu(mobileSubmenu === name ? null : name)
+    }
+
+    const handleSectionClick = (e: React.MouseEvent) => {
+        // Name click navigates; stop bubbling so the wrapper doesn't toggle instead.
+        e.stopPropagation()
+        setIsMenuOpen(false)
+        setMobileSubmenu(null)
     }
 
     return (
@@ -50,9 +60,20 @@ function Navbar() {
                 
                 {/* Artwork Section */}
                 <div className={`nav_dropdown ${mobileSubmenu === 'artwork' ? 'mobile_open' : ''}`}>
-                    <div className='nav_header_wrapper'>
-                        <Link to='/artwork' className='nav_button' onClick={toggleMenu}>Artwork</Link>
-                        <span className='mobile_arrow' onClick={() => toggleSubmenu('artwork')}></span>
+                    <div
+                        className='nav_header_wrapper'
+                        onClick={() => {
+                            if (isMobileNav()) toggleSubmenu('artwork')
+                        }}
+                    >
+                        <Link
+                            to='/artwork'
+                            className='nav_button'
+                            onClick={handleSectionClick}
+                        >
+                            Artwork
+                        </Link>
+                        <span className='mobile_arrow'></span>
                     </div>
                     <div className='nav_drop_content'>
                         {ARTWORK_CATEGORIES.map((cat) => (
@@ -63,9 +84,20 @@ function Navbar() {
 
                 {/* Exhibitions Section */}
                 <div className={`nav_dropdown ${mobileSubmenu === 'exhibitions' ? 'mobile_open' : ''}`}>
-                    <div className='nav_header_wrapper'>
-                        <Link to='/exhibitions' className='nav_button' onClick={toggleMenu}>Exhibitions</Link>
-                        <span className='mobile_arrow' onClick={() => toggleSubmenu('exhibitions')}></span>
+                    <div
+                        className='nav_header_wrapper'
+                        onClick={() => {
+                            if (isMobileNav()) toggleSubmenu('exhibitions')
+                        }}
+                    >
+                        <Link
+                            to='/exhibitions'
+                            className='nav_button'
+                            onClick={handleSectionClick}
+                        >
+                            Exhibitions
+                        </Link>
+                        <span className='mobile_arrow'></span>
                     </div>
                     <div className='nav_drop_content exhibitions_width'>
                         {EXHIBITIONS.map((ex) => (
