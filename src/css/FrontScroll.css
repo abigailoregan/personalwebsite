@@ -42,9 +42,17 @@
 .front-scroll-item.is-collapse-diagonal .front-scroll-image {
   /* progress 0 below burger breakpoint, 1 at large desktop */
   --slide-t: clamp(0, (100vw - 981px) / 819px, 1);
-  /* sign -1 = down, +1 = up; shift amount from --slide-shift */
+  /*
+   * sign -1 = down, +1 = up; shift amount from --slide-shift.
+   * Clamp to 0%–100% so extreme shifts can't uncover the box
+   * (black bars under the navbar / above the image).
+   */
   object-position: center
-    calc(50% + var(--slide-shift-sign, -1) * var(--slide-t) * var(--slide-shift, 0%));
+    clamp(
+      0%,
+      calc(50% + var(--slide-shift-sign, -1) * var(--slide-t) * var(--slide-shift, 0%)),
+      100%
+    );
 }
 
 .front-scroll-gradient {
