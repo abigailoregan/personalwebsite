@@ -47,7 +47,7 @@ function App() {
           <Route path="abstract" element={<Abstract />} />
           <Route path="figures" element={<Figures />} />
           <Route path="landscapes" element={<Landscapes />} />
-          <Route path="murals" element={<Murals />} />
+          <Route path="installations" element={<Murals />} />
           <Route path="portraits" element={<Portraits />} />
           <Route path="stills" element={<Stills />} />
         </Route>

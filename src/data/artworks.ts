@@ -88,6 +88,14 @@ export const artworks: Record<string, ArtworkItem[]> = {
             desc:'Ingested, Oil, Acrylic, and pieces of food on canvas, each 18"x24"',
             height: 807,
             width: 2048
+        },
+        {
+            id:"abstract-11",
+            img:"/images/abstract/05.jpg",
+            imgH:"/images/frontscroll/05.jpg",
+            desc:'Trip, Oil on canvas, 18"x24"',
+            height: 1000,
+            width: 1354
         }
     ],
 
@@ -150,14 +158,6 @@ export const artworks: Record<string, ArtworkItem[]> = {
         },
         {
             id:"figures-8",
-            img:"/images/figures/abigail_zombies.jpg",
-            imgH:"/images/hi-resolution/figures/abigail_zombies.jpg",
-            desc:'Santa\'s Helpers, Oil on Canvas, 30"x22"',
-            height: 1000,
-            width: 748
-        },
-        {
-            id:"figures-9",
             img:"/images/figures/abigail_campfire.jpg",
             imgH:"/images/hi-resolution/figures/abigail_campfire.jpg",
             desc:'The James, Charcoal on Toned-Tan Drawing Paper, 36"x24"',
@@ -165,7 +165,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 746
         },
         {
-            id:"figures-10",
+            id:"figures-9",
             img:"/images/figures/abigail_tryptich.png",
             imgH:"/images/hi-resolution/figures/abigail_tryptich.png",
             desc:"Veils of the Self, Oil on canvas, two 36”x24” and other 36”x36”",
@@ -173,7 +173,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 2495
         },
         {
-            id:"figures-11",
+            id:"figures-10",
             img: "/images/figures/abigail_baby.jpg",
             imgH: "/images/hi-resolution/figures/abigail_baby.jpg",
             desc:"Childhood, Oil on canvas, two 24”x24”",
@@ -340,6 +340,14 @@ export const artworks: Record<string, ArtworkItem[]> = {
             desc:"Goddess of Justice (Co-Artist: Sophia Koo), Acrylic Mural, Meridian High School - Falls Church, VA",
             height: 1000,
             width: 800
+        },
+        {
+            id:"murals-3",
+            img:"/images/murals/04.jpg",
+            imgH:"/images/frontscroll/04.jpg",
+            desc:"Hindu Cosmology & Medetative Practice, Abstract Ephemeral Installation, Richmond, VA",
+            height: 1000,
+            width: 1500
         }
     ],
 
@@ -447,6 +455,14 @@ export const artworks: Record<string, ArtworkItem[]> = {
             desc:'Dr David J O\'Regan, Oil on Canvas, 18"x14"',
             height: 1000,
             width: 778
+        },
+        {
+            id:"portraits-14",
+            img:"/images/figures/abigail_zombies.jpg",
+            imgH:"/images/hi-resolution/figures/abigail_zombies.jpg",
+            desc:'Santa\'s Helpers, Oil on Canvas, 30"x22"',
+            height: 1000,
+            width: 748
         }
     ],
 
@@ -602,6 +618,14 @@ export const artworks: Record<string, ArtworkItem[]> = {
             desc:'Hiraeth, Oil on Canvas, 24"x18"',
             height: 1000,
             width: 750
+        },
+        {
+            id:"stills-20",
+            img:"/images/stills/12.jpg",
+            imgH:"/images/frontscroll/12.JPG",
+            desc:'Vessel of Becoming, Oil on Canvas, 30"x15"',
+            height: 1000,
+            width: 559
         }
     ]
 }
