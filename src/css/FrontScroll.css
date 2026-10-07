@@ -5,6 +5,7 @@
   overflow: hidden;
   background: #111;
   color: #fff;
+  touch-action: pan-y;
 }
 
 #front-scroll-container.is-split-active {

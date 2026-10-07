@@ -9,6 +9,13 @@ export interface Portfolio25 {
 
 export const portfolio25: Portfolio25[] = [
   {
+    title: "Heaven and Hell",
+    medium: "Oil on canvas, 40” x 30”.",
+    description: "A study of emotional opposites through color and abstraction. One painting depicting a descent into chaos and unrest, and the other shows an orderly, yet eerie serenity.",
+    image: "/images/home/abigail_heaven_hell.png",
+    hiRes: "/images/hi-resolution/landscapes/abigail_heaven_hell.png",
+  },
+  {
     title: "Ingested",
     medium: "Oil, Acrylic, and pieces of food on canvas, each 18” x 24”.",
     description: "Each painting uses color and a textural dictionary to represent how anxieties about an eating disorder feels in the body.",
@@ -21,13 +28,6 @@ export const portfolio25: Portfolio25[] = [
     description: "A lesson in covering up old work and letting go. This painting explores evolution and the surrealist qualities of imagination.",
     image: "/images/home/abigail_flowers.png",
     hiRes: "/images/hi-resolution/abstract/abigail_flowers.jpg",
-  },
-  {
-    title: "Heaven and Hell",
-    medium: "Oil on canvas, 40” x 30”.",
-    description: "A study of emotional opposites through color and abstraction. One painting depicting a descent into chaos and unrest, and the other shows an orderly, yet eerie serenity.",
-    image: "/images/home/abigail_heaven_hell.png",
-    hiRes: "/images/hi-resolution/landscapes/abigail_heaven_hell.png",
   },
   {
     title: "Cosmic Symphony",

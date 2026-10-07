@@ -10,6 +10,7 @@ function FrontScroll() {
   const [paused, setPaused] = useState(false)
   const [progress, setProgress] = useState(0)
   const progressRef = useRef(0)
+  const touchStartRef = useRef<{ x: number; y: number } | null>(null)
   const active = slides[index]
   const isSplitActive =
     active.layout === 'split' ||
@@ -44,10 +45,39 @@ function FrontScroll() {
     return () => window.cancelAnimationFrame(frame)
   }, [paused, index])
 
-  const goTo = (next: number) => {
-    progressRef.current = 0
-    setProgress(0)
-    setIndex((next + slides.length) % slides.length)
+  const goTo = (next: number, options?: { fillIfPaused?: boolean }) => {
+    const target = (next + slides.length) % slides.length
+    if (paused && options?.fillIfPaused) {
+      // Paused tab jump: mark this slide done so play advances immediately.
+      progressRef.current = 1
+      setProgress(1)
+    } else {
+      progressRef.current = 0
+      setProgress(0)
+    }
+    setIndex(target)
+  }
+
+  const onTouchStart = (e: React.TouchEvent) => {
+    if (!window.matchMedia('(max-width: 980px)').matches) return
+    const touch = e.changedTouches[0]
+    touchStartRef.current = { x: touch.clientX, y: touch.clientY }
+  }
+
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const start = touchStartRef.current
+    touchStartRef.current = null
+    if (!start || !window.matchMedia('(max-width: 980px)').matches) return
+
+    const touch = e.changedTouches[0]
+    const dx = touch.clientX - start.x
+    const dy = touch.clientY - start.y
+    const minSwipe = 48
+
+    if (Math.abs(dx) < minSwipe || Math.abs(dx) < Math.abs(dy)) return
+
+    // Swipe left → next; swipe right → previous
+    goTo(dx < 0 ? index + 1 : index - 1)
   }
 
   return (
@@ -56,6 +86,8 @@ function FrontScroll() {
       className={isSplitActive ? 'is-split-active' : undefined}
       aria-roledescription="carousel"
       aria-label="Featured work"
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
     >
       {slides.map((slide, i) => {
         const isSplit = slide.layout === 'split'
@@ -158,7 +190,7 @@ function FrontScroll() {
                 role="tab"
                 aria-selected={i === index}
                 className={`front-scroll-progress-segment${i === index ? ' is-active' : ''}${i < index ? ' is-complete' : ''}`}
-                onClick={() => goTo(i)}
+                onClick={() => goTo(i, { fillIfPaused: true })}
                 aria-label={`Go to slide ${i + 1}`}
               >
                 <span
