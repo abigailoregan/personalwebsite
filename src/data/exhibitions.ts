@@ -124,6 +124,30 @@ export const exhibitions: Record<string, ArtworkItem[]> = {
             width: 1333
         },
         {
+            id:"srisaA-2",
+            img:"/images/landscapes/florence_1.jpg",
+            imgH:"/images/hi-resolution/landscapes/florence_1.jpg",
+            desc:"Piazza della Indipendenza, Acrylic on canvas, 12”x10”",
+            height: 1183,
+            width: 1000
+        },
+        {
+            id:"srisaA-3",
+            img:"/images/landscapes/florence_2.jpg",
+            imgH:"/images/hi-resolution/landscapes/florence_2.jpg",
+            desc:"View of the Duomo from the Orto Botanico Giardino dei Semplici, Acrylic on canvas, 12”x16”",
+            height: 744,
+            width: 1000
+        },
+        {
+            id:"srisaA-4",
+            img:"/images/landscapes/florence_3.jpg",
+            imgH:"/images/hi-resolution/landscapes/florence_3.jpg",
+            desc:"Florentine Garden by the Train Tracks, Acrylic on canvas, 10”x14”",
+            height: 710,
+            width: 1000
+        },
+        {
             id: "srisaA-5",
             img:"/images/landscapes/abigail_religious.jpg",
             imgH:"/images/hi-resolution/landscapes/abigail_religious.jpg",
@@ -132,7 +156,7 @@ export const exhibitions: Record<string, ArtworkItem[]> = {
             width: 1375
         },
         {
-            id: "srisaA-2",
+            id: "srisaA-6",
             img: "/images/exhibitions/srisa_sA_watercolour.jpg",
             imgH: "/images/hi-resolution/exhibitions/srisa_sA_watercolour.jpg",
             desc: "Photo of the watercolor paintings at the exhibition",
@@ -140,7 +164,7 @@ export const exhibitions: Record<string, ArtworkItem[]> = {
             width: 1772
         },
         {
-            id: "srisaA-3",
+            id: "srisaA-7",
             img: "/images/exhibitions/srisa_sA_wall.jpg",
             imgH: "/images/hi-resolution/exhibitions/srisa_sA_wall.jpg",
             desc: "Photo of the main exhibition wall, with three of my artworks",
@@ -148,7 +172,7 @@ export const exhibitions: Record<string, ArtworkItem[]> = {
             width: 750
         },
         {
-            id: "srisaA-4",
+            id: "srisaA-8",
             img: "/images/exhibitions/srisa_sA_abigail.jpg",
             imgH: "/images/hi-resolution/exhibitions/srisa_sA_abigail.jpg",
             desc: "Photo of Abigail O'Regan at the exhibition",

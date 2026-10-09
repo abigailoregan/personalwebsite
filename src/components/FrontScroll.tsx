@@ -208,7 +208,7 @@ function FrontScroll() {
           </span>
           <button
             type="button"
-            onClick={() => goTo(index - 1)}
+            onClick={() => goTo(index - 1, { fillIfPaused: true })}
             aria-label="Previous slide"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -217,7 +217,7 @@ function FrontScroll() {
           </button>
           <button
             type="button"
-            onClick={() => goTo(index + 1)}
+            onClick={() => goTo(index + 1, { fillIfPaused: true })}
             aria-label="Next slide"
           >
             <svg viewBox="0 0 24 24" aria-hidden="true">

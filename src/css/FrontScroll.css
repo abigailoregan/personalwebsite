@@ -504,4 +504,9 @@
     grid-column: 1 / -1;
     justify-content: flex-end;
   }
+
+  /* Phone only: swipe instead of arrows (keep arrows in tablet/shrunk layout) */
+  .front-scroll-nav button {
+    display: none;
+  }
 }

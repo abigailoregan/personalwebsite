@@ -294,6 +294,30 @@ export const artworks: Record<string, ArtworkItem[]> = {
             desc:"Testament of Light, Acrylic on canvas, 12”x16”",
             height: 1000,
             width: 1375
+        },
+        {
+            id:"landscapes-15",
+            img:"/images/landscapes/florence_1.jpg",
+            imgH:"/images/hi-resolution/landscapes/florence_1.jpg",
+            desc:"Piazza della Indipendenza, Acrylic on canvas, 12”x10”",
+            height: 1183,
+            width: 1000
+        },
+        {
+            id:"landscapes-16",
+            img:"/images/landscapes/florence_2.jpg",
+            imgH:"/images/hi-resolution/landscapes/florence_2.jpg",
+            desc:"View of the Duomo from the Orto Botanico Giardino dei Semplici, Acrylic on canvas, 12”x16”",
+            height: 744,
+            width: 1000
+        },
+        {
+            id:"landscapes-17",
+            img:"/images/landscapes/florence_3.jpg",
+            imgH:"/images/hi-resolution/landscapes/florence_3.jpg",
+            desc:"Florentine Garden by the Train Tracks, Acrylic on canvas, 10”x14”",
+            height: 710,
+            width: 1000
         }
     ],
 
@@ -469,14 +493,6 @@ export const artworks: Record<string, ArtworkItem[]> = {
     stills:[
         {
             id:"stills-1",
-            img:"/images/stills/abigail_pepper2.jpg",
-            imgH:"/images/hi-resolution/stills/abigail_pepper2.jpg",
-            desc:"Pepper, digital drawing on Procreate",
-            height: 1000,
-            width: 750
-        },
-        {
-            id:"stills-2",
             img:"/images/stills/abigail_pepper1.jpg",
             imgH:"/images/hi-resolution/stills/abigail_pepper1.jpg",
             desc:'Pepper, Oil on Canvas, 10"x10"',
@@ -484,7 +500,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1013
         },
         {
-            id:"stills-3",
+            id:"stills-2",
             img:"/images/stills/abigail_bottle.jpg",
             imgH:"/images/hi-resolution/stills/abigail_bottle.jpg",
             desc:'Bottle, Oil on Canvas, 14"x14"',
@@ -492,7 +508,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1055
         },
         {
-            id:"stills-4",
+            id:"stills-3",
             img:"/images/stills/abigail_brown.jpg",
             imgH:"/images/hi-resolution/stills/abigail_brown.jpg",
             desc:"Vase, Oil on Canvas Board",
@@ -500,7 +516,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 782
         },
         {
-            id:"stills-5",
+            id:"stills-4",
             img:"/images/stills/abigail_milk.jpg",
             imgH:"/images/hi-resolution/stills/abigail_milk.jpg",
             desc:'Milk Jug, Oil on Canvas, 12"x9"',
@@ -508,7 +524,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 779
         },
         {
-            id:"stills-6",
+            id:"stills-5",
             img:"/images/stills/abigail_hopestudy.jpg",
             imgH:"/images/hi-resolution/stills/abigail_hopestudy.jpg",
             desc:'Flowers, Oil on Canvas, 10"x10"',
@@ -516,7 +532,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 750
         },
         {
-            id:"stills-7",
+            id:"stills-6",
             img:"/images/stills/abigail_echoes.jpg",
             imgH:"/images/hi-resolution/stills/abigail_echoes.jpg",
             desc:'Echos of Stillness, Charcoal on Drawing Paper, 24"x18"',
@@ -524,7 +540,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 740
         },
         {
-            id:"stills-8",
+            id:"stills-7",
             img:"/images/stills/abigail_bust.jpg",
             imgH:"/images/hi-resolution/stills/abigail_bust.jpg",
             desc:"Greek Style Bust, Oil on Canvas Board",
@@ -532,7 +548,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 757
         },
         {
-            id:"stills-9",
+            id:"stills-8",
             img:"/images/stills/abigail_orange.jpg",
             imgH:"/images/hi-resolution/stills/abigail_orange.jpg",
             desc:'Breakfast, Oil on Canvas, 20"x20"',
@@ -540,7 +556,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 997
         },
         {
-            id:"stills-10",
+            id:"stills-9",
             img:"/images/stills/abigail_grapes.jpg",
             imgH:"/images/hi-resolution/stills/abigail_grapes.jpg",
             desc:'Grapes, Oil on Canvas, 20"x20"',
@@ -548,7 +564,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1028
         },
         {
-            id:"stills-11",
+            id:"stills-10",
             img:"/images/stills/abigail_ring.jpg",
             imgH:"/images/hi-resolution/stills/abigail_ring.jpg",
             desc:'Butterfly Ring, Oil on Canvas, 24"x24"',
@@ -556,7 +572,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1000
         },
         {
-            id:"stills-12",
+            id:"stills-11",
             img:"/images/stills/abigail_bottles2.jpg",
             imgH:"/images/hi-resolution/stills/abigail_bottles2.jpg",
             desc:'Bottles Sketch, Graphite on Drawing Paper, 18"x24"',
@@ -564,7 +580,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1227
         },
         {
-            id:"stills-13",
+            id:"stills-12",
             img:"/images/stills/abigail_bottles.jpg",
             imgH:"/images/hi-resolution/stills/abigail_bottles.jpg",
             desc:'Bottles, Oil on Canvas, 24"x24"',
@@ -572,7 +588,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1014
         },
         {
-            id:"stills-14",
+            id:"stills-13",
             img:"/images/stills/abigail_teapot.jpg",
             imgH:"/images/hi-resolution/stills/abigail_teapot.jpg",
             desc:'Teapot, Oil on Canvas, 12"x12"',
@@ -580,7 +596,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1002
         },
         {
-            id:"stills-15",
+            id:"stills-14",
             img:"/images/stills/abigail_nose.jpg",
             imgH:"/images/hi-resolution/stills/abigail_nose.jpg",
             desc:'The Nose, Oil on Canvas, 16"x20"',
@@ -588,7 +604,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1248
         },
         {
-            id:"stills-16",
+            id:"stills-15",
             img:"/images/stills/abigail_cup.jpg",
             imgH:"/images/hi-resolution/stills/abigail_cup.jpg",
             desc:'Teatime, Charcoal on Paper, 18"x24"',
@@ -596,7 +612,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 1357
         },
         {
-            id:"stills-17",
+            id:"stills-16",
             img:"/images/stills/abigail_jar.jpg",
             imgH:"/images/hi-resolution/stills/abigail_jar.jpg",
             desc:'The Jar, Oil on Canvas, 24"x18"',
@@ -604,7 +620,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 770
         },
         {
-            id:"stills-18",
+            id:"stills-17",
             img:"/images/stills/abigail_bird.jpg",
             imgH:"/images/hi-resolution/stills/abigail_bird.jpg",
             desc:"Taxidermy Still Life, Charcoal on Drawing Paper",
@@ -612,7 +628,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 669
         },
         {
-            id:"stills-19",
+            id:"stills-18",
             img:"/images/stills/abigail_plush.jpg",
             imgH:"/images/hi-resolution/stills/abigail_plush.jpg",
             desc:'Hiraeth, Oil on Canvas, 24"x18"',
@@ -620,7 +636,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             width: 750
         },
         {
-            id:"stills-20",
+            id:"stills-19",
             img:"/images/stills/12.jpg",
             imgH:"/images/frontscroll/12.JPG",
             desc:'Vessel of Becoming, Oil on Canvas, 30"x15"',
@@ -745,7 +761,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-15",
             img:"/images/photography/IMG_0840.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0840.JPG",
-            desc:"Photograph",
+            desc:"Photograph, Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -753,7 +769,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-16",
             img:"/images/photography/IMG_0850.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0850.JPG",
-            desc:"Photograph",
+            desc:"Photograph, Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -761,7 +777,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-17",
             img:"/images/photography/IMG_0851.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0851.JPG",
-            desc:"Photograph",
+            desc:"Photograph, Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -769,7 +785,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-18",
             img:"/images/photography/IMG_0853.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0853.JPG",
-            desc:"Photograph",
+            desc:"Photograph, Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -777,23 +793,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-19",
             img:"/images/photography/IMG_0893.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0893.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 1499
-        },
-        {
-            id:"photography-20",
-            img:"/images/photography/IMG_0905.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0905.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 1499
-        },
-        {
-            id:"photography-21",
-            img:"/images/photography/IMG_0929.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0929.JPG",
-            desc:"Photograph",
+            desc:"Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -801,7 +801,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-22",
             img:"/images/photography/IMG_0939.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0939.JPG",
-            desc:"Photograph",
+            desc:"The Goodloe Byron Memorial Footbridge, Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -809,15 +809,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-23",
             img:"/images/photography/IMG_0963.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0963.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 1499
-        },
-        {
-            id:"photography-24",
-            img:"/images/photography/IMG_1378.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_1378.JPG",
-            desc:"Photograph",
+            desc:"St. Peter's, Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -825,7 +817,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-25",
             img:"/images/photography/IMG_1404.jpg",
             imgH:"/images/hi-resolution/photography/IMG_1404.JPG",
-            desc:"Photograph",
+            desc:"Lemon Thyme, 2026",
             height: 1000,
             width: 1499
         },
@@ -833,7 +825,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-26",
             img:"/images/photography/IMG_1421.jpg",
             imgH:"/images/hi-resolution/photography/IMG_1421.JPG",
-            desc:"Photograph",
+            desc:"Gerbera Daisies, 2026",
             height: 1000,
             width: 667
         },
@@ -841,7 +833,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-27",
             img:"/images/photography/IMG_1423.jpg",
             imgH:"/images/hi-resolution/photography/IMG_1423.JPG",
-            desc:"Photograph",
+            desc:"The Richmond Fan, 2026",
             height: 1000,
             width: 667
         },
