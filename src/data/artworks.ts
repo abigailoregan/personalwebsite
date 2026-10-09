@@ -646,42 +646,10 @@ export const artworks: Record<string, ArtworkItem[]> = {
     ],
     photography: [
         {
-            id:"photography-1",
-            img:"/images/photography/IMG_0321.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0321.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 667
-        },
-        {
-            id:"photography-2",
-            img:"/images/photography/IMG_0397.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0397.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 1499
-        },
-        {
             id:"photography-3",
             img:"/images/photography/IMG_0410.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0410.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 667
-        },
-        {
-            id:"photography-4",
-            img:"/images/photography/IMG_0423.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0423.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 667
-        },
-        {
-            id:"photography-5",
-            img:"/images/photography/IMG_0435.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0435.JPG",
-            desc:"Photograph",
+            desc:"Pizza, Richmond, 2026",
             height: 1000,
             width: 667
         },
@@ -689,15 +657,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-6",
             img:"/images/photography/IMG_0437.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0437.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 667
-        },
-        {
-            id:"photography-7",
-            img:"/images/photography/IMG_0441.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0441.JPG",
-            desc:"Photograph",
+            desc:"Up in the Clouds, Richmond, 2026",
             height: 1000,
             width: 667
         },
@@ -705,7 +665,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-8",
             img:"/images/photography/IMG_0442.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0442.JPG",
-            desc:"Photograph",
+            desc:"Hourglass, Richmond, 2026",
             height: 1000,
             width: 1499
         },
@@ -713,15 +673,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-9",
             img:"/images/photography/IMG_0443.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0443.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 1499
-        },
-        {
-            id:"photography-10",
-            img:"/images/photography/IMG_0739.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0739.JPG",
-            desc:"Photograph",
+            desc:"Révéler, Richmond, 2026",
             height: 1000,
             width: 1499
         },
@@ -729,7 +681,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-11",
             img:"/images/photography/IMG_0788.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0788.JPG",
-            desc:"Photograph",
+            desc:"Harpers Ferry Armory, Harpers Ferry, 2026",
             height: 1000,
             width: 667
         },
@@ -737,23 +689,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-12",
             img:"/images/photography/IMG_0810.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0810.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 667
-        },
-        {
-            id:"photography-13",
-            img:"/images/photography/IMG_0814.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0814.JPG",
-            desc:"Photograph",
-            height: 1000,
-            width: 1499
-        },
-        {
-            id:"photography-14",
-            img:"/images/photography/IMG_0818.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0818.JPG",
-            desc:"Photograph",
+            desc:"Strata in Stone, Harpers Ferry, 2026",
             height: 1000,
             width: 667
         },
@@ -761,7 +697,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-15",
             img:"/images/photography/IMG_0840.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0840.JPG",
-            desc:"Photograph, Harpers Ferry, 2026",
+            desc:"Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -769,7 +705,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-16",
             img:"/images/photography/IMG_0850.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0850.JPG",
-            desc:"Photograph, Harpers Ferry, 2026",
+            desc:"Philip Frankel & Co., Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -777,23 +713,7 @@ export const artworks: Record<string, ArtworkItem[]> = {
             id:"photography-17",
             img:"/images/photography/IMG_0851.jpg",
             imgH:"/images/hi-resolution/photography/IMG_0851.JPG",
-            desc:"Photograph, Harpers Ferry, 2026",
-            height: 1000,
-            width: 1499
-        },
-        {
-            id:"photography-18",
-            img:"/images/photography/IMG_0853.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0853.JPG",
-            desc:"Photograph, Harpers Ferry, 2026",
-            height: 1000,
-            width: 1499
-        },
-        {
-            id:"photography-19",
-            img:"/images/photography/IMG_0893.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_0893.JPG",
-            desc:"Harpers Ferry, 2026",
+            desc:"Adams Express Office, Harpers Ferry, 2026",
             height: 1000,
             width: 1499
         },
@@ -828,14 +748,6 @@ export const artworks: Record<string, ArtworkItem[]> = {
             desc:"Gerbera Daisies, 2026",
             height: 1000,
             width: 667
-        },
-        {
-            id:"photography-27",
-            img:"/images/photography/IMG_1423.jpg",
-            imgH:"/images/hi-resolution/photography/IMG_1423.JPG",
-            desc:"The Richmond Fan, 2026",
-            height: 1000,
-            width: 667
-        },
+        }
     ]
 }
