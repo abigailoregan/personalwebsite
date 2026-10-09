@@ -14,6 +14,7 @@ import Landscapes from "./pages/artwork/Landscapes";
 import Murals from "./pages/artwork/Murals";
 import Portraits from "./pages/artwork/Portraits";
 import Stills from "./pages/artwork/Stills";
+import Photography from "./pages/artwork/Photography";
 
 import ExhibitionsLayout from "./pages/exhibitions/ExhibitionsLayout";
 import ExhibitionsHome from "./pages/exhibitions/ExhibitionsHome";
@@ -50,6 +51,7 @@ function App() {
           <Route path="installations" element={<Murals />} />
           <Route path="portraits" element={<Portraits />} />
           <Route path="stills" element={<Stills />} />
+          <Route path="photography" element={<Photography />} />
         </Route>
         {/* Exhibitions */}
         <Route path="/exhibitions" element={<ExhibitionsLayout />}>

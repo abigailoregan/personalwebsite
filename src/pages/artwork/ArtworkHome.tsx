@@ -8,6 +8,7 @@ function ArtworkHome() {
         <LinkTile title='Figures' image='/images/figures/cover.jpg' link='/artwork/figures' />
         <LinkTile title='Landscapes' image='/images/landscapes/cover.png' link='/artwork/landscapes' />
         <LinkTile title='Murals & Installations' image='/images/murals/cover.png' link='/artwork/installations' />
+        <LinkTile title='Photography' image='/images/photography/cover.jpg' link='/artwork/photography' />
         <LinkTile title='Portraits' image='/images/portraits/cover.png' link='/artwork/portraits' />
         <LinkTile title='Still Lifes' image='/images/stills/cover.png' link='/artwork/stills' />
     </div>

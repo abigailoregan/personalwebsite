@@ -7,6 +7,7 @@ const ARTWORK_CATEGORIES = [
     { name: 'Figures', path: 'figures' },
     { name: 'Landscapes', path: 'landscapes' },
     { name: 'Murals & Installations', path: 'installations' },
+    { name: 'Photography', path: 'photography' },
     { name: 'Portraits', path: 'portraits' },
     { name: 'Still Lifes', path: 'stills' },
 ]

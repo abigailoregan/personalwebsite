@@ -627,5 +627,223 @@ export const artworks: Record<string, ArtworkItem[]> = {
             height: 1000,
             width: 559
         }
+    ],
+    photography: [
+        {
+            id:"photography-1",
+            img:"/images/photography/IMG_0321.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0321.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-2",
+            img:"/images/photography/IMG_0397.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0397.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-3",
+            img:"/images/photography/IMG_0410.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0410.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-4",
+            img:"/images/photography/IMG_0423.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0423.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-5",
+            img:"/images/photography/IMG_0435.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0435.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-6",
+            img:"/images/photography/IMG_0437.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0437.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-7",
+            img:"/images/photography/IMG_0441.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0441.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-8",
+            img:"/images/photography/IMG_0442.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0442.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-9",
+            img:"/images/photography/IMG_0443.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0443.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-10",
+            img:"/images/photography/IMG_0739.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0739.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-11",
+            img:"/images/photography/IMG_0788.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0788.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-12",
+            img:"/images/photography/IMG_0810.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0810.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-13",
+            img:"/images/photography/IMG_0814.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0814.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-14",
+            img:"/images/photography/IMG_0818.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0818.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-15",
+            img:"/images/photography/IMG_0840.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0840.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-16",
+            img:"/images/photography/IMG_0850.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0850.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-17",
+            img:"/images/photography/IMG_0851.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0851.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-18",
+            img:"/images/photography/IMG_0853.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0853.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-19",
+            img:"/images/photography/IMG_0893.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0893.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-20",
+            img:"/images/photography/IMG_0905.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0905.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-21",
+            img:"/images/photography/IMG_0929.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0929.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-22",
+            img:"/images/photography/IMG_0939.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0939.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-23",
+            img:"/images/photography/IMG_0963.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_0963.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-24",
+            img:"/images/photography/IMG_1378.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_1378.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-25",
+            img:"/images/photography/IMG_1404.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_1404.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 1499
+        },
+        {
+            id:"photography-26",
+            img:"/images/photography/IMG_1421.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_1421.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
+        {
+            id:"photography-27",
+            img:"/images/photography/IMG_1423.jpg",
+            imgH:"/images/hi-resolution/photography/IMG_1423.JPG",
+            desc:"Photograph",
+            height: 1000,
+            width: 667
+        },
     ]
 }

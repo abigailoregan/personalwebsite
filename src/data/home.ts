@@ -164,6 +164,6 @@ export const slides: Slide[] = [
     title: "Connect with Abigail",
     subtitle: 'Follow Work on Other Platforms',
     meta: '',
-    cta: { label: 'View LinkedIn', to: 'https://www.linkedin.com/in/abigail-oregan/' },
+    cta: { label: 'View Linktree', to: 'https://linktr.ee/abigailoregan' },
   },
 ]
